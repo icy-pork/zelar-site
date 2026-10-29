@@ -13,19 +13,30 @@ concurrency:
   group: pages-${{ github.ref }}
   cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 
-# Deploy from main only, and never from the template repo itself.
-env:
-  DEPLOY: ${{ github.event_name != 'pull_request' && !github.event.repository.is_template }}
-
 jobs:
   build:
     runs-on: ubuntu-latest
+    outputs:
+      deploy: ${{ steps.mode.outputs.deploy }}
     steps:
       - uses: actions/checkout@v7
 
-      # The template repo keeps its [[PLACEHOLDERS]]; app sites must not.
+      # Until scripts/new-app.py has filled in [[APP_NAME]], this is the
+      # template itself: it may keep its placeholders and never deploys.
+      - name: Decide what to do
+        id: mode
+        run: |
+          if grep -q '\[\[APP_NAME\]\]' index.html; then
+            echo "check_args=--allow-placeholders" >> "$GITHUB_OUTPUT"
+            echo "deploy=false" >> "$GITHUB_OUTPUT"
+          elif [ "$GITHUB_EVENT_NAME" = "pull_request" ]; then
+            echo "deploy=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "deploy=true" >> "$GITHUB_OUTPUT"
+          fi
+
       - name: Check pages
-        run: python3 scripts/check-site.py ${{ github.event.repository.is_template && '--allow-placeholders' || '' }}
+        run: python3 scripts/check-site.py ${{ steps.mode.outputs.check_args }}
 
       # Publish only the site, not the repo's docs, scripts or README.
       - name: Stage site
@@ -37,15 +48,15 @@ jobs:
             ./ _site/
 
       - uses: actions/configure-pages@v6
-        if: env.DEPLOY == 'true'
+        if: steps.mode.outputs.deploy == 'true'
 
       - uses: actions/upload-pages-artifact@v5
-        if: env.DEPLOY == 'true'
+        if: steps.mode.outputs.deploy == 'true'
         with:
           path: _site
 
   deploy:
-    if: github.event_name != 'pull_request' && !github.event.repository.is_template
+    if: needs.build.outputs.deploy == 'true'
     needs: build
     runs-on: ubuntu-latest
     permissions:

@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Zélar — Din egen AI i Zélar</title>
+<meta name="description" content="Sådan bruger du din egen Claude eller ChatGPT med Zélar: skan etiketter med en genvej, del svar til Zélar, kladder og første indlæsning af en hel kælder.">
+<link rel="canonical" href="https://zelar.whaaat.co/ai/">
+<link rel="alternate" hreflang="da" href="https://zelar.whaaat.co/ai/">
+<link rel="alternate" hreflang="en" href="https://zelar.whaaat.co/en/ai/">
+<link rel="alternate" hreflang="x-default" href="https://zelar.whaaat.co/ai/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Zélar">
+<meta property="og:locale" content="da_DK">
+<meta property="og:title" content="Zélar — Din egen AI i Zélar">
+<meta property="og:description" content="Sådan bruger du din egen Claude eller ChatGPT med Zélar: skan etiketter med en genvej, del svar til Zélar, kladder og første indlæsning af en hel kælder.">
+<meta property="og:url" content="https://zelar.whaaat.co/ai/">
+<meta property="og:image" content="https://zelar.whaaat.co/assets/img/og-da.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#15100a">
+<!-- When Zélar is live, add the Smart App Banner: <meta name="apple-itunes-app" content="app-id=APP_ID"> -->
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="icon" href="/assets/img/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+<link rel="preload" href="/assets/fonts/fraunces-latin-opsz-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/site.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Spring til indhold</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="wordmark" href="/" aria-label="Zélar forside">zélar</a>
+    <nav class="site-nav" aria-label="Hovedmenu">
+      <a href="/privacy/">Privatliv</a>
+      <a href="/support/">Support</a>
+      <a href="/ai/" aria-current="page">AI-guide</a>
+      <a class="lang-switch" href="/en/ai/" hreflang="en" lang="en">English</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<div class="wrap wrap--narrow">
+  <div class="page-head">
+    <h1>Din egen AI i Zélar</h1>
+    <p class="meta">Senest opdateret: 1. november 2026</p>
+  </div>
+
+    <div class="card">
+      <p>Zélar er bygget, så din egen AI kan arbejde med din kælder. Ud over prompts og indsæt-import under <span class="ui">Prompts</span> kan du bruge en genvej til at skanne etiketter, dele svar direkte fra din AI-app og lade din AI læse en hel kælder ind første gang. Det er gratis, og det bliver ved med at være gratis.</p>
+      <p>Uanset vejen gælder ét princip: <strong>alt, der kommer fra en AI, er et forslag.</strong> Det lander som en kladde, du tjekker, før noget kommer på lager eller i Journalen.</p>
+    </div>
+
+    <nav class="toc" aria-label="Indhold">
+      <div class="eyebrow">Indhold</div>
+      <ol>
+        <li><a href="#tre-veje">Tre veje ind</a></li>
+        <li><a href="#privatliv">Hvad sendes hvorhen</a></li>
+        <li><a href="#genvej">Installér genvejen</a></li>
+        <li><a href="#skan">Skan en etiket, trin for trin</a></li>
+        <li><a href="#del">Del fra din AI-app</a></li>
+        <li><a href="#kladder">Kladder</a></li>
+        <li><a href="#forste-indlaesning">Første indlæsning</a></li>
+        <li><a href="#fejl">Fejlfinding</a></li>
+        <li><a href="#egne-prompts">Til dine egne prompts og genveje</a></li>
+      </ol>
+    </nav>
+
+    <div class="card" id="tre-veje">
+      <div class="eyebrow">Tre veje ind</div>
+      <h2>Vælg den, der passer til opgaven</h2>
+      <ul>
+        <li><strong>Skan en etiket med en genvej.</strong> Tag et foto; genvejen læser teksten på telefonen, spørger din egen Claude eller ChatGPT og lægger svaret og fotoet i Zélar som en kladde. Bedst til én flaske ad gangen.</li>
+        <li><strong>Del fra din AI-app.</strong> Har du allerede talt med din AI om en vin, så del svaret (og eventuelt fotoet) til Zélar fra delearket.</li>
+        <li><strong>Første indlæsning.</strong> En hel kælder fra et regneark, en anden apps eksport eller en bunke etiketfotos — som tekst i dele, eller som en backupfil.</li>
+      </ul>
+      <div class="table-wrap" tabindex="0" role="region" aria-label="Hvilken vej skal jeg vælge?">
+        <table>
+          <tr><th>Du har …</th><th>Brug</th></tr>
+          <tr><td>én flaske i hånden</td><td><a href="#genvej">Genvejen</a></td></tr>
+          <tr><td>en snak med din AI om en vin, et vinkort eller en kvittering</td><td><a href="#del">Del til Zélar</a></td></tr>
+          <tr><td>en kopieret tekst fra en app uden deleknap</td><td><span class="ui">＋ → Importér fra AI</span></td></tr>
+          <tr><td>et regneark, en eksport fra en anden app eller mange fotos</td><td><a href="#forste-indlaesning">Første indlæsning</a></td></tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="card" id="privatliv">
+      <div class="eyebrow">Privatliv</div>
+      <h2>Hvad sendes hvorhen</h2>
+      <ul>
+        <li><strong>Fotoet bliver på telefonen</strong>, når genvejen læser etiketten med iOS' tekstgenkendelse. Vælger du i stedet Apples model i skyen til at læse teksten, behandles fotoet i Apples Private Cloud Compute.</li>
+        <li><strong>Kun tekst går til din egen Claude eller ChatGPT</strong>, under din egen konto. Det tæller med i din plans grænser dér, og den tjenestes vilkår gælder.</li>
+        <li><strong>Ved første indlæsning</strong> sender du selv dit regneark eller dine fotos til din egen AI-konto.</li>
+        <li><strong>Zélar sender ingenting.</strong> Genvejshandlingerne og delearket læser og skriver kun filer på din enhed. Kladder ligger kun på enheden og synkroniseres ikke.</li>
+      </ul>
+      <p>Se også <a href="/privacy/">privatlivspolitikken</a>.</p>
+    </div>
+
+    <div class="card" id="genvej">
+      <div class="eyebrow">Genvejen</div>
+      <h2>Installér "Zélar · Skan etiket"</h2>
+      <p>Der er to udgaver af genvejen, én til Claude og én til ChatGPT. Vælg den, der passer til den AI-app, du bruger.</p>
+      <div class="callout">
+        <strong>Links følger</strong>
+        <p>Genvejene "Zélar · Skan etiket (Claude)" og "Zélar · Skan etiket (ChatGPT)" lægges her som iCloud-links, når de er klar. Indtil da kan du bygge den selv efter opskriften nedenfor; det tager et par minutter.</p>
+      </div>
+      <!-- When the Shortcuts are built: add the two iCloud links here, with their
+           version ("v1"), e.g. <a class="btn btn--primary" href="https://www.icloud.com/shortcuts/…">Hent til Claude</a>.
+           Then soften the callout above. Screenshots go in assets/img/ai/ (da and en). -->
+
+      <h3>Det skal du bruge</h3>
+      <ul>
+        <li>Zélar, og Claude- eller ChatGPT-appen, installeret og logget ind.</li>
+        <li>Genveje-appen (følger med iOS).</li>
+        <li>Valgfrit: Apple Intelligence (iPhone 15 Pro eller nyere) for at lade Apples model læse teksten. Den har daglige grænser. Uden den bruger genvejen iOS' indbyggede tekstgenkendelse, som virker fint på de fleste etiketter.</li>
+      </ul>
+
+      <h3>Første gang du kører den</h3>
+      <p>iOS spørger, om genvejen må bruge Zélar, din AI-app og Fotos. Det er genvejen, der spørger, ikke Zélar, og svaret gælder kun denne genvej. Vælg <span class="ui">Tillad altid</span>, så den ikke spørger hver gang.</p>
+
+      <h3>Læg den, hvor du bruger den</h3>
+      <ul>
+        <li><strong>Handlingsknappen</strong> (iPhone 15 Pro og nyere): Indstillinger → Handlingsknap → Genvej.</li>
+        <li><strong>Låseskærmen eller Kontrolcenter</strong>: tilføj en Genvej-knap.</li>
+        <li><strong>Hjemmeskærmen</strong>: tryk og hold på genvejen i Genveje → Del → Føj til hjemmeskærm.</li>
+        <li><strong>Delearket i Fotos</strong>: slå "Vis i delingsark" til i genvejens detaljer, så kan du skanne et foto, du allerede har taget.</li>
+      </ul>
+
+      <h3>Byg den selv</h3>
+      <p>Opret en ny genvej i Genveje med disse handlinger. Zélars handlinger findes under <span class="ui">Apps → Zélar</span>.</p>
+      <pre>1  Modtag Billeder fra Delingsark — hvis intet input: Tag foto
+2  Udtræk tekst fra billede (Genvejsinput)
+     eller: Brug model (Cloud) "Skriv al synlig tekst af."
+3  Vælg fra menu: Lager · Journal
+4  (Journal) Spørg efter input: "Vurdering, sted, glas eller flaske?"
+5  Zélar → Hent Zélar-prompt
+     Prompt: Skan etiket til lager / Skan etiket til journalen
+     Note: (svaret fra trin 4)
+6  Spørg Claude: [Zélar-prompt] [Udtrukket tekst]
+     (ChatGPT-udgaven: Spørg ChatGPT, kun tekst)
+7  Zélar → Opret vin på lager / Opret journal-note
+     Tekst: [Svar]   Fotos: [Genvejsinput]</pre>
+      <p>Prompten i trin 5 følger med, når Zélar opdateres, så genvejen ikke skal laves om, hvis formatet ændrer sig.</p>
+    </div>
+
+    <div class="card" id="skan">
+      <div class="eyebrow">Skan en etiket</div>
+      <h2>Trin for trin</h2>
+      <ol>
+        <li><strong>Kør genvejen</strong> og tag et foto af etiketten, lige forfra og i godt lys.</li>
+        <li><strong>Vælg Lager eller Journal.</strong> Lager er til en flaske, du lægger i kælderen. Journal er til en vin, du smager nu; skriv en kort note med vurdering, sted og glas eller flaske, fx "4,5 stjerner, Restaurant Barolo, et glas".</li>
+        <li><strong>Vent på din AI.</strong> Genvejen sender teksten fra etiketten og Zélars prompt til Claude eller ChatGPT og venter på svaret.</li>
+        <li><strong>Zélar åbner kladden</strong> med svaret og fotoet, klar til at tjekke.</li>
+      </ol>
+      <h3>Tjek-skærmen</h3>
+      <ul>
+        <li>Felterne er <strong>AI-forslag</strong>: tjek navn, producent og årgang mod etiketten, og ret det, der er forkert. AI kan tage fejl.</li>
+        <li>Findes vinen allerede i kælderen, foreslår Zélar at bruge den, så flasken lægges til den eksisterende vin i stedet for at blive en ny.</li>
+        <li>Vælg antal og plads til flaskerne. Uden plads lander de under <span class="ui">Ingen placering</span>.</li>
+        <li>Tryk <span class="ui">Færdiggør</span>. Først nu oprettes vinen eller smagningen, og kladden slettes.</li>
+      </ul>
+    </div>
+
+    <div class="card" id="del">
+      <div class="eyebrow">Del fra din AI-app</div>
+      <h2>Svaret fra Claude eller ChatGPT direkte til Zélar</h2>
+      <ol>
+        <li>Bed din AI om at svare i Zélars format. Det nemmeste er at starte med en prompt fra <span class="ui">Prompts</span> eller formatet fra <span class="ui">＋ → Importér fra AI → ?</span>.</li>
+        <li>Tryk og hold på svaret (eller brug delknappen) → <span class="ui">Del</span> → <span class="ui">Zélar</span>.</li>
+        <li>Kortet "Del til Zélar" viser, hvad teksten indeholder, fx en vins navn eller "3 vine i teksten", og om det ligner et AI-svar i Zélars format.</li>
+        <li>Vælg <span class="ui">Vin til lager</span> eller <span class="ui">Smagt vin</span>. Zélar har forvalgt det, der passer bedst. Du tjekker det i Zélar, før noget oprettes.</li>
+      </ol>
+      <h3>Tekst og foto hver for sig</h3>
+      <p>Mange AI-apps deler kun tekst. Del fotoet bagefter (eller først) fra Fotos til Zélar, og vælg <span class="ui">Tilføj til …</span> med den kladde, det hører til. Zélar foreslår den kladde, der passer, men vælger aldrig af sig selv. Deler du et foto alene, kan du også <span class="ui">Gem som kladde</span> og vente på teksten, eller gå direkte til vin- eller smagningsformularen med billederne.</p>
+      <p>Kan du ikke finde Zélar i delearket, så rul til højre i app-rækken, tryk <span class="ui">Flere</span> og slå Zélar til.</p>
+    </div>
+
+    <div class="card" id="kladder">
+      <div class="eyebrow">Kladder</div>
+      <h2>Det, der venter på dig</h2>
+      <p>Så længe der er kladder, står <span class="ui">Kladder</span> med et tal i menuen (bag kælderknappen på Overblik) under Bibliotek, og i sidebjælken på iPad. En kladde kan være:</p>
+      <div class="table-wrap" tabindex="0" role="region" aria-label="Kladdernes tilstande">
+        <table>
+          <tr><th>Tilstand</th><th>Hvad du gør</th></tr>
+          <tr><td>Tekst og foto · klar til at tjekke</td><td>Tryk på den for at tjekke og oprette.</td></tr>
+          <tr><td>Uden foto · klar til at tjekke</td><td>Opret den som den er, eller del et foto til den først.</td></tr>
+          <tr><td>Venter på AI'ens tekst</td><td>Del svaret fra din AI-app og vælg <span class="ui">Tilføj til kladde</span>, eller opret vinen selv nu.</td></tr>
+        </table>
+      </div>
+      <ul>
+        <li><strong>Slet</strong> en kladde med <span class="ui">Slet kladde</span>, eller ryd op med <span class="ui">Slet kladder ældre end 30 dage</span>.</li>
+        <li><strong>Indsæt-knappen</strong> i Kladder gemmer et kopieret AI-svar som kladde. Brug den med apps, der kun kan kopiere.</li>
+        <li>Kladder bliver på enheden. De synkroniseres ikke til dine andre enheder og kommer ikke med i backup.</li>
+      </ul>
+    </div>
+
+    <div class="card" id="forste-indlaesning">
+      <div class="eyebrow">Første indlæsning</div>
+      <h2>Hele kælderen ind på én gang</h2>
+      <p>Har du allerede vine registreret et andet sted? Find <span class="ui">Første indlæsning</span> under <span class="ui">Backup, import &amp; eksport</span> i menuen. Der er to veje.</p>
+
+      <h3>Som tekst (anbefalet)</h3>
+      <ol>
+        <li>Tryk <span class="ui">Kopiér AI-instruktioner (tekst)</span>.</li>
+        <li>Åbn Claude eller ChatGPT, indsæt instruktionerne og vedhæft dit regneark, din eksport eller dine fotos.</li>
+        <li>AI'en svarer i dele på 40 vine. Skriv <em>fortsæt</em> for at få den næste del.</li>
+        <li>Kopiér hver del og sæt den ind under <span class="ui">Indsæt vine fra AI</span> i samme sektion, én ad gangen. Tjek vinene og tryk <span class="ui">Færdiggør</span>.</li>
+        <li>Fotos tilføjes bagefter på hver vin.</li>
+      </ol>
+
+      <h3>Som backupfil — på eget ansvar</h3>
+      <div class="callout callout--warn">
+        <strong>Læs dette først</strong>
+        <p>En backupfil fra en AI gendannes med <span class="ui">Gendan fra fil</span>, og det <strong>erstatter alt i Zélar</strong>. AI'en kan lave fejl i filen, og Zélar kan (endnu) ikke flette den ind i en eksisterende kælder. Brug den kun i en tom app, og tag en backup først, hvis du har data.</p>
+      </div>
+      <ol>
+        <li>Tryk <span class="ui">Kopiér AI-instruktioner (backup-fil)</span> og bekræft med <span class="ui">Jeg forstår, kopiér</span>.</li>
+        <li>Brug en AI, der kan lave filer. Indsæt instruktionerne og vedhæft dine filer; fotos kan komme med.</li>
+        <li>Hent den <code>.zelarbackup</code>-fil, AI'en laver, til Filer.</li>
+        <li>I Zélar: <span class="ui">Backup, import &amp; eksport</span> → <span class="ui">Gendan fra fil</span> → vælg filen i Filer.</li>
+      </ol>
+      <p>Bliver filen for stor, deler AI'en den i flere. Gendan kun én af dem, for hver gendannelse erstatter den forrige, eller brug tekstvejen i stedet.</p>
+
+      <h3>Gode råd</h3>
+      <ul>
+        <li><strong>Regneark:</strong> én række pr. vin med overskrifter giver det bedste resultat. Antal flasker og placering kan stå i hver sin kolonne.</li>
+        <li><strong>Eksport fra en anden app:</strong> CSV eller tekst er bedst. Fortæl AI'en, hvilken app den kommer fra.</li>
+        <li><strong>Mange etiketter:</strong> tag ét foto pr. etiket, lige forfra, og send dem i mindre bunker.</li>
+        <li><strong>Placeringer:</strong> byg dine reoler i Zélar først. Så kan AI'en bruge dine rigtige navne, fx "Reol A · B3".</li>
+      </ul>
+    </div>
+
+    <div class="card" id="fejl">
+      <div class="eyebrow">Fejlfinding</div>
+      <h2>Når noget driller</h2>
+      <h3>"Svaret bruger en nyere version af formatet"</h3>
+      <p>Svaret er skrevet til en nyere Zélar. Opdatér Zélar i App Store, og prøv igen.</p>
+      <h3>Genvejen stopper, eller Spørg Claude / Spørg ChatGPT giver intet svar</h3>
+      <p>Tjek, at AI-appen er installeret og logget ind, og at du har netværk. Åbn AI-appen én gang, og kør derefter genvejen fra Genveje-appen, så du kan se, hvilket trin der stopper.</p>
+      <h3>Etiketten blev læst forkert</h3>
+      <p>Tag fotoet igen lige forfra, uden genskin, og fyld billedet ud med etiketten. Læser tekstgenkendelsen dårligt, så prøv Apples model i skyen til trin 2. Du kan altid rette felterne på tjek-skærmen.</p>
+      <h3>Zélar er ikke i delearket</h3>
+      <p>Rul til højre i rækken af apps, tryk <span class="ui">Flere</span>, og slå Zélar til. Åbn Zélar én gang efter en ny installation.</p>
+      <h3>"Brug model" siger stop</h3>
+      <p>Apples model har daglige grænser. Brug tekstgenkendelse i trin 2 indtil i morgen.</p>
+      <h3>Hvorfor ikke bare Siri?</h3>
+      <p>Siris nye AI-funktioner findes ikke på iPhone i EU endnu. Genveje virker overalt, så Zélar bygger på dem.</p>
+      <h3>Filen er for stor</h3>
+      <p>Del indholdet i flere omgange: send færre fotos ad gangen, eller brug tekstvejen med dele på 40 vine.</p>
+    </div>
+
+    <div class="card" id="egne-prompts">
+      <div class="eyebrow">For de nysgerrige</div>
+      <h2>Til dine egne prompts og genveje</h2>
+      <h3>Formatet</h3>
+      <p>Zélar læser tekst med én oplysning pr. linje (<code>NØGLE: værdi</code>) og en linje med <code>---</code> mellem vinene. Svaret kan starte med <code>ZÉLAR-FORMAT: 1</code>, så Zélar ved, hvilken version af formatet det er. Danske og engelske nøgler virker begge, og linjer, Zélar ikke kender, springes over.</p>
+      <pre>ZÉLAR-FORMAT: 1
+VIN: Château Somewhere
+PRODUCENT: A. Christmann
+ÅRGANG: 2018
+LAND: Frankrig
+OMRÅDE: Bordeaux, Médoc
+TYPE: Rødvin
+DRUER: Cabernet Sauvignon, Merlot
+ANTAL: 2
+DRIKKEVINDUE: 2024-2032
+KÆLDER: Hjemme
+PLACERING: Reol A · B3
+---
+VIN: ...</pre>
+      <p>Det fulde format, med alle felter, får du med <span class="ui">Hent importformat</span> i Genveje eller med <span class="ui">?</span> under <span class="ui">＋ → Importér fra AI</span>.</p>
+
+      <h3>Zélars handlinger i Genveje</h3>
+      <div class="table-wrap" tabindex="0" role="region" aria-label="Zélars handlinger i Genveje">
+        <table>
+          <tr><th>Handling</th><th>Input</th><th>Giver</th></tr>
+          <tr><td><span class="ui">Opret vin på lager</span></td><td>Tekst (AI-svar i Zélars format), fotos (valgfrit)</td><td>En kladde, der åbnes til tjek</td></tr>
+          <tr><td><span class="ui">Opret journal-note</span></td><td>Tekst, fotos (valgfrit)</td><td>En kladde til Journalen, der åbnes til tjek</td></tr>
+          <tr><td><span class="ui">Tilføj foto til kladde</span></td><td>Fotos, kladde (valgfrit: den nyeste, der venter på et foto)</td><td>Fotoet lagt til kladden</td></tr>
+          <tr><td><span class="ui">Hent Zélar-prompt</span></td><td>Prompt (skan til lager eller journal, første indlæsning som tekst eller backupfil), note</td><td>Prompten som tekst</td></tr>
+          <tr><td><span class="ui">Hent importformat</span></td><td>Vin til lager eller smagt vin</td><td>Formatet og dets version</td></tr>
+          <tr><td><span class="ui">Hent mit bibliotek</span></td><td>—</td><td>Din kælder, dine smagninger og din ønskeliste som Markdown</td></tr>
+          <tr><td><span class="ui">Hent prompt med min kælder</span></td><td>Opgave, ret, fra kælderen eller køb nyt, hvor du handler</td><td>En prompt fra Prompts med din kælder, som når du kopierer den i appen</td></tr>
+        </table>
+      </div>
+
+      <h3>Dit prompt-bibliotek i en genvej</h3>
+      <p><span class="ui">Hent prompt med min kælder</span> efterfulgt af Spørg Claude eller Spørg ChatGPT giver dig dine prompts uden at åbne Zélar. To idéer:</p>
+      <ul>
+        <li><strong>Madmatch med stemmen:</strong> Diktér tekst ("Hvad laver du?") → Hent prompt med min kælder (Madmatch til aftensmad, Ret: diktatet) → Spørg Claude.</li>
+        <li><strong>Indkøbsforslag på hjemmeskærmen:</strong> Hent prompt med min kælder (Indkøbsforslag) → Spørg ChatGPT.</li>
+      </ul>
+      <p>Svaret bliver i AI-appen. Bruger du opgaven <em>Berig mine vinoplysninger</em>, så sæt svaret ind med <span class="ui">Opdatér vine fra AI</span> i Zélar, så du kan se ændringerne felt for felt.</p>
+    </div>
+
+    <div class="card">
+      <div class="eyebrow">Hjælp</div>
+      <p>Resten af appen er beskrevet i <a href="/support/">brugerguiden</a>. Går du i stå, så skriv til <a href="mailto:anders@whaaat.co" class="mono">anders@whaaat.co</a>.</p>
+    </div>
+</div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>© 2026 Whaaat Company · CVR 46838068</p>
+    <nav aria-label="Sidefod">
+      <a href="/privacy/">Privatliv</a>
+      <a href="/support/">Support</a>
+      <a href="/ai/">AI-guide</a>
+      <a href="https://whaaat.co/">whaaat.co</a>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>

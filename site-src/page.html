@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="{{lang}}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{title}}</title>
+<meta name="description" content="{{description}}">
+<link rel="canonical" href="{{canonical}}">
+{{alternates}}<meta property="og:type" content="website">
+<meta property="og:site_name" content="Zélar">
+<meta property="og:locale" content="{{og_locale}}">
+<meta property="og:title" content="{{title}}">
+<meta property="og:description" content="{{description}}">
+<meta property="og:url" content="{{canonical}}">
+<meta property="og:image" content="{{site}}/assets/img/{{og_image}}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#15100a">
+<!-- When Zélar is live, add the Smart App Banner: <meta name="apple-itunes-app" content="app-id=APP_ID"> -->
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="icon" href="/assets/img/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+<link rel="preload" href="/assets/fonts/fraunces-latin-opsz-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/site.css">
+</head>
+<body>
+<a class="skip-link" href="#main">{{ui.skip}}</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="wordmark" href="{{root}}" aria-label="{{ui.home}}">zélar</a>
+    <nav class="site-nav" aria-label="{{ui.nav}}">
+      <a href="{{root}}privacy/"{{current.privacy}}>{{ui.privacy}}</a>
+      <a href="{{root}}support/"{{current.support}}>{{ui.support}}</a>
+      <a href="{{root}}ai/"{{current.ai}}>{{ui.ai}}</a>
+{{language_menu}}
+    </nav>
+  </div>
+</header>
+{{notice}}
+{{main}}
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>© 2026 Whaaat Company · CVR 46838068</p>
+    <nav aria-label="{{ui.footer}}">
+      <a href="{{root}}privacy/">{{ui.privacy}}</a>
+      <a href="{{root}}support/">{{ui.support}}</a>
+      <a href="{{root}}ai/">{{ui.ai}}</a>
+      <a href="https://whaaat.co/">whaaat.co</a>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>

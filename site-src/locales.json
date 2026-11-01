@@ -1,0 +1,45 @@
+{
+  "_comment": "Every locale the site and the app are built for (icy-pork/zelar#212). English is the core language and lives at the root; every other locale lives under /<path>/. A locale is published once `ready` is true; until then it is left out of the language menu and the sitemap. A ready locale without its own copy of a page gets the English page with a notice (`untranslated`). Strings here are UI chrome only; page text is in content/<code>/. Wine and app terms follow icy-pork/zelar docs/localization/GLOSSARY.md.",
+  "default": "en",
+  "locales": [
+    {
+      "code": "en", "path": "", "lang": "en", "og": "en_GB", "name": "English", "ready": true, "ogImage": "og-en.png",
+      "ui": {
+        "skip": "Skip to content", "home": "Zélar home", "nav": "Main", "footer": "Footer", "language": "Language",
+        "privacy": "Privacy", "support": "Support", "ai": "AI guide",
+        "untranslated": "This page isn't available in English yet."
+      }
+    },
+    {
+      "code": "da", "path": "da/", "lang": "da", "og": "da_DK", "name": "Dansk", "ready": true, "ogImage": "og-da.png",
+      "ui": {
+        "skip": "Spring til indhold", "home": "Zélar forside", "nav": "Hovedmenu", "footer": "Sidefod", "language": "Sprog",
+        "privacy": "Privatliv", "support": "Support", "ai": "AI-guide",
+        "untranslated": "Siden findes ikke på dansk endnu, så den vises på engelsk."
+      }
+    },
+    { "code": "en-GB", "path": "en-gb/", "lang": "en-GB", "og": "en_GB", "name": "English (UK)", "ready": false },
+    { "code": "sv", "path": "sv/", "lang": "sv", "og": "sv_SE", "name": "Svenska", "ready": false },
+    { "code": "nb", "path": "nb/", "lang": "nb", "og": "nb_NO", "name": "Norsk bokmål", "ready": false },
+    { "code": "de", "path": "de/", "lang": "de", "og": "de_DE", "name": "Deutsch", "ready": false },
+    { "code": "fr", "path": "fr/", "lang": "fr", "og": "fr_FR", "name": "Français", "ready": false },
+    { "code": "it", "path": "it/", "lang": "it", "og": "it_IT", "name": "Italiano", "ready": false },
+    { "code": "es", "path": "es/", "lang": "es", "og": "es_ES", "name": "Español", "ready": false },
+    { "code": "pt-PT", "path": "pt-pt/", "lang": "pt-PT", "og": "pt_PT", "name": "Português (Portugal)", "ready": false },
+    { "code": "pt-BR", "path": "pt-br/", "lang": "pt-BR", "og": "pt_BR", "name": "Português (Brasil)", "ready": false },
+    { "code": "nl", "path": "nl/", "lang": "nl", "og": "nl_NL", "name": "Nederlands", "ready": false }
+  ],
+  "pages": [
+    { "id": "home", "path": "" },
+    { "id": "privacy", "path": "privacy/" },
+    { "id": "support", "path": "support/" },
+    { "id": "ai", "path": "ai/" }
+  ],
+  "moved": {
+    "_comment": "Old URLs kept as redirect pages, so a link from before the English root still lands. Path → new path.",
+    "en/": "",
+    "en/privacy/": "privacy/",
+    "en/support/": "support/",
+    "en/ai/": "ai/"
+  }
+}

@@ -1,21 +1,18 @@
 # Localisation (icy-pork/zelar#212)
 
-The Phase 0 audit for adding 10 more languages to the app and this site lives
-in the app repo, so one copy covers both:
-`icy-pork/zelar` → `docs/localization/AUDIT.md` (on `dev` and
-`feat/zelar-pro`). Section 2 is about this site.
+The audit, the owner's decisions and the glossary live in the app repo, so
+one copy covers both: `icy-pork/zelar` → `docs/localization/` (`AUDIT.md`,
+`GLOSSARY.md`). Section 2 of the audit is about this site.
 
-The short version for this repo:
+What this repo does about it:
 
-- Danish stays at `/` and English at `/en/`; new locales go beside them
-  (`/sv/`, `/de/`, …), so no existing URL moves.
-- With 12 locales, the hand-copied header, footer and `sitemap.xml` would
-  need a small build-time generator (standard-library Python, run in the
-  workflow before `scripts/check-site.py`). Still no JavaScript and no
-  third-party requests.
-- The Open Graph images have baked-in text, so each locale needs its own.
-- The glossary (Phase 2) is shared with the app, so a UI label quoted on the
+- English is the core language at the root; every other locale lives under
+  `/<locale>/` (`/da/` today). The old `/en/…` URLs redirect to the root.
+- The pages are built from `site-src/` by `scripts/build-site.py`: one
+  layout, one language menu, a sitemap with `hreflang` and `x-default`, and
+  an English fallback with a notice for a page a language hasn't
+  translated yet. See the README.
+- Site text uses the same glossary as the app, so a UI label quoted on the
   support or AI page matches the app in every language.
-
-Nothing is changed on the site until the owner answers the audit's open
-questions.
+- The Open Graph images have text baked in; each new locale needs its own
+  (until then it uses the English one).

@@ -14,7 +14,7 @@ import sys
 from html.parser import HTMLParser
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-SKIP_DIRS = {".git", ".github", "docs", "scripts", "_site", "node_modules"}
+SKIP_DIRS = {".git", ".github", "docs", "scripts", "site-src", "_site", "node_modules"}
 LOADING = {("link", "href"), ("script", "src"), ("img", "src"), ("source", "src"),
            ("source", "srcset"), ("img", "srcset"), ("iframe", "src"), ("video", "src"), ("audio", "src")}
 

@@ -2,42 +2,50 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://zelar.whaaat.co/</loc>
-    <xhtml:link rel="alternate" hreflang="da" href="https://zelar.whaaat.co/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://zelar.whaaat.co/en/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zelar.whaaat.co/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://zelar.whaaat.co/da/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zelar.whaaat.co/"/>
   </url>
   <url>
-    <loc>https://zelar.whaaat.co/en/</loc>
-    <xhtml:link rel="alternate" hreflang="da" href="https://zelar.whaaat.co/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://zelar.whaaat.co/en/"/>
+    <loc>https://zelar.whaaat.co/da/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zelar.whaaat.co/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://zelar.whaaat.co/da/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zelar.whaaat.co/"/>
   </url>
   <url>
     <loc>https://zelar.whaaat.co/privacy/</loc>
-    <xhtml:link rel="alternate" hreflang="da" href="https://zelar.whaaat.co/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://zelar.whaaat.co/en/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zelar.whaaat.co/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://zelar.whaaat.co/da/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zelar.whaaat.co/privacy/"/>
   </url>
   <url>
-    <loc>https://zelar.whaaat.co/en/privacy/</loc>
-    <xhtml:link rel="alternate" hreflang="da" href="https://zelar.whaaat.co/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://zelar.whaaat.co/en/privacy/"/>
+    <loc>https://zelar.whaaat.co/da/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zelar.whaaat.co/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://zelar.whaaat.co/da/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zelar.whaaat.co/privacy/"/>
   </url>
   <url>
     <loc>https://zelar.whaaat.co/support/</loc>
-    <xhtml:link rel="alternate" hreflang="da" href="https://zelar.whaaat.co/support/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://zelar.whaaat.co/en/support/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zelar.whaaat.co/support/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://zelar.whaaat.co/da/support/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zelar.whaaat.co/support/"/>
   </url>
   <url>
-    <loc>https://zelar.whaaat.co/en/support/</loc>
-    <xhtml:link rel="alternate" hreflang="da" href="https://zelar.whaaat.co/support/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://zelar.whaaat.co/en/support/"/>
+    <loc>https://zelar.whaaat.co/da/support/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zelar.whaaat.co/support/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://zelar.whaaat.co/da/support/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zelar.whaaat.co/support/"/>
   </url>
   <url>
     <loc>https://zelar.whaaat.co/ai/</loc>
-    <xhtml:link rel="alternate" hreflang="da" href="https://zelar.whaaat.co/ai/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://zelar.whaaat.co/en/ai/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zelar.whaaat.co/ai/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://zelar.whaaat.co/da/ai/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zelar.whaaat.co/ai/"/>
   </url>
   <url>
-    <loc>https://zelar.whaaat.co/en/ai/</loc>
-    <xhtml:link rel="alternate" hreflang="da" href="https://zelar.whaaat.co/ai/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://zelar.whaaat.co/en/ai/"/>
+    <loc>https://zelar.whaaat.co/da/ai/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zelar.whaaat.co/ai/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://zelar.whaaat.co/da/ai/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zelar.whaaat.co/ai/"/>
   </url>
 </urlset>

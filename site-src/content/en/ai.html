@@ -1,0 +1,280 @@
+<!-- title: Zélar — Your Own AI in Zélar -->
+<!-- description: How to use your own Claude or ChatGPT with Zélar: scan labels with a Shortcut, share replies to Zélar, drafts, and the first load of a whole cellar. -->
+<main id="main">
+<div class="wrap wrap--narrow">
+  <div class="page-head">
+    <h1>Your own AI in Zélar</h1>
+    <p class="meta">Last updated: November 1, 2026</p>
+  </div>
+
+    <div class="card">
+      <p>Zélar is built so your own AI can work with your cellar. Besides the prompts and paste-import under <span class="ui">Prompts</span>, you can scan labels with a Shortcut, share replies straight from your AI app, and let your AI read in a whole cellar the first time. It's free, and it will stay free.</p>
+      <p>Whichever way you use, one rule holds: <strong>everything that comes from an AI is a suggestion.</strong> It lands as a draft that you check before anything goes into your stock or the Journal.</p>
+    </div>
+
+    <nav class="toc" aria-label="Contents">
+      <div class="eyebrow">Contents</div>
+      <ol>
+        <li><a href="#three-ways">Three ways in</a></li>
+        <li><a href="#privacy">What goes where</a></li>
+        <li><a href="#shortcut">Install the Shortcut</a></li>
+        <li><a href="#scan">Scan a label, step by step</a></li>
+        <li><a href="#share">Share from your AI app</a></li>
+        <li><a href="#drafts">Drafts</a></li>
+        <li><a href="#first-load">First load</a></li>
+        <li><a href="#troubleshooting">Troubleshooting</a></li>
+        <li><a href="#own-prompts">For your own prompts and Shortcuts</a></li>
+      </ol>
+    </nav>
+
+    <div class="card" id="three-ways">
+      <div class="eyebrow">Three ways in</div>
+      <h2>Pick the one that fits the job</h2>
+      <ul>
+        <li><strong>Scan a label with a Shortcut.</strong> Pick a photo; Apple's model reads the label, the Shortcut asks your own Claude or ChatGPT, and puts the reply and the photo into Zélar as a draft. Best for one bottle at a time.</li>
+        <li><strong>Share from your AI app.</strong> Already talked to your AI about a wine? Share the reply (and the photo, if you like) to Zélar from the share sheet.</li>
+        <li><strong>First load.</strong> A whole cellar from a spreadsheet, another app's export or a pile of label photos — as text in parts, or as a backup file.</li>
+      </ul>
+      <div class="table-wrap" tabindex="0" role="region" aria-label="Which one should I use?">
+        <table>
+          <tr><th>You have …</th><th>Use</th></tr>
+          <tr><td>one bottle in your hand</td><td><a href="#shortcut">The Shortcut</a></td></tr>
+          <tr><td>a chat with your AI about a wine, a wine list or a receipt</td><td><a href="#share">Share to Zélar</a></td></tr>
+          <tr><td>copied text from an app with no share button</td><td><span class="ui">＋ → Import from AI</span></td></tr>
+          <tr><td>a spreadsheet, another app's export or many photos</td><td><a href="#first-load">First load</a></td></tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="card" id="privacy">
+      <div class="eyebrow">Privacy</div>
+      <h2>What goes where</h2>
+      <ul>
+        <li><strong>The photo doesn't go to your AI.</strong> The Shortcut lets Apple's model read the label in Apple's Private Cloud Compute, where Apple doesn't keep it. If you want the photo to stay on your phone, use iOS's text recognition instead (see the <a href="#shortcut">recipe</a>).</li>
+        <li><strong>Only text goes to your own Claude or ChatGPT</strong>, under your own account. It counts toward your plan's limits there, and that service's terms apply.</li>
+        <li><strong>For a first load</strong>, you send your spreadsheet or photos to your own AI account yourself.</li>
+        <li><strong>Zélar sends nothing.</strong> The Shortcuts actions and the share sheet only read and write files on your device. Drafts stay on the device and aren't synced.</li>
+      </ul>
+      <p>See also the <a href="{{root}}privacy/">privacy policy</a>.</p>
+    </div>
+
+    <div class="card" id="shortcut">
+      <div class="eyebrow">The Shortcut</div>
+      <h2>Install "Zélar · Scan label"</h2>
+      <!-- SCREENSHOT ai-01: The Shortcut open in the Shortcuts app with its actions (Claude version). assets/img/screens/en/ai-01.webp, see icy-pork/zelar-site#2 -->
+      <!-- SCREENSHOT ai-02: The first-run permission prompt. assets/img/screens/en/ai-02.webp, see icy-pork/zelar-site#2 -->
+      <!-- SCREENSHOT ai-03: Settings → Action Button set to the Shortcut. assets/img/screens/en/ai-03.webp, see icy-pork/zelar-site#2 -->
+      <p>There's a Shortcut for each destination: <strong>to stock</strong> (a bottle going into the cellar) and <strong>to the journal</strong> (a wine you're tasting now). Each comes for Claude and for ChatGPT. Pick the ones that match the AI app you use.</p>
+      <div class="callout">
+        <strong>Links coming</strong>
+        <p>The Shortcuts to stock and to the journal, for Claude and for ChatGPT, will be linked here from iCloud once they're ready. Until then you can build it yourself from the recipe below; it takes a few minutes.</p>
+      </div>
+      <!-- When the Shortcuts are built: add the two iCloud links here, with their
+           version ("v1"). Then soften the callout above. Screenshots go in
+           assets/img/ai/ (da and en). -->
+
+      <h3>What you need</h3>
+      <ul>
+        <li>Zélar, and the Claude or ChatGPT app, installed and signed in.</li>
+        <li>The Shortcuts app (comes with iOS).</li>
+        <li>Apple Intelligence (iPhone 15 Pro or later) for the <span class="ui">Use Model</span> action, which reads the label. It has daily limits. Without Apple Intelligence you can use <span class="ui">Extract Text from Image</span> instead; it runs on the phone and handles most labels.</li>
+      </ul>
+
+      <h3>The first time you run it</h3>
+      <p>iOS asks whether the Shortcut may use Zélar, your AI app and Photos. It's the Shortcut asking, not Zélar, and the answer only applies to this Shortcut. Choose <span class="ui">Always Allow</span> so it doesn't ask every time.</p>
+
+      <h3>Put it where you'll use it</h3>
+      <ul>
+        <li><strong>The Action button</strong> (iPhone 15 Pro and later): Settings → Action Button → Shortcut.</li>
+        <li><strong>The Lock Screen or Control Center</strong>: add a Shortcut control.</li>
+        <li><strong>The Home Screen</strong>: touch and hold the Shortcut in Shortcuts → Share → Add to Home Screen.</li>
+        <li><strong>The share sheet in Photos</strong>: turn on "Show in Share Sheet" in the Shortcut's details, and you can scan a photo you've already taken.</li>
+      </ul>
+
+      <h3>Build it yourself</h3>
+      <p>Create a new Shortcut in Shortcuts, for example "Zélar · Scan label to stock (Claude)", with these five actions. Zélar's actions are under <span class="ui">Apps → Zélar</span>.</p>
+      <pre>1  Select Photos      Include: All · Select Multiple: off
+2  Use Model (Cloud)  (the prompt below) + [Photos]
+3  Get Scan label to stock          (Zélar → Get Zélar Prompt)
+4  Ask Claude         [Get Zélar Prompt] [Response]
+5  Create Stocked Wine from [Ask Claude]
+     Photos: [Photos]</pre>
+      <p>The prompt for step 2. It only asks the model to read the label; the wine knowledge comes from your own AI in step 4:</p>
+      <pre>This is a photo of a wine label. Extract as much information
+about the bottle as you can from the image, for example name,
+producer, country, region, vintage, alcohol % and any organic
+or biodynamic marks: [Photos]</pre>
+      <ul>
+        <li><strong>To the journal:</strong> choose <span class="ui">Scan label to the journal</span> in step 3, and use <span class="ui">Create Journal Entry</span> in step 5. To include rating and place, add <span class="ui">Ask for Input</span> ("Rating, place, glass or bottle?") before step 3 and put the answer in step 3's <span class="ui">Note</span>.</li>
+        <li><strong>ChatGPT:</strong> use <span class="ui">Ask ChatGPT</span> in step 4, with text only.</li>
+        <li><strong>Take the photo right away:</strong> use <span class="ui">Take Photo</span> instead of <span class="ui">Select Photos</span>.</li>
+        <li><strong>Without Apple Intelligence:</strong> use <span class="ui">Extract Text from Image</span> in step 2. Then the photo never leaves the phone.</li>
+      </ul>
+      <p>The prompt in step 3 is updated along with Zélar, so the Shortcut doesn't need rebuilding if the format changes.</p>
+    </div>
+
+    <div class="card" id="scan">
+      <div class="eyebrow">Scan a label</div>
+      <h2>Step by step</h2>
+      <!-- SCREENSHOT ai-04: The Shortcut running: Claude answering inside Shortcuts. assets/img/screens/en/ai-04.webp, see icy-pork/zelar-site#2 -->
+      <!-- SCREENSHOT ai-05: The draft review screen: AI suggestions, match with an existing wine, placement, Færdiggør. assets/img/screens/en/ai-05.webp, see icy-pork/zelar-site#2 -->
+      <ol>
+        <li><strong>Run the Shortcut</strong> to stock or to the journal, and pick a photo of the label, taken straight on and in good light. For the journal you can write a short note, for example "4.5 stars, Restaurant Barolo, a glass".</li>
+        <li><strong>Apple's model reads the label</strong> and writes down what it can see: name, producer, vintage and so on.</li>
+        <li><strong>Wait for your AI.</strong> The Shortcut sends what the label said and Zélar's prompt to Claude or ChatGPT and waits for the reply.</li>
+        <li><strong>Zélar opens the draft</strong> with the reply and the photo, ready to check.</li>
+      </ol>
+      <h3>The review screen</h3>
+      <ul>
+        <li>The fields are <strong>AI suggestions</strong>: check name, producer and vintage against the label and correct what's wrong. AI can be wrong.</li>
+        <li>If the wine is already in your cellar, Zélar suggests using it, so the bottle is added to the existing wine instead of becoming a new one.</li>
+        <li>Choose how many bottles and where they go. Without a place they land under <span class="ui">No location</span>.</li>
+        <li>Tap <span class="ui">Finish up</span>. Only now is the wine or tasting created, and the draft deleted.</li>
+      </ul>
+    </div>
+
+    <div class="card" id="share">
+      <div class="eyebrow">Share from your AI app</div>
+      <h2>The reply from Claude or ChatGPT straight to Zélar</h2>
+      <!-- SCREENSHOT ai-06: A reply in the Claude or ChatGPT app with the share sheet open and Zélar in the row. assets/img/screens/en/ai-06.webp, see icy-pork/zelar-site#2 -->
+      <!-- SCREENSHOT ai-07: The "Del til Zélar" card. assets/img/screens/en/ai-07.webp, see icy-pork/zelar-site#2 -->
+      <!-- SCREENSHOT ai-08: A photo shared to Zélar with "Tilføj til …" for an open draft. assets/img/screens/en/ai-08.webp, see icy-pork/zelar-site#2 -->
+      <ol>
+        <li>Ask your AI to reply in Zélar's format. The easiest way is to start with a prompt from <span class="ui">Prompts</span> or the format from <span class="ui">＋ → Import from AI → ?</span>.</li>
+        <li>Touch and hold the reply (or use the share button) → <span class="ui">Share</span> → <span class="ui">Zélar</span>.</li>
+        <li>The "Share to Zélar" card shows what the text holds, for example a wine's name or "3 wines in the text", and whether it looks like an AI reply in Zélar's format.</li>
+        <li>Choose <span class="ui">Wine to stock</span> or <span class="ui">Tasted wine</span>. Zélar preselects the one that fits best. You check it in Zélar before anything is created.</li>
+      </ol>
+      <h3>Text and photo separately</h3>
+      <p>Many AI apps share text only. Share the photo afterwards (or first) from Photos to Zélar, and choose <span class="ui">Add to …</span> with the draft it belongs to. Zélar suggests the draft that fits but never picks one by itself. If you share a photo on its own, you can also <span class="ui">Save as draft</span> and wait for the text, or go straight to the wine or tasting form with the pictures.</p>
+      <p>Can't find Zélar in the share sheet? Scroll to the end of the row of apps, tap <span class="ui">More</span> and turn Zélar on.</p>
+    </div>
+
+    <div class="card" id="drafts">
+      <div class="eyebrow">Drafts</div>
+      <h2>What's waiting for you</h2>
+      <!-- SCREENSHOT ai-09: The Kladder list showing all three states. assets/img/screens/en/ai-09.webp, see icy-pork/zelar-site#2 -->
+      <p>While there are drafts, <span class="ui">Drafts</span> shows with a count in the menu (behind the cellar button on Overview) under Library, and in the iPad sidebar. A draft can be:</p>
+      <div class="table-wrap" tabindex="0" role="region" aria-label="Draft states">
+        <table>
+          <tr><th>State</th><th>What to do</th></tr>
+          <tr><td>Text and photo · ready to check</td><td>Tap it to check and create.</td></tr>
+          <tr><td>No photo · ready to check</td><td>Create it as it is, or share a photo to it first.</td></tr>
+          <tr><td>Waiting for the AI's text</td><td>Share the reply from your AI app and choose <span class="ui">Add to draft</span>, or create the wine yourself now.</td></tr>
+        </table>
+      </div>
+      <ul>
+        <li><strong>Delete</strong> a draft with <span class="ui">Delete draft</span>, or tidy up with <span class="ui">Delete drafts older than 30 days</span>.</li>
+        <li><strong>The paste button</strong> in Drafts saves a copied AI reply as a draft. Use it with apps that can only copy.</li>
+        <li>Drafts stay on the device. They aren't synced to your other devices and aren't included in backups.</li>
+      </ul>
+    </div>
+
+    <div class="card" id="first-load">
+      <div class="eyebrow">First load</div>
+      <h2>The whole cellar in one go</h2>
+      <!-- SCREENSHOT ai-10: The Første indlæsning section on Backup, import & eksport. assets/img/screens/en/ai-10.webp, see icy-pork/zelar-site#2 -->
+      <!-- SCREENSHOT ai-11: The "På eget ansvar" confirmation. assets/img/screens/en/ai-11.webp, see icy-pork/zelar-site#2 -->
+      <!-- SCREENSHOT ai-12: Claude or ChatGPT answering a first load in parts. assets/img/screens/en/ai-12.webp, see icy-pork/zelar-site#2 -->
+      <p>Already have your wines recorded somewhere else? Find <span class="ui">First load</span> under <span class="ui">Backup, Import &amp; Export</span> in the menu. There are two routes.</p>
+
+      <h3>As text (recommended)</h3>
+      <ol>
+        <li>Tap <span class="ui">Copy AI instructions (text)</span>.</li>
+        <li>Open Claude or ChatGPT, paste the instructions and attach your spreadsheet, export or photos.</li>
+        <li>The AI answers in parts of 40 wines. Write <em>continue</em> to get the next part.</li>
+        <li>Copy each part and paste it under <span class="ui">Paste wines from AI</span> in the same section, one at a time. Check the wines and tap <span class="ui">Finish up</span>.</li>
+        <li>Add photos to each wine afterwards.</li>
+      </ol>
+
+      <h3>As a backup file — at your own risk</h3>
+      <div class="callout callout--warn">
+        <strong>Read this first</strong>
+        <p>A backup file from an AI is restored with <span class="ui">Restore from file</span>, and that <strong>replaces everything in Zélar</strong>. The AI can make mistakes in the file, and Zélar can't merge it into an existing cellar (yet). Only use it in an empty app, and make a backup first if you have data.</p>
+      </div>
+      <ol>
+        <li>Tap <span class="ui">Copy AI instructions (backup file)</span> and confirm with <span class="ui">I understand, copy</span>.</li>
+        <li>Use an AI that can create files. Paste the instructions and attach your files; photos can be included.</li>
+        <li>Download the <code>.zelarbackup</code> file the AI makes to Files.</li>
+        <li>In Zélar: <span class="ui">Backup, Import &amp; Export</span> → <span class="ui">Restore from file</span> → pick the file in Files.</li>
+      </ol>
+      <p>If the file gets too large, the AI splits it into several. Restore only one of them, since each restore replaces the last, or use the text route instead.</p>
+
+      <h3>Tips</h3>
+      <ul>
+        <li><strong>Spreadsheets:</strong> one row per wine with headers gives the best result. Bottle count and location can each have a column.</li>
+        <li><strong>Another app's export:</strong> CSV or text works best. Tell the AI which app it comes from.</li>
+        <li><strong>Many labels:</strong> one photo per label, straight on, sent in smaller batches.</li>
+        <li><strong>Locations:</strong> build your racks in Zélar first. Then the AI can use your real names, for example "Rack A · B3".</li>
+      </ul>
+    </div>
+
+    <div class="card" id="troubleshooting">
+      <div class="eyebrow">Troubleshooting</div>
+      <h2>When something's off</h2>
+      <h3>"The reply uses a newer version of the format"</h3>
+      <p>The reply was written for a newer Zélar. Update Zélar in the App Store and try again.</p>
+      <h3>The Shortcut stops, or Ask Claude / Ask ChatGPT gives no reply</h3>
+      <p>Check that the AI app is installed and signed in, and that you're online. Open the AI app once, then run the Shortcut from the Shortcuts app so you can see which step stops.</p>
+      <h3>The label was misread</h3>
+      <p>Retake the photo straight on, without glare, with the label filling the picture. If you use text recognition in step 2, try the Cloud model instead; it reads hard labels better. You can always correct the fields on the review screen.</p>
+      <h3>Zélar isn't in the share sheet</h3>
+      <p>Scroll to the end of the row of apps, tap <span class="ui">More</span> and turn Zélar on. Open Zélar once after a new install.</p>
+      <h3>"Use Model" stops</h3>
+      <p>Apple's model has daily limits. Use <span class="ui">Extract Text from Image</span> in step 2 until tomorrow.</p>
+      <h3>Why not just Siri?</h3>
+      <p>Siri's new AI features aren't available on iPhone in the EU yet. Shortcuts work everywhere, so Zélar builds on them.</p>
+      <h3>The file is too large</h3>
+      <p>Split the job: send fewer photos at a time, or use the text route with parts of 40 wines.</p>
+    </div>
+
+    <div class="card" id="own-prompts">
+      <div class="eyebrow">For the curious</div>
+      <h2>For your own prompts and Shortcuts</h2>
+      <h3>The format</h3>
+      <p>Zélar reads text with one detail per line (<code>KEY: value</code>) and a <code>---</code> line between wines. A reply can start with <code>ZÉLAR-FORMAT: 1</code>, so Zélar knows which version of the format it is. Danish and English keys both work, and lines Zélar doesn't know are skipped.</p>
+      <pre>ZÉLAR-FORMAT: 1
+WINE: Château Somewhere
+PRODUCER: A. Christmann
+VINTAGE: 2018
+COUNTRY: France
+REGION: Bordeaux, Médoc
+TYPE: Red
+GRAPES: Cabernet Sauvignon, Merlot
+QUANTITY: 2
+DRINKING WINDOW: 2024-2032
+CELLAR: Home
+LOCATION: Rack A · B3
+---
+WINE: ...</pre>
+      <p>Get the full format, with every field, from <span class="ui">Get Import Format</span> in Shortcuts or with <span class="ui">?</span> under <span class="ui">＋ → Import from AI</span>.</p>
+
+      <h3>Zélar's actions in Shortcuts</h3>
+      <div class="table-wrap" tabindex="0" role="region" aria-label="Zélar's actions in Shortcuts">
+        <table>
+          <tr><th>Action</th><th>Input</th><th>Gives</th></tr>
+          <tr><td><span class="ui">Create Stocked Wine</span></td><td>Text (an AI reply in Zélar's format), photos (optional)</td><td>A draft, opened for review</td></tr>
+          <tr><td><span class="ui">Create Journal Entry</span></td><td>Text, photos (optional)</td><td>A Journal draft, opened for review</td></tr>
+          <tr><td><span class="ui">Attach Photo to Draft</span></td><td>Photos, draft (optional: the newest one waiting for a photo)</td><td>The photo added to the draft</td></tr>
+          <tr><td><span class="ui">Get Zélar Prompt</span></td><td>Prompt (scan to stock or journal, first load as text or backup file), note</td><td>The prompt as text</td></tr>
+          <tr><td><span class="ui">Get Import Format</span></td><td>Wine to stock or tasted wine</td><td>The format and its version</td></tr>
+          <tr><td><span class="ui">Get My Library</span></td><td>—</td><td>Your cellar, tastings and wish list as Markdown</td></tr>
+          <tr><td><span class="ui">Get Prompt With My Cellar</span></td><td>Task, dish, from the cellar or buy new, where you shop</td><td>A prompt from Prompts with your cellar, as when you copy it in the app</td></tr>
+        </table>
+      </div>
+
+      <h3>Your prompt library in a Shortcut</h3>
+      <p><span class="ui">Get Prompt With My Cellar</span> followed by Ask Claude or Ask ChatGPT gives you your prompts without opening Zélar. Two ideas:</p>
+      <ul>
+        <li><strong>Food pairing by voice:</strong> Dictate Text ("What are you cooking?") → Get Prompt With My Cellar (Food pairing for dinner, Dish: the dictated text) → Ask Claude.</li>
+        <li><strong>Shopping suggestions on the Home Screen:</strong> Get Prompt With My Cellar (Shopping suggestions) → Ask ChatGPT.</li>
+      </ul>
+      <p>The reply stays in the AI app. If you use the task <em>Enrich my wine details</em>, paste the reply with <span class="ui">Update wines from AI</span> in Zélar, so you can see the changes field by field.</p>
+    </div>
+
+    <div class="card">
+      <div class="eyebrow">Help</div>
+      <p>The rest of the app is covered in the <a href="{{root}}support/">user guide</a>. If you get stuck, write to <a href="mailto:zelar@whaaat.co" class="mono">zelar@whaaat.co</a>.</p>
+    </div>
+</div>
+</main>

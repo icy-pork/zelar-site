@@ -90,7 +90,7 @@ Delete the parking records Namecheap adds to a new domain:
 - the **CNAME** for `www` pointing at `parkingpage.namecheap.com`
 
 **Keep every MX, SPF, DKIM and other TXT record.** They carry email for
-`anders@whaaat.co`.
+`zelar@whaaat.co`.
 
 ### 5. Never add a wildcard record
 

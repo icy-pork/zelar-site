@@ -176,12 +176,75 @@ em { font-style: italic; }
 }
 .site-nav a:hover,
 .site-nav a[aria-current="page"] { color: var(--accent); }
-.site-nav .lang-switch {
+/* Language menu: a plain <details>, so it works without JavaScript. */
+.lang-menu { position: relative; }
+.lang-menu summary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
   padding: 0 14px;
   border: 1px solid var(--line-strong);
   border-radius: 999px;
+  color: var(--text);
+  font-size: 12px;
+  font-weight: 600;
   letter-spacing: .08em;
+  text-transform: uppercase;
+  cursor: pointer;
+  list-style: none;
 }
+.lang-menu summary::-webkit-details-marker { display: none; }
+.lang-menu summary::after {
+  content: "";
+  width: 6px;
+  height: 6px;
+  margin-top: -3px;
+  border-right: 1.5px solid currentColor;
+  border-bottom: 1.5px solid currentColor;
+  transform: rotate(45deg);
+}
+.lang-menu[open] summary,
+.lang-menu summary:hover { color: var(--accent); }
+.lang-menu ul {
+  position: absolute;
+  right: 0;
+  z-index: 10;
+  min-width: 200px;
+  max-width: calc(100vw - 32px);
+  margin: 6px 0 0;
+  padding: 6px;
+  list-style: none;
+  background: var(--surface);
+  border: 1px solid var(--line-strong);
+  border-radius: 14px;
+}
+.lang-menu li a {
+  display: flex;
+  min-height: 44px;
+  padding: 0 12px;
+  border-radius: 10px;
+  text-transform: none;
+  letter-spacing: 0;
+  font-size: 15px;
+  font-weight: 500;
+}
+.lang-menu li a[aria-current="true"] { color: var(--accent); }
+.lang-menu li a:hover { background: var(--line); }
+/* On a phone the menu wraps to the start of the row, so it opens rightwards. */
+@media (max-width: 720px) {
+  .lang-menu ul { right: auto; left: 0; }
+}
+
+/* Shown on a page that isn't translated yet. */
+.notice {
+  margin: 0;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--line);
+  color: var(--text-muted);
+  font-size: 14px;
+}
+.notice .wrap { display: block; }
 
 /* Buttons */
 

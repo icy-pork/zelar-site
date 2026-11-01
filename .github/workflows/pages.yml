@@ -35,6 +35,12 @@ jobs:
             echo "deploy=true" >> "$GITHUB_OUTPUT"
           fi
 
+      # The pages are built from site-src/ and committed (#212); fail if
+      # someone edited a built page or forgot to rebuild.
+      - name: Check built pages are current
+        if: steps.mode.outputs.check_args == ''
+        run: python3 scripts/build-site.py --check
+
       - name: Check pages
         run: python3 scripts/check-site.py ${{ steps.mode.outputs.check_args }}
 
@@ -44,7 +50,7 @@ jobs:
           mkdir _site
           rsync -a \
             --exclude '.*' --exclude '_site' \
-            --exclude 'docs' --exclude 'scripts' --exclude 'README.md' \
+            --exclude 'docs' --exclude 'scripts' --exclude 'site-src' --exclude 'README.md' \
             ./ _site/
 
       - uses: actions/configure-pages@v6

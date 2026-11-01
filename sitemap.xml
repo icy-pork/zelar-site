@@ -30,4 +30,14 @@
     <xhtml:link rel="alternate" hreflang="da" href="https://zelar.whaaat.co/support/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://zelar.whaaat.co/en/support/"/>
   </url>
+  <url>
+    <loc>https://zelar.whaaat.co/ai/</loc>
+    <xhtml:link rel="alternate" hreflang="da" href="https://zelar.whaaat.co/ai/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zelar.whaaat.co/en/ai/"/>
+  </url>
+  <url>
+    <loc>https://zelar.whaaat.co/en/ai/</loc>
+    <xhtml:link rel="alternate" hreflang="da" href="https://zelar.whaaat.co/ai/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zelar.whaaat.co/en/ai/"/>
+  </url>
 </urlset>

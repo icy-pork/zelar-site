@@ -368,3 +368,56 @@ th {
   color: var(--text-muted);
 }
 .site-footer a:hover { color: var(--accent); }
+
+/* ==== Zélar only: not in app-site-template ==== */
+
+/* Guide pages: contents list, boxed notes, code and keyboard-ish UI names */
+.toc { margin: 0 0 24px; padding: 18px 22px; border: 1px solid var(--line); border-radius: var(--radius); }
+.toc ol { margin: 8px 0 0; columns: 2 220px; column-gap: 28px; font-size: 15px; }
+.toc li { break-inside: avoid; }
+
+.callout {
+  margin: 18px 0;
+  padding: 16px 18px;
+  border: 1px solid var(--line-strong);
+  border-left: 3px solid var(--accent);
+  border-radius: 12px;
+  background: rgba(201, 169, 97, .05);
+}
+.callout--warn { border-left-color: #b4633b; background: rgba(180, 99, 59, .08); }
+.callout > :last-child { margin-bottom: 0; }
+.callout strong:first-child { display: block; margin-bottom: 6px; }
+
+pre, code { font-family: var(--font-mono); font-size: 13px; }
+code { color: var(--text-strong); }
+pre {
+  margin: 16px 0;
+  padding: 14px 16px;
+  overflow-x: auto;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--bg);
+  line-height: 1.6;
+  color: var(--text-strong);
+}
+
+.pro {
+  display: inline-block;
+  margin-left: 6px;
+  padding: 1px 7px;
+  border: 1px solid var(--accent);
+  border-radius: 999px;
+  font-family: var(--font-text);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: .14em;
+  vertical-align: middle;
+  color: var(--accent);
+}
+
+/* Screenshots in the guides (icy-pork/zelar-site#2) */
+.shot { margin: 20px auto; max-width: 300px; }
+.shot img { width: 100%; height: auto; border: 1px solid var(--line); border-radius: 22px; }
+.shot--wide { max-width: 100%; }
+.shot--wide img { border-radius: 14px; }
+.shot figcaption { margin-top: 8px; font-size: 13px; text-align: center; color: var(--text-muted); }

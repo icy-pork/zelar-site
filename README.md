@@ -23,8 +23,9 @@ This repo holds only the website. The app lives in `icy-pork/zelar`.
 `/en/`, `/en/privacy/`, `/en/support/` and `/en/ai/` are redirect pages to
 the root, kept so links from before the English root still land. Until
 icy-pork/zelar#212, Danish was at the root: `/privacy/` and friends now show
-English. The app links to the old `icy-pork.github.io/zelar-privacy/`
-pages until its next release switches to this site.
+English. Released app builds link to the old
+`icy-pork.github.io/zelar-privacy/` pages; the next release links here
+(icy-pork/zelar#278).
 
 The site is set up for the app's 12 locales (`site-src/locales.json`):
 `en`, `en-GB`, `da`, `sv`, `nb`, `de`, `fr`, `it`, `es`, `pt-PT`, `pt-BR`
@@ -117,10 +118,14 @@ check only.
   box and a build-it-yourself recipe until the owner has built the two
   Shortcuts on a device. Add their iCloud links where the HTML comment says
   (icy-pork/zelar#265).
-- **App links:** the app still opens `icy-pork.github.io/zelar-privacy/`
-  (privacy) and `…/zelar-privacy/ai.html` (AI guide). The owner switches
-  them to `/privacy/` and `/ai/` here (English, with the language menu) at
-  the app's next release (icy-pork/zelar#212).
+- **App links:** from the app's next release, every link goes through
+  `ZelarLinks` in icy-pork/zelar (#278): `/da/…` in Danish, the root in
+  English, English for a language this site hasn't published. Its anchors
+  must stay put in every language: `#first-load`, `#drafts`, `#share`,
+  `#own-prompts` (ai), `#reminders`, `#fair-use` (support). When a locale
+  goes `ready` here, add it to `ZelarLinks.publishedSiteFolders` in the app.
+  Builds already out still open `icy-pork.github.io/zelar-privacy/`: keep
+  redirects there until they expire.
 
 ## Template
 

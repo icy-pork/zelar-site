@@ -19,8 +19,22 @@
       }
     },
     { "code": "en-GB", "path": "en-gb/", "lang": "en-GB", "og": "en_GB", "name": "English (UK)", "ready": false },
-    { "code": "sv", "path": "sv/", "lang": "sv", "og": "sv_SE", "name": "Svenska", "ready": false },
-    { "code": "nb", "path": "nb/", "lang": "nb", "og": "nb_NO", "name": "Norsk bokmål", "ready": false },
+    {
+      "code": "sv", "path": "sv/", "lang": "sv", "og": "sv_SE", "name": "Svenska", "ready": true,
+      "ui": {
+        "skip": "Hoppa till innehållet", "home": "Zélar startsida", "nav": "Huvudmeny", "footer": "Sidfot", "language": "Språk",
+        "privacy": "Integritet", "support": "Support", "ai": "AI-guide",
+        "untranslated": "Sidan finns inte på svenska än, så den visas på engelska."
+      }
+    },
+    {
+      "code": "nb", "path": "nb/", "lang": "nb", "og": "nb_NO", "name": "Norsk bokmål", "ready": true,
+      "ui": {
+        "skip": "Hopp til innholdet", "home": "Zélar forside", "nav": "Hovedmeny", "footer": "Bunntekst", "language": "Språk",
+        "privacy": "Personvern", "support": "Brukerstøtte", "ai": "AI-veiledning",
+        "untranslated": "Siden finnes ikke på norsk ennå, så den vises på engelsk."
+      }
+    },
     { "code": "de", "path": "de/", "lang": "de", "og": "de_DE", "name": "Deutsch", "ready": false },
     { "code": "fr", "path": "fr/", "lang": "fr", "og": "fr_FR", "name": "Français", "ready": false },
     { "code": "it", "path": "it/", "lang": "it", "og": "it_IT", "name": "Italiano", "ready": false },

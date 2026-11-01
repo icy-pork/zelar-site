@@ -1,0 +1,156 @@
+<!-- title: Zélar – Personvernerklæring -->
+<!-- description: Hvilke data Zélar samler inn, hvor de lagres, og hvilke valg du har. Kjellerdataene dine blir på enheten din; AI-funksjonene er frivillige. -->
+<main id="main">
+<div class="wrap wrap--narrow">
+  <div class="page-head">
+    <h1>Personvernerklæring</h1>
+    <p class="meta">Sist oppdatert: 1. november 2026</p>
+  </div>
+
+    <div class="card">
+      <p>Zélar er en personlig vinkjellerapp som er utviklet og vedlikeholdes av én uavhengig utvikler som et lite hobbyprosjekt. Denne erklæringen forklarer hvilke data Zélar samler inn, hvor de lagres, og hvilke valg du har.</p>
+      <p>Kort fortalt: <strong>kjellerdataene dine blir på enheten din</strong> og, hvis du vil, i din egen iCloud. I tillegg forlater to typer data enheten din: <strong>anonymisert bruksstatistikk</strong>, som du kan slå av, og, <strong>bare hvis du velger å bruke AI-funksjonene</strong>, bildet eller teksten du sender med den enkelte forespørselen.</p>
+    </div>
+
+    <div class="card">
+      <div class="eyebrow">Vinkjellerdataene dine</div>
+      <h2>Lagres lokalt på enheten din</h2>
+      <p>Alt du registrerer i Zélar – kjellere, vinstativ, hyller, viner, flasker, smaksnotater, drikkevinduer, bilder, ønskeliste og utkast – lagres lokalt på iPhonen eller iPaden din. Det sendes ikke til utviklerens server, og ingen andre enn deg har tilgang til det.</p>
+
+      <h2>Valgfri iCloud-synkronisering</h2>
+      <p>Zélar kan synkronisere kjelleren din mellom enhetene dine via din personlige iCloud-konto (Apple CloudKit). Dataene dine lagres da i din egen private iCloud-container, underlagt Apples personvernpraksis.</p>
+      <ul>
+        <li>Du kan slå synkroniseringen av og på i appens innstillinger.</li>
+        <li>Utvikleren har ikke tilgang til data i iCloud-en din – de er knyttet til kontoen din på samme måte som Bilder eller Notater.</li>
+        <li>Utkast (AI-svar og bilder som venter på at du sjekker dem) ligger bare på enheten og synkroniseres ikke.</li>
+      </ul>
+
+      <h2>Din egen AI: utklippstavle, deling og snarveier</h2>
+      <p>Zélar kan gi deg deler av kjelleren din som tekst (prompter og Markdown), så du kan bruke dem i en AI-assistent du velger selv, og kan lese strukturert tekst som du limer inn igjen. Det skjer via utklippstavlen, delingsarket («Del til Zélar») og Zélars handlinger i Apples Snarveier-app. Ingen av disse veiene bruker nettverket: de leser og skriver bare på enheten din. Det er du som flytter teksten til AI-en din, og hva du sender dit, er mellom deg og den tjenesten, under din egen konto og dens vilkår.</p>
+    </div>
+
+    <div class="card">
+      <div class="eyebrow">Zélar AI</div>
+      <h2>AI-funksjoner (skann etikett m.m.)</h2>
+      <p>Zélar AI er en del av Zélar Pro og er frivillig. Funksjonene er slått av til du sier ja på samtykkeskjermen første gang du bruker en av dem. Du kan når som helst trekke samtykket tilbake under <span class="ui">Innstillinger → AI-funksjoner</span>, og da stopper de med en gang.</p>
+
+      <h3>Hva som sendes</h3>
+      <ul>
+        <li><strong>Skann etikett:</strong> bildet du har tatt, i forminsket utgave (høyst 1568 piksler på den lange siden). Serveren legger til en fast instruksjon og sender begge deler til Anthropic, som leser etiketten og sender opplysningene om vinen tilbake.</li>
+        <li><strong>Berik på nett:</strong> bare tekst – navn, produsent, årgang, land, område, appellasjon og druer for én vin. Du får forslag tilbake, som du går gjennom før noe lagres. Svaret kan inneholde en anslått markedsverdi.</li>
+        <li><strong>Forslag til en rett i påminnelser</strong> (valgfritt, slås på separat): de samme feltene pluss vintypen, for en vin som er forbi drikkevinduet, høyst én gang per vin.</li>
+      </ul>
+      <p>Ingenting annet fra kjelleren din sendes – ingen notater, priser, vurderinger, merker eller andre viner. Serveren avviser forespørsler med andre felt.</p>
+
+      <h3>Enhets-ID</h3>
+      <p>For å hindre misbruk og holde styr på bruken din av Zélar AI beviser appen overfor serveren vår at den er en ekte Zélar, med Apples App Attest. Det lager en nøkkel i enhetens Secure Enclave; serveren lagrer nøkkelens ID, den offentlige nøkkelen og en teller. Det er ikke Apple-ID-en din, det deles ikke med noen, og det endres hvis du installerer appen på nytt.</p>
+
+      <h3>Kjøpsbevis (Zélar Pro)</h3>
+      <p>Kjøper du Zélar Pro, sender appen også Apples signerte opplysninger om kjøpet med hver AI-forespørsel, så serveren kan gi deg Zélar AI som en del av Pro. Opplysningene er laget og signert av Apple. De inneholder appens bundle-ID, hvilket Pro-produkt du har kjøpt (måned, år eller livstid), når du kjøpte det, når et abonnement utløper eller ble refundert, om det er kjøpt i App Store eller i Apples testmiljø, og Apples transaksjons-ID-er. De inneholder ikke navnet ditt, e-postadressen din, Apple-ID-en din, betalingsmåten din eller prisen.</p>
+      <p>Serveren sjekker Apples signatur og lagrer bare den opprinnelige transaksjons-ID-en. Den er den samme for kjøpet på alle enhetene dine og etter en ny installasjon, så Zélar AI følger kjøpet. Mislykkes en fornyelse, og gir Apple deg en frist til å rette betalingen, sender appen også Apples signerte fornyelsesstatus, så du beholder Zélar AI frem til da; serveren sjekker den bare og lagrer ingenting fra den. Ingenting av dette sendes før du har sagt ja til AI-funksjonene, og det brukes aldri til reklame eller deles med andre.</p>
+
+      <h3>Rimelig bruk</h3>
+      <p>Med et abonnement er Zélar AI inkludert med rimelig bruk: opptil 60 AI-handlinger i måneden og 30 om dagen. For å holde styr på det teller serveren handlingene dine per enhets-ID eller per kjøp. Telleren inneholder ingen opplysninger om vinene dine.</p>
+
+      <h3>Hvem som behandler det</h3>
+      <ul>
+        <li><strong>Cloudflare, Inc.</strong> drifter serveren vår. Forespørsler går gjennom Cloudflares nettverk.</li>
+        <li><strong>Anthropic, PBC</strong> drifter AI-modellen. Anthropic behandler bildet eller teksten for å besvare forespørselen og bruker det ikke til å trene modellene sine. Anthropic sletter forespørsler og svar automatisk etter en kort periode, som Anthropic oppgir i sitt <a href="https://privacy.claude.com/" rel="noopener">Privacy Center</a>, og lagrer dem bare lenger hvis det er nødvendig for å håndheve Anthropics bruksregler eller for å overholde loven.</li>
+      </ul>
+      <p>Begge er databehandlerne våre under databehandleravtaler, og behandlingen skjer i USA. Overføringen skjer for Anthropic på grunnlag av EUs standardavtaler (standard contractual clauses) i databehandleravtalen samt de britiske og sveitsiske tilleggene, og for Cloudflare på grunnlag av selskapets sertifisering under EU-U.S. Data Privacy Framework med EUs standardavtaler som reserve.</p>
+
+      <h3>Hva serveren vår lagrer</h3>
+      <p>Ingen bilder og ingen tekst. Serveren lagrer bare App Attest-ID, offentlig nøkkel og teller, forbrukstelleren din, den opprinnelige transaksjons-ID-en hvis du har kjøpt Pro, og driftslogger. Loggene inneholder forespørselens type, resultatkode, plan, antall handlinger, antall tokens, anslått pris og varighet – aldri bildet, teksten, AI-ens svar eller IP-adressen din. Driftslogger slettes automatisk etter høyst 7 dager.</p>
+
+
+      <h3>AI kan ta feil</h3>
+      <p>Svar fra en AI kan være feil, også opplysninger og priser. Sjekk dem før du lagrer. Zélar lagrer ingenting fra en skanning eller berikelse før du selv har gått gjennom det og trykket på lagre.</p>
+
+      <h3>Rettslig grunnlag</h3>
+      <p>Samtykket ditt (GDPR art. 6 nr. 1 bokstav a). Trekker du det tilbake, påvirker det ikke forespørsler som allerede er sendt.</p>
+
+      <h3>Dataene dine er dine</h3>
+      <p>Resultatet av en skanning lagres bare på enheten din og i iCloud-en din, akkurat som alt annet du registrerer.</p>
+    </div>
+
+    <div class="card">
+      <div class="eyebrow">Fra serveren vår</div>
+      <h2>Innstillinger og valutakurser</h2>
+      <p>Zélar henter en liten innstillingsfil fra serveren vår, f.eks. hvor mange flasker gratisplanen har plass til, og eventuelle meldinger fra utvikleren. Når du bruker en annen valuta enn din egen, henter appen også valutakurser: Den europeiske sentralbankens referansekurser for euro, som serveren vår henter hos ECB og sender videre uendret.</p>
+      <p>Ingen av forespørslene inneholder en ID eller noe om deg eller kjelleren din – heller ikke hvilke valutaer du bruker – og alle får det samme svaret. Cloudflare ser IP-adressen din for å kunne levere svaret; vi logger den ikke. Disse forespørslene krever ikke samtykke til AI-funksjonene.</p>
+    </div>
+
+    <div class="card">
+      <div class="eyebrow">Del en kjeller</div>
+      <h2>Deling av en kjeller (beta)</h2>
+      <p>Du kan dele en kjeller med opptil fire andre. Deling er frivillig og slått av til du slår den på under Innstillinger → Eksperimentelt.</p>
+      <ul>
+        <li><strong>Slik virker det.</strong> Deling bruker Apples iCloud: alle bruker sin egen Apple-ID, og Zélar har ingen konto og ingen kopi av dataene dine. En delt kjeller ligger i eierens iCloud; de inviterte leser og endrer den gjennom sin egen iCloud. Apple viser hver persons navn eller e-postadresse for de andre, som ved all iCloud-deling.</li>
+        <li><strong>Hva de andre ser.</strong> Den delte kjellerens vinstativ, flasker, hvem som drakk dem, merker og vinbilder. Har eieren Zélar Pro, ligger det også et bevis for kjøpet fra App Store i kjelleren, så de andres app kan se at kjelleren er Pro. Det blir i iCloud og sendes aldri til serveren vår.</li>
+        <li><strong>Hva som forblir privat.</strong> Smaksnotatene, vurderingene og anledningene dine, Journalen, ønskelisten din, etikettskanningene dine og de andre kjellerne dine deles aldri.</li>
+        <li><strong>Å forlate.</strong> Du kan forlate en delt kjeller, og eieren kan fjerne personer eller stoppe delingen, når som helst. Dine egne smaksnotater blir hos deg.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <div class="eyebrow">Bruksstatistikk</div>
+      <h2>PostHog</h2>
+      <p>Zélar bruker <a href="https://posthog.com" target="_blank" rel="noopener">PostHog</a>, en tjeneste for produktanalyse, til å forstå hvordan appen brukes, og til å finne feil og forbedringsmuligheter. Analysedata behandles på PostHogs <strong>servere i EU</strong>.</p>
+      <p>Statistikken er begrenset til anonymiserte hendelser om bruken av appen, f.eks. hvilke skjermer som åpnes, hvilke funksjoner som brukes, og antall eller koder. Den inneholder aldri vinene dine, notater, priser eller andre personopplysninger, og Zélar er utformet slik at den ikke kan identifisere deg.</p>
+      <ul>
+        <li>Du kan <strong>når som helst velge bort statistikk</strong> under Innstillinger → Personvern. Deretter sendes det ikke flere bruksdata.</li>
+        <li>Statistikken er atskilt fra kjellerdataene dine og fra Zélar AI.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <div class="eyebrow">Oversikt</div>
+      <h2>Hva som ligger hvor</h2>
+      <div class="table-wrap" tabindex="0" role="region" aria-label="Oversikt over data">
+        <table>
+          <tr><th>Data</th><th>Hvor</th><th>Din kontroll</th></tr>
+          <tr><td>Kjellerdata (viner, flasker, notater, bilder)</td><td>Lokalt på enheten din</td><td>Helt dine egne; forlater bare enheten hvis du eksporterer, deler eller synkroniserer dem</td></tr>
+          <tr><td>iCloud-synkronisering (valgfri)</td><td>Din personlige iCloud (Apple CloudKit)</td><td>Slå på/av i Innstillinger</td></tr>
+          <tr><td>Delt kjeller (beta, valgfri)</td><td>Eierens iCloud, delt via Apple</td><td>Forlat eller stopp delingen når som helst</td></tr>
+          <tr><td>Bilde eller vintekst til Zélar AI</td><td>Sendes via Cloudflare til Anthropic; lagres ikke på serveren vår</td><td>Bare etter samtykke; trekk det tilbake i Innstillinger</td></tr>
+          <tr><td>App Attest-ID, forbruksteller, transaksjons-ID</td><td>Serveren vår (Cloudflare)</td><td>Bare etter samtykke; kan slettes på forespørsel</td></tr>
+          <tr><td>Anonymisert bruksstatistikk</td><td>PostHog, servere i EU</td><td>Velg bort når som helst i Innstillinger</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="eyebrow">Hva Zélar ikke gjør</div>
+      <ul>
+        <li>Ingen kontoer, registreringer eller passord.</li>
+        <li>Ingen reklame og ingen annonsenettverk fra tredjeparter.</li>
+        <li>Ingen sporing på tvers av apper eller nettsteder.</li>
+        <li>Ingen salg eller deling av dataene dine med tredjeparter til markedsføring.</li>
+        <li>Ingen AI-funksjon sender noe før du har sagt ja, og ingen sender hele kjelleren din.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <div class="eyebrow">Barns personvern</div>
+      <p>Zélar er en app for å administrere vinkjellere og er beregnet på voksne over den lovlige alkoholalderen i sitt land. Den henvender seg ikke til barn og samler ikke bevisst inn data fra barn.</p>
+    </div>
+
+    <div class="card">
+      <div class="eyebrow">Dine rettigheter og valgmuligheter</div>
+      <p>Avhengig av hvor du bor, kan du ha rettigheter etter lovgivning som EUs personvernforordning (GDPR) eller California Consumer Privacy Act (CCPA), blant annet retten til innsyn i, retting, sletting eller eksport av dataene dine.</p>
+      <p>Siden kjellerdataene dine lagres på enheten din, har du direkte kontroll over dem: du kan eksportere, redigere eller slette dem i appen, eller fjerne dem helt ved å slette appen.</p>
+      <p>Du trekker tilbake samtykket til AI-funksjonene under Innstillinger → AI-funksjoner. Vil du ha App Attest-ID-en og forbrukstelleren din slettet fra serveren vår, så skriv til <a href="mailto:zelar@whaaat.co">zelar@whaaat.co</a> med datoen da du første gang brukte AI-funksjonene. Siden vi ikke har noen konto eller noe navn, kan vi be deg installere appen på nytt i stedet, noe som lager en ny ID. Ved spørsmål om PostHog-data kan du skrive til samme adresse eller velge bort statistikk i appen.</p>
+    </div>
+
+    <div class="card">
+      <div class="eyebrow">Endringer i denne erklæringen</div>
+      <p>Erklæringen kan bli oppdatert for å gjenspeile endringer i appen eller i lovgivningen. Datoen «Sist oppdatert» øverst viser alltid den nyeste utgaven. Fortsatt bruk av Zélar etter at endringer har trådt i kraft, regnes som aksept av den oppdaterte erklæringen.</p>
+    </div>
+
+    <div class="card">
+      <div class="eyebrow">Kontakt</div>
+      <p>Zélar utvikles av én uavhengig utvikler. Har du spørsmål om denne erklæringen eller dataene dine, så skriv til:</p>
+      <p><a href="mailto:zelar@whaaat.co" class="mono">zelar@whaaat.co</a></p>
+    </div>
+</div>
+</main>

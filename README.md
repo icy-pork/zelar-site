@@ -46,7 +46,7 @@ Every page links to its other-language twin with `hreflang`, and
   (`PrivacyInfo.xcprivacy`) and its App Store privacy label. Update the
   "Senest opdateret / Last updated" date with every change. The text here
   was moved word for word from `icy-pork/zelar-privacy` on 2026-10-29.
-  On 2026-11-01 it gained the Zélar AI (Worker), server-settings, exchange
+  On 2026-11-01 it gained the Zélar AI, server-settings, exchange
   rates and cellar-sharing sections, from the drafts in `icy-pork/zelar`
   `docs/compliance/` (icy-pork/zelar#174).
 - **No third-party requests:** fonts, images and styles are all served from

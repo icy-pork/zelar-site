@@ -62,11 +62,11 @@
         <li><a href="#privatliv">Hvad sendes hvorhen</a></li>
         <li><a href="#genvej">Installér genvejen</a></li>
         <li><a href="#skan">Skan en etiket, trin for trin</a></li>
-        <li><a href="#del">Del fra din AI-app</a></li>
-        <li><a href="#kladder">Kladder</a></li>
-        <li><a href="#forste-indlaesning">Første indlæsning</a></li>
+        <li><a href="#share">Del fra din AI-app</a></li>
+        <li><a href="#drafts">Kladder</a></li>
+        <li><a href="#first-load">Første indlæsning</a></li>
         <li><a href="#fejl">Fejlfinding</a></li>
-        <li><a href="#egne-prompts">Til dine egne prompts og genveje</a></li>
+        <li><a href="#own-prompts">Til dine egne prompts og genveje</a></li>
       </ol>
     </nav>
 
@@ -82,9 +82,9 @@
         <table>
           <tr><th>Du har …</th><th>Brug</th></tr>
           <tr><td>én flaske i hånden</td><td><a href="#genvej">Genvejen</a></td></tr>
-          <tr><td>en snak med din AI om en vin, et vinkort eller en kvittering</td><td><a href="#del">Del til Zélar</a></td></tr>
+          <tr><td>en snak med din AI om en vin, et vinkort eller en kvittering</td><td><a href="#share">Del til Zélar</a></td></tr>
           <tr><td>en kopieret tekst fra en app uden deleknap</td><td><span class="ui">＋ → Importér fra AI</span></td></tr>
-          <tr><td>et regneark, en eksport fra en anden app eller mange fotos</td><td><a href="#forste-indlaesning">Første indlæsning</a></td></tr>
+          <tr><td>et regneark, en eksport fra en anden app eller mange fotos</td><td><a href="#first-load">Første indlæsning</a></td></tr>
         </table>
       </div>
     </div>
@@ -104,6 +104,9 @@
     <div class="card" id="genvej">
       <div class="eyebrow">Genvejen</div>
       <h2>Installér "Zélar · Skan etiket"</h2>
+      <!-- SCREENSHOT ai-01: The Shortcut open in the Shortcuts app with its actions (Claude version). assets/img/screens/da/ai-01.webp, see icy-pork/zelar-site#2 -->
+      <!-- SCREENSHOT ai-02: The first-run permission prompt. assets/img/screens/da/ai-02.webp, see icy-pork/zelar-site#2 -->
+      <!-- SCREENSHOT ai-03: Settings → Action Button set to the Shortcut. assets/img/screens/da/ai-03.webp, see icy-pork/zelar-site#2 -->
       <p>Der er to udgaver af genvejen, én til Claude og én til ChatGPT. Vælg den, der passer til den AI-app, du bruger.</p>
       <div class="callout">
         <strong>Links følger</strong>
@@ -151,6 +154,8 @@
     <div class="card" id="skan">
       <div class="eyebrow">Skan en etiket</div>
       <h2>Trin for trin</h2>
+      <!-- SCREENSHOT ai-04: The menu "Lager · Journal" while the Shortcut runs. assets/img/screens/da/ai-04.webp, see icy-pork/zelar-site#2 -->
+      <!-- SCREENSHOT ai-05: The draft review screen: AI suggestions, match with an existing wine, placement, Færdiggør. assets/img/screens/da/ai-05.webp, see icy-pork/zelar-site#2 -->
       <ol>
         <li><strong>Kør genvejen</strong> og tag et foto af etiketten, lige forfra og i godt lys.</li>
         <li><strong>Vælg Lager eller Journal.</strong> Lager er til en flaske, du lægger i kælderen. Journal er til en vin, du smager nu; skriv en kort note med vurdering, sted og glas eller flaske, fx "4,5 stjerner, Restaurant Barolo, et glas".</li>
@@ -166,9 +171,12 @@
       </ul>
     </div>
 
-    <div class="card" id="del">
+    <div class="card" id="share">
       <div class="eyebrow">Del fra din AI-app</div>
       <h2>Svaret fra Claude eller ChatGPT direkte til Zélar</h2>
+      <!-- SCREENSHOT ai-06: A reply in the Claude or ChatGPT app with the share sheet open and Zélar in the row. assets/img/screens/da/ai-06.webp, see icy-pork/zelar-site#2 -->
+      <!-- SCREENSHOT ai-07: The "Del til Zélar" card. assets/img/screens/da/ai-07.webp, see icy-pork/zelar-site#2 -->
+      <!-- SCREENSHOT ai-08: A photo shared to Zélar with "Tilføj til …" for an open draft. assets/img/screens/da/ai-08.webp, see icy-pork/zelar-site#2 -->
       <ol>
         <li>Bed din AI om at svare i Zélars format. Det nemmeste er at starte med en prompt fra <span class="ui">Prompts</span> eller formatet fra <span class="ui">＋ → Importér fra AI → ?</span>.</li>
         <li>Tryk og hold på svaret (eller brug delknappen) → <span class="ui">Del</span> → <span class="ui">Zélar</span>.</li>
@@ -180,9 +188,10 @@
       <p>Kan du ikke finde Zélar i delearket, så rul til højre i app-rækken, tryk <span class="ui">Flere</span> og slå Zélar til.</p>
     </div>
 
-    <div class="card" id="kladder">
+    <div class="card" id="drafts">
       <div class="eyebrow">Kladder</div>
       <h2>Det, der venter på dig</h2>
+      <!-- SCREENSHOT ai-09: The Kladder list showing all three states. assets/img/screens/da/ai-09.webp, see icy-pork/zelar-site#2 -->
       <p>Så længe der er kladder, står <span class="ui">Kladder</span> med et tal i menuen (bag kælderknappen på Overblik) under Bibliotek, og i sidebjælken på iPad. En kladde kan være:</p>
       <div class="table-wrap" tabindex="0" role="region" aria-label="Kladdernes tilstande">
         <table>
@@ -199,9 +208,12 @@
       </ul>
     </div>
 
-    <div class="card" id="forste-indlaesning">
+    <div class="card" id="first-load">
       <div class="eyebrow">Første indlæsning</div>
       <h2>Hele kælderen ind på én gang</h2>
+      <!-- SCREENSHOT ai-10: The Første indlæsning section on Backup, import & eksport. assets/img/screens/da/ai-10.webp, see icy-pork/zelar-site#2 -->
+      <!-- SCREENSHOT ai-11: The "På eget ansvar" confirmation. assets/img/screens/da/ai-11.webp, see icy-pork/zelar-site#2 -->
+      <!-- SCREENSHOT ai-12: Claude or ChatGPT answering a first load in parts. assets/img/screens/da/ai-12.webp, see icy-pork/zelar-site#2 -->
       <p>Har du allerede vine registreret et andet sted? Find <span class="ui">Første indlæsning</span> under <span class="ui">Backup, import &amp; eksport</span> i menuen. Der er to veje.</p>
 
       <h3>Som tekst (anbefalet)</h3>
@@ -254,7 +266,7 @@
       <p>Del indholdet i flere omgange: send færre fotos ad gangen, eller brug tekstvejen med dele på 40 vine.</p>
     </div>
 
-    <div class="card" id="egne-prompts">
+    <div class="card" id="own-prompts">
       <div class="eyebrow">For de nysgerrige</div>
       <h2>Til dine egne prompts og genveje</h2>
       <h3>Formatet</h3>

@@ -414,3 +414,10 @@ pre {
   vertical-align: middle;
   color: var(--accent);
 }
+
+/* Screenshots in the guides (icy-pork/zelar-site#2) */
+.shot { margin: 20px auto; max-width: 300px; }
+.shot img { width: 100%; height: auto; border: 1px solid var(--line); border-radius: 22px; }
+.shot--wide { max-width: 100%; }
+.shot--wide img { border-radius: 14px; }
+.shot figcaption { margin-top: 8px; font-size: 13px; text-align: center; color: var(--text-muted); }

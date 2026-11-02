@@ -83,7 +83,14 @@
         "untranslated": "Esta página ainda não existe em português, então ela é exibida em inglês."
       }
     },
-    { "code": "nl", "path": "nl/", "lang": "nl", "og": "nl_NL", "name": "Nederlands", "ready": false }
+    {
+      "code": "nl", "path": "nl/", "lang": "nl", "og": "nl_NL", "name": "Nederlands", "ready": true,
+      "ui": {
+        "skip": "Naar de inhoud", "home": "Startpagina van Zélar", "nav": "Hoofdmenu", "footer": "Voettekst", "language": "Taal",
+        "privacy": "Privacy", "support": "Ondersteuning", "ai": "AI-handleiding",
+        "untranslated": "Deze pagina bestaat nog niet in het Nederlands, daarom wordt hij in het Engels getoond."
+      }
+    }
   ],
   "pages": [
     { "id": "home", "path": "" },

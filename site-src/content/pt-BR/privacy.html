@@ -15,7 +15,7 @@
     <div class="card">
       <div class="eyebrow">Os dados da sua adega</div>
       <h2>Guardados localmente no seu dispositivo</h2>
-      <p>Tudo o que você insere no Zélar — adegas, estantes, prateleiras, vinhos, garrafas, notas de degustação, janelas de consumo, fotos, lista de desejos e rascunhos — é guardado localmente no seu iPhone ou iPad. Não é enviado para o servidor do desenvolvedor e ninguém além de você tem acesso.</p>
+      <p>Tudo o que você insere no Zélar — adegas, porta-garrafas, prateleiras, vinhos, garrafas, notas de degustação, janelas de consumo, fotos, lista de desejos e rascunhos — é guardado localmente no seu iPhone ou iPad. Não é enviado para o servidor do desenvolvedor e ninguém além de você tem acesso.</p>
 
       <h2>Sincronização com o iCloud opcional</h2>
       <p>O Zélar pode sincronizar a sua adega entre os seus dispositivos pela sua conta pessoal do iCloud (Apple CloudKit). Seus dados ficam então guardados no seu próprio contêiner privado do iCloud, sujeito às práticas de privacidade da Apple.</p>
@@ -43,10 +43,10 @@
       <p>Nada mais da sua adega é enviado — nem notas, preços, avaliações, etiquetas ou outros vinhos. O servidor rejeita solicitações com outros campos.</p>
 
       <h3>ID do dispositivo</h3>
-      <p>Para evitar abusos e acompanhar o seu uso do Zélar AI, o app prova ao nosso servidor que é um Zélar autêntico com o App Attest da Apple. Isso cria uma chave no Secure Enclave do seu dispositivo; o servidor guarda o ID da chave, sua chave pública e um contador. Não é o seu ID Apple, não é compartilhado com ninguém e muda se você reinstalar o app.</p>
+      <p>Para evitar abusos e acompanhar o seu uso do Zélar AI, o app prova ao nosso servidor que é um Zélar autêntico com o App Attest da Apple. Isso cria uma chave no Secure Enclave do seu dispositivo; o servidor guarda o ID da chave, sua chave pública e um contador. Não é a sua Conta Apple, não é compartilhado com ninguém e muda se você reinstalar o app.</p>
 
       <h3>Comprovante de compra (Zélar Pro)</h3>
-      <p>Se você comprar o Zélar Pro, o app também envia, com cada solicitação de IA, as informações assinadas da Apple sobre a compra, para que o servidor possa dar a você o Zélar AI como parte do Pro. As informações são criadas e assinadas pela Apple. Elas contêm o bundle ID do app, qual produto Pro você comprou (mensal, anual ou vitalício), quando você comprou, quando uma assinatura expira ou foi reembolsada, se foi comprado na App Store ou no ambiente de testes da Apple, e os IDs de transação da Apple. Elas não contêm seu nome, seu e-mail, seu ID Apple, sua forma de pagamento nem o preço.</p>
+      <p>Se você comprar o Zélar Pro, o app também envia, com cada solicitação de IA, as informações assinadas da Apple sobre a compra, para que o servidor possa dar a você o Zélar AI como parte do Pro. As informações são criadas e assinadas pela Apple. Elas contêm o bundle ID do app, qual produto Pro você comprou (mensal, anual ou vitalício), quando você comprou, quando uma assinatura expira ou foi reembolsada, se foi comprado na App Store ou no ambiente de testes da Apple, e os IDs de transação da Apple. Elas não contêm seu nome, seu e-mail, sua Conta Apple, sua forma de pagamento nem o preço.</p>
       <p>O servidor verifica a assinatura da Apple e guarda apenas o ID de transação original. Ele é o mesmo para a compra em todos os seus dispositivos e depois de uma reinstalação, então o Zélar AI acompanha a compra. Se uma renovação falhar e a Apple der a você um prazo para corrigir o pagamento, o app também envia o status de renovação assinado da Apple, para que você mantenha o Zélar AI até lá; o servidor apenas o verifica e não guarda nada dele. Nada disso é enviado antes de você aceitar os recursos de IA, e nunca é usado para publicidade nem compartilhado com terceiros.</p>
 
       <h3>Uso razoável</h3>
@@ -85,8 +85,8 @@
       <h2>Compartilhamento de uma adega (beta)</h2>
       <p>Você pode compartilhar uma adega com até quatro outras pessoas. O compartilhamento é opcional e fica desativado até você ativá-lo em Ajustes → Experimental.</p>
       <ul>
-        <li><strong>Como funciona.</strong> O compartilhamento usa o iCloud da Apple: cada pessoa usa o seu próprio ID Apple, e o Zélar não tem nenhuma conta nem cópia dos seus dados. Uma adega compartilhada fica no iCloud do proprietário; os convidados a leem e alteram pelo próprio iCloud. A Apple mostra aos outros o nome ou o endereço de e-mail de cada pessoa, como em qualquer compartilhamento do iCloud.</li>
-        <li><strong>O que os outros veem.</strong> As estantes e as garrafas da adega compartilhada, quem as bebeu, as etiquetas e as fotos dos vinhos. Se o proprietário tiver o Zélar Pro, a adega também contém um comprovante da compra na App Store, para que o app dos outros veja que a adega é Pro. Ele fica no iCloud e nunca é enviado para o nosso servidor.</li>
+        <li><strong>Como funciona.</strong> O compartilhamento usa o iCloud da Apple: cada pessoa usa a sua própria Conta Apple, e o Zélar não tem nenhuma conta nem cópia dos seus dados. Uma adega compartilhada fica no iCloud do proprietário; os convidados a leem e alteram pelo próprio iCloud. A Apple mostra aos outros o nome ou o endereço de e-mail de cada pessoa, como em qualquer compartilhamento do iCloud.</li>
+        <li><strong>O que os outros veem.</strong> Os porta-garrafas e as garrafas da adega compartilhada, quem as bebeu, as etiquetas e as fotos dos vinhos. Se o proprietário tiver o Zélar Pro, a adega também contém um comprovante da compra na App Store, para que o app dos outros veja que a adega é Pro. Ele fica no iCloud e nunca é enviado para o nosso servidor.</li>
         <li><strong>O que continua privado.</strong> Suas notas de degustação, avaliações e ocasiões, o Diário, sua lista de desejos, seus escaneamentos de rótulos e suas outras adegas nunca são compartilhados.</li>
         <li><strong>Sair.</strong> Você pode sair de uma adega compartilhada, e o proprietário pode remover pessoas ou interromper o compartilhamento, a qualquer momento. Suas próprias notas de degustação ficam com você.</li>
       </ul>

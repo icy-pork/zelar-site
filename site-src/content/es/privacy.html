@@ -26,7 +26,7 @@
       </ul>
 
       <h2>Tu propia IA: portapapeles, compartir y atajos</h2>
-      <p>Zélar puede darte partes de tu bodega como texto (prompts y Markdown) para que las uses con el asistente de IA que elijas, y puede leer el texto estructurado que vuelvas a pegar. Esto se hace mediante el portapapeles, la hoja de compartir ("Compartir con Zélar") y las acciones de Zélar en la app Atajos de Apple. Ninguna de estas vías usa la red: solo leen y escriben en tu dispositivo. Eres tú quien lleva el texto a tu IA, y lo que envías allí queda entre tú y ese servicio, con tu propia cuenta y sus condiciones.</p>
+      <p>Zélar puede darte partes de tu bodega como texto (prompts y Markdown) para que las uses con el asistente de IA que elijas, y puede leer el texto estructurado que vuelvas a pegar. Esto se hace mediante el portapapeles, la hoja de compartir (“Compartir con Zélar”) y las acciones de Zélar en la app Atajos de Apple. Ninguna de estas vías usa la red: solo leen y escriben en tu dispositivo. Eres tú quien lleva el texto a tu IA, y lo que envías allí queda entre tú y ese servicio, con tu propia cuenta y sus condiciones.</p>
     </div>
 
     <div class="card">
@@ -37,16 +37,16 @@
       <h3>Qué se envía</h3>
       <ul>
         <li><strong>Escanear etiqueta:</strong> la foto que has hecho, en versión reducida (como máximo 1568 píxeles en el lado largo). El servidor añade una instrucción fija y envía ambas cosas a Anthropic, que lee la etiqueta y devuelve los datos del vino.</li>
-        <li><strong>Completar en línea:</strong> solo texto — nombre, productor, añada, país, región, denominación y uvas de un vino. Recibes sugerencias, que revisas antes de que se guarde nada. La respuesta puede incluir un valor de mercado estimado.</li>
+        <li><strong>Completar en línea:</strong> solo texto — nombre, productor, añada, país, región, denominación y variedades de un vino. Recibes sugerencias, que revisas antes de que se guarde nada. La respuesta puede incluir un valor de mercado estimado.</li>
         <li><strong>Sugerencia de un plato en los recordatorios</strong> (opcional, se activa por separado): los mismos campos más el tipo de vino, para un vino que ha pasado su ventana de consumo, como máximo una vez por vino.</li>
       </ul>
       <p>No se envía nada más de tu bodega — ni notas, ni precios, ni valoraciones, ni tags, ni otros vinos. El servidor rechaza las solicitudes con otros campos.</p>
 
       <h3>ID del dispositivo</h3>
-      <p>Para evitar abusos y llevar la cuenta de tu uso de Zélar AI, la app demuestra a nuestro servidor que es un Zélar auténtico mediante App Attest de Apple. Esto crea una clave en la Secure Enclave de tu dispositivo; el servidor guarda el ID de la clave, su clave pública y un contador. No es tu ID de Apple, no se comparte con nadie y cambia si reinstalas la app.</p>
+      <p>Para evitar abusos y llevar la cuenta de tu uso de Zélar AI, la app demuestra a nuestro servidor que es un Zélar auténtico mediante App Attest de Apple. Esto crea una clave en la Secure Enclave de tu dispositivo; el servidor guarda el ID de la clave, su clave pública y un contador. No es tu cuenta de Apple, no se comparte con nadie y cambia si reinstalas la app.</p>
 
       <h3>Prueba de compra (Zélar Pro)</h3>
-      <p>Si compras Zélar Pro, la app también envía con cada solicitud de IA la información firmada de Apple sobre la compra, para que el servidor pueda darte Zélar AI como parte de Pro. La información la crea y la firma Apple. Contiene el bundle ID de la app, qué producto Pro has comprado (mensual, anual o de por vida), cuándo lo compraste, cuándo vence o se reembolsó una suscripción, si se compró en el App Store o en el entorno de pruebas de Apple, y los ID de transacción de Apple. No contiene tu nombre, tu correo, tu ID de Apple, tu método de pago ni el precio.</p>
+      <p>Si compras Zélar Pro, la app también envía con cada solicitud de IA la información firmada de Apple sobre la compra, para que el servidor pueda darte Zélar AI como parte de Pro. La información la crea y la firma Apple. Contiene el bundle ID de la app, qué producto Pro has comprado (mensual, anual o de por vida), cuándo lo compraste, cuándo vence o se reembolsó una suscripción, si se compró en el App Store o en el entorno de pruebas de Apple, y los ID de transacción de Apple. No contiene tu nombre, tu correo, tu cuenta de Apple, tu método de pago ni el precio.</p>
       <p>El servidor comprueba la firma de Apple y solo guarda el ID de transacción original. Es el mismo para la compra en todos tus dispositivos y tras una reinstalación, así que Zélar AI sigue a la compra. Si una renovación falla y Apple te da un plazo para arreglar el pago, la app también envía el estado de renovación firmado de Apple, para que conserves Zélar AI hasta entonces; el servidor solo lo comprueba y no guarda nada de él. Nada de esto se envía antes de que hayas aceptado las funciones de IA, y nunca se usa para publicidad ni se comparte con otros.</p>
 
       <h3>Uso razonable</h3>
@@ -85,7 +85,7 @@
       <h2>Compartir una bodega (beta)</h2>
       <p>Puedes compartir una bodega con hasta otras cuatro personas. Compartir es opcional y está desactivado hasta que lo activas en Ajustes → Experimental.</p>
       <ul>
-        <li><strong>Cómo funciona.</strong> Compartir usa iCloud de Apple: cada persona usa su propio ID de Apple, y Zélar no tiene ninguna cuenta ni ninguna copia de tus datos. Una bodega compartida está en el iCloud de su propietario; los invitados la leen y la modifican a través de su propio iCloud. Apple muestra a los demás el nombre o el correo de cada persona, como en cualquier uso compartido de iCloud.</li>
+        <li><strong>Cómo funciona.</strong> Compartir usa iCloud de Apple: cada persona usa su propia cuenta de Apple, y Zélar no tiene ninguna cuenta ni ninguna copia de tus datos. Una bodega compartida está en el iCloud de su propietario; los invitados la leen y la modifican a través de su propio iCloud. Apple muestra a los demás el nombre o el correo de cada persona, como en cualquier uso compartido de iCloud.</li>
         <li><strong>Qué ven los demás.</strong> Los botelleros y las botellas de la bodega compartida, quién se las bebió, los tags y las fotos de los vinos. Si el propietario tiene Zélar Pro, en la bodega hay también una prueba de la compra en el App Store, para que la app de los demás vea que la bodega es Pro. Se queda en iCloud y nunca se envía a nuestro servidor.</li>
         <li><strong>Qué sigue siendo privado.</strong> Tus notas de cata, valoraciones y ocasiones, el Diario, tu lista de deseos, tus escaneos de etiquetas y tus otras bodegas nunca se comparten.</li>
         <li><strong>Salir.</strong> Puedes salir de una bodega compartida, y el propietario puede quitar personas o dejar de compartir, en cualquier momento. Tus propias notas de cata se quedan contigo.</li>
@@ -144,7 +144,7 @@
 
     <div class="card">
       <div class="eyebrow">Cambios en esta política</div>
-      <p>La política puede actualizarse para reflejar cambios en la app o en la legislación. La fecha "Última actualización" de arriba indica siempre la versión más reciente. El uso continuado de Zélar después de que los cambios entren en vigor se considera aceptación de la política actualizada.</p>
+      <p>La política puede actualizarse para reflejar cambios en la app o en la legislación. La fecha “Última actualización” de arriba indica siempre la versión más reciente. El uso continuado de Zélar después de que los cambios entren en vigor se considera aceptación de la política actualizada.</p>
     </div>
 
     <div class="card">

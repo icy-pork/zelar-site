@@ -1,5 +1,5 @@
 <!-- title: Zélar – Politique de confidentialité -->
-<!-- description: Les données collectées par Zélar, où elles sont stockées et les choix dont vous disposez. Les données de votre cave restent sur votre appareil ; les fonctions d'IA sont facultatives. -->
+<!-- description: Les données collectées par Zélar, où elles sont stockées et les choix dont vous disposez. Les données de votre cave restent sur votre appareil ; les fonctions d'IA sont facultatives. -->
 <main id="main">
 <div class="wrap wrap--narrow">
   <div class="page-head">
@@ -40,14 +40,14 @@
         <li><strong>Compléter en ligne :</strong> du texte uniquement – nom, producteur, millésime, pays, région, appellation et cépages d'un vin. Vous recevez des suggestions que vous passez en revue avant tout enregistrement. La réponse peut contenir une valeur de marché estimée.</li>
         <li><strong>Suggestion de plat dans les rappels</strong> (facultatif, à activer séparément) : les mêmes champs plus le type de vin, pour un vin qui a dépassé sa fenêtre de dégustation, une seule fois par vin au maximum.</li>
       </ul>
-      <p>Rien d'autre de votre cave n'est envoyé – ni remarques, ni prix, ni notes, ni tags, ni autres vins. Le serveur rejette les requêtes contenant d'autres champs.</p>
+      <p>Rien d'autre de votre cave n'est envoyé – ni remarques, ni prix, ni évaluations, ni tags, ni autres vins. Le serveur rejette les requêtes contenant d'autres champs.</p>
 
       <h3>Identifiant d'appareil</h3>
-      <p>Pour empêcher les abus et suivre votre utilisation de Zélar AI, l'app prouve à notre serveur qu'il s'agit bien de Zélar grâce à App Attest d'Apple. Cela crée une clé dans la Secure Enclave de votre appareil ; le serveur conserve l'identifiant de la clé, sa clé publique et un compteur. Ce n'est pas votre identifiant Apple, il n'est partagé avec personne et il change si vous réinstallez l'app.</p>
+      <p>Pour empêcher les abus et suivre votre utilisation de Zélar AI, l'app prouve à notre serveur qu'il s'agit bien de Zélar grâce à App Attest d'Apple. Cela crée une clé dans la Secure Enclave de votre appareil ; le serveur conserve l'identifiant de la clé, sa clé publique et un compteur. Ce n'est pas votre compte Apple, il n'est partagé avec personne et il change si vous réinstallez l'app.</p>
 
       <h3>Preuve d'achat (Zélar Pro)</h3>
-      <p>Si vous achetez Zélar Pro, l'app envoie aussi, avec chaque requête d'IA, les informations d'achat signées par Apple, pour que le serveur puisse vous donner Zélar AI dans le cadre de Pro. Ces informations sont créées et signées par Apple. Elles contiennent l'identifiant de bundle de l'app, le produit Pro acheté (mois, année ou à vie), la date d'achat, la date d'expiration ou de remboursement d'un abonnement, s'il a été acheté sur l'App Store ou dans l'environnement de test d'Apple, et les identifiants de transaction d'Apple. Elles ne contiennent ni votre nom, ni votre e-mail, ni votre identifiant Apple, ni votre moyen de paiement, ni le prix.</p>
-      <p>Le serveur vérifie la signature d'Apple et ne conserve que l'identifiant de transaction d'origine. Il est le même pour l'achat sur tous vos appareils et après une réinstallation, de sorte que Zélar AI suit l'achat. Si un renouvellement échoue et qu'Apple vous accorde un délai pour régulariser le paiement, l'app envoie aussi l'état de renouvellement signé par Apple, pour que vous gardiez Zélar AI jusque-là ; le serveur se contente de le vérifier et n'en conserve rien. Rien de tout cela n'est envoyé avant que vous ayez accepté les fonctions d'IA, et rien n'est jamais utilisé pour de la publicité ni partagé avec des tiers.</p>
+      <p>Si vous achetez Zélar Pro, l'app envoie aussi, avec chaque requête d'IA, les informations d'achat signées par Apple, pour que le serveur puisse vous donner Zélar AI dans le cadre de Pro. Ces informations sont créées et signées par Apple. Elles contiennent l'identifiant de bundle de l'app, le produit Pro acheté (mois, année ou à vie), la date d'achat, la date d'expiration ou de remboursement d'un abonnement, s'il a été acheté sur l'App Store ou dans l'environnement de test d'Apple, et les identifiants de transaction d'Apple. Elles ne contiennent ni votre nom, ni votre e-mail, ni votre compte Apple, ni votre moyen de paiement, ni le prix.</p>
+      <p>Le serveur vérifie la signature d'Apple et ne conserve que l'identifiant de transaction d'origine. Il est le même pour l'achat sur tous vos appareils et après une réinstallation, de sorte que Zélar AI suit l'achat. Si un renouvellement échoue et qu'Apple vous accorde un délai pour régulariser le paiement, l'app envoie aussi l'état de renouvellement signé par Apple, pour que vous gardiez Zélar AI jusque-là ; le serveur se contente de le vérifier et n'en conserve rien. Rien de tout cela n'est envoyé avant que vous ayez accepté les fonctions d'IA, et rien n'est jamais utilisé pour de la publicité ni partagé avec des tiers.</p>
 
       <h3>Usage raisonnable</h3>
       <p>Avec un abonnement, Zélar AI est inclus avec un usage raisonnable : jusqu'à 60 actions d'IA par mois et 30 par jour. Pour le suivre, le serveur compte vos actions par identifiant d'appareil ou par achat. Le compteur ne contient aucune information sur vos vins.</p>
@@ -77,7 +77,7 @@
       <div class="eyebrow">Depuis notre serveur</div>
       <h2>Réglages et taux de change</h2>
       <p>Zélar récupère un petit fichier de réglages sur notre serveur, p. ex. le nombre de bouteilles de la formule gratuite, et d'éventuels messages du développeur. Quand vous utilisez une autre devise que la vôtre, l'app récupère aussi des taux de change : les taux de référence de l'euro de la Banque centrale européenne, que notre serveur obtient auprès de la BCE et transmet sans modification.</p>
-      <p>Aucune de ces requêtes ne contient d'identifiant ni quoi que ce soit sur vous ou votre cave – pas même les devises que vous utilisez – et tout le monde reçoit la même réponse. Cloudflare voit votre adresse IP pour pouvoir livrer la réponse ; nous ne l'enregistrons pas. Ces requêtes ne nécessitent pas de consentement aux fonctions d'IA.</p>
+      <p>Aucune de ces requêtes ne contient d'identifiant ni quoi que ce soit sur vous ou votre cave – pas même les devises que vous utilisez – et tout le monde reçoit la même réponse. Cloudflare voit votre adresse IP pour pouvoir livrer la réponse ; nous ne l'enregistrons pas. Ces requêtes ne nécessitent pas de consentement aux fonctions d'IA.</p>
     </div>
 
     <div class="card">
@@ -85,9 +85,9 @@
       <h2>Partage d'une cave (bêta)</h2>
       <p>Vous pouvez partager une cave avec jusqu'à quatre autres personnes. Le partage est facultatif et désactivé tant que vous ne l'activez pas dans Réglages → Expérimental.</p>
       <ul>
-        <li><strong>Comment ça marche.</strong> Le partage utilise iCloud d'Apple : chacun utilise son propre identifiant Apple, et Zélar n'a ni compte ni copie de vos données. Une cave partagée se trouve dans l'iCloud du propriétaire ; les invités la lisent et la modifient via leur propre iCloud. Apple affiche le nom ou l'adresse e-mail de chaque personne aux autres, comme pour tout partage iCloud.</li>
+        <li><strong>Comment ça marche.</strong> Le partage utilise iCloud d'Apple : chacun utilise son propre compte Apple, et Zélar n'a ni compte ni copie de vos données. Une cave partagée se trouve dans l'iCloud du propriétaire ; les invités la lisent et la modifient via leur propre iCloud. Apple affiche le nom ou l'adresse e-mail de chaque personne aux autres, comme pour tout partage iCloud.</li>
         <li><strong>Ce que voient les autres.</strong> Les casiers et bouteilles de la cave partagée, qui les a bues, les tags et les photos des vins. Si le propriétaire a Zélar Pro, une preuve de l'achat sur l'App Store se trouve aussi dans la cave, pour que l'app des autres sache que la cave est Pro. Elle reste dans iCloud et n'est jamais envoyée à notre serveur.</li>
-        <li><strong>Ce qui reste privé.</strong> Vos notes de dégustation, vos notes et vos occasions, le Journal, votre liste d'envies, vos scans d'étiquettes et vos autres caves ne sont jamais partagés.</li>
+        <li><strong>Ce qui reste privé.</strong> Vos notes de dégustation, vos évaluations et vos occasions, le Journal, votre liste d'envies, vos scans d'étiquettes et vos autres caves ne sont jamais partagés.</li>
         <li><strong>Quitter.</strong> Vous pouvez quitter une cave partagée, et le propriétaire peut retirer des personnes ou arrêter le partage, à tout moment. Vos propres notes de dégustation restent chez vous.</li>
       </ul>
     </div>
@@ -109,11 +109,11 @@
       <div class="table-wrap" tabindex="0" role="region" aria-label="Récapitulatif des données">
         <table>
           <tr><th>Données</th><th>Où</th><th>Votre contrôle</th></tr>
-          <tr><td>Données de la cave (vins, bouteilles, remarques, photos)</td><td>En local sur votre appareil</td><td>Entièrement à vous ; elles ne quittent l'appareil que si vous les exportez, partagez ou synchronisez</td></tr>
+          <tr><td>Données de la cave (vins, bouteilles, remarques, photos)</td><td>En local sur votre appareil</td><td>Entièrement à vous ; elles ne quittent l'appareil que si vous les exportez, partagez ou synchronisez</td></tr>
           <tr><td>Synchronisation iCloud (facultative)</td><td>Votre iCloud personnel (Apple CloudKit)</td><td>Activer ou désactiver dans Réglages</td></tr>
           <tr><td>Cave partagée (bêta, facultative)</td><td>iCloud du propriétaire, partagé via Apple</td><td>Quitter ou arrêter le partage à tout moment</td></tr>
-          <tr><td>Photo ou texte du vin pour Zélar AI</td><td>Envoyé via Cloudflare à Anthropic ; non conservé sur notre serveur</td><td>Uniquement après consentement ; à retirer dans Réglages</td></tr>
-          <tr><td>Identifiant App Attest, compteur d'utilisation, identifiant de transaction</td><td>Notre serveur (Cloudflare)</td><td>Uniquement après consentement ; supprimable sur demande</td></tr>
+          <tr><td>Photo ou texte du vin pour Zélar AI</td><td>Envoyé via Cloudflare à Anthropic ; non conservé sur notre serveur</td><td>Uniquement après consentement ; à retirer dans Réglages</td></tr>
+          <tr><td>Identifiant App Attest, compteur d'utilisation, identifiant de transaction</td><td>Notre serveur (Cloudflare)</td><td>Uniquement après consentement ; supprimable sur demande</td></tr>
           <tr><td>Statistiques d'utilisation anonymisées</td><td>PostHog, serveurs européens</td><td>Refusables à tout moment dans Réglages</td></tr>
         </table>
       </div>

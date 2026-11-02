@@ -104,16 +104,16 @@
       <h3>Vad som skickas</h3>
       <ul>
         <li><strong>Skanna etikett:</strong> det foto du har tagit, i förminskad version (högst 1568 pixlar på den långa sidan). Servern lägger till en fast instruktion och skickar båda till Anthropic, som läser etiketten och skickar tillbaka vinets uppgifter.</li>
-        <li><strong>Berika online:</strong> bara text – namn, producent, årgång, land, område, appellation och druvor för ett vin. Du får tillbaka förslag som du går igenom innan något sparas. Svaret kan innehålla ett uppskattat marknadsvärde.</li>
+        <li><strong>Berika online:</strong> bara text – namn, producent, årgång, land, region, appellation och druvor för ett vin. Du får tillbaka förslag som du går igenom innan något sparas. Svaret kan innehålla ett uppskattat marknadsvärde.</li>
         <li><strong>Förslag på en rätt i påminnelser</strong> (valfritt, slås på separat): samma fält plus vintypen, för ett vin som har passerat sitt drickfönster, högst en gång per vin.</li>
       </ul>
       <p>Inget annat från din källare skickas – inga anteckningar, priser, betyg, taggar eller andra viner. Servern avvisar förfrågningar med andra fält.</p>
 
       <h3>Enhets-id</h3>
-      <p>För att förhindra missbruk och hålla koll på din användning av Zélar AI bevisar appen för vår server att den är en äkta Zélar, med Apples App Attest. Det skapar en nyckel i din enhets Secure Enclave; servern sparar nyckelns id, dess offentliga nyckel och en räknare. Det är inte ditt Apple-ID, det delas inte med någon, och det byts om du installerar om appen.</p>
+      <p>För att förhindra missbruk och hålla koll på din användning av Zélar AI bevisar appen för vår server att den är en äkta Zélar, med Apples App Attest. Det skapar en nyckel i din enhets Secure Enclave; servern sparar nyckelns id, dess offentliga nyckel och en räknare. Det är inte ditt Apple-konto, det delas inte med någon, och det byts om du installerar om appen.</p>
 
       <h3>Köpbevis (Zélar Pro)</h3>
-      <p>Köper du Zélar Pro skickar appen också Apples signerade uppgifter om köpet med varje AI-förfrågan, så att servern kan ge dig Zélar AI som en del av Pro. Uppgifterna är skapade och signerade av Apple. De innehåller appens bundle-id, vilken Pro-produkt du har köpt (månad, år eller livstid), när du köpte den, när ett abonnemang löper ut eller återbetalades, om den är köpt i App Store eller i Apples testmiljö, och Apples transaktions-id:n. De innehåller inte ditt namn, din e-postadress, ditt Apple-ID, ditt betalsätt eller priset.</p>
+      <p>Köper du Zélar Pro skickar appen också Apples signerade uppgifter om köpet med varje AI-förfrågan, så att servern kan ge dig Zélar AI som en del av Pro. Uppgifterna är skapade och signerade av Apple. De innehåller appens bundle-id, vilken Pro-produkt du har köpt (månad, år eller livstid), när du köpte den, när ett abonnemang löper ut eller återbetalades, om den är köpt i App Store eller i Apples testmiljö, och Apples transaktions-id:n. De innehåller inte ditt namn, din e-postadress, ditt Apple-konto, ditt betalsätt eller priset.</p>
       <p>Servern kontrollerar Apples signatur och sparar bara det ursprungliga transaktions-id:t. Det är detsamma för köpet på alla dina enheter och efter en ominstallation, så att Zélar AI följer köpet. Misslyckas en förnyelse och ger Apple dig en frist att rätta betalningen, skickar appen också Apples signerade förnyelsestatus, så att du behåller Zélar AI till dess; servern kontrollerar den bara och sparar inget från den. Inget av detta skickas innan du har sagt ja till AI-funktionerna, och det används aldrig för reklam eller delas med andra.</p>
 
       <h3>Skälig användning</h3>
@@ -152,7 +152,7 @@
       <h2>Delning av en källare (beta)</h2>
       <p>Du kan dela en källare med upp till fyra andra. Delning är frivillig och avstängd tills du slår på den under Inställningar → Experimentellt.</p>
       <ul>
-        <li><strong>Så fungerar det.</strong> Delning använder Apples iCloud: alla använder sitt eget Apple-ID, och Zélar har inget konto och ingen kopia av dina data. En delad källare ligger i ägarens iCloud; de inbjudna läser och ändrar den genom sin egen iCloud. Apple visar varje persons namn eller e-postadress för de andra, som vid all iCloud-delning.</li>
+        <li><strong>Så fungerar det.</strong> Delning använder Apples iCloud: alla använder sitt eget Apple-konto, och Zélar har inget konto och ingen kopia av dina data. En delad källare ligger i ägarens iCloud; de inbjudna läser och ändrar den genom sin egen iCloud. Apple visar varje persons namn eller e-postadress för de andra, som vid all iCloud-delning.</li>
         <li><strong>Vad de andra ser.</strong> Den delade källarens vinställ, flaskor, vem som drack dem, taggar och vinfoton. Har ägaren Zélar Pro ligger också ett bevis för köpet från App Store i källaren, så att de andras app kan se att källaren är Pro. Det stannar i iCloud och skickas aldrig till vår server.</li>
         <li><strong>Vad som förblir privat.</strong> Dina provningsanteckningar, betyg och tillfällen, Journalen, din önskelista, dina etikettskanningar och dina andra källare delas aldrig.</li>
         <li><strong>Att lämna.</strong> Du kan lämna en delad källare, och ägaren kan ta bort personer eller sluta dela, när som helst. Dina egna provningsanteckningar stannar hos dig.</li>

@@ -111,7 +111,7 @@
       <div class="table-wrap" tabindex="0" role="region" aria-label="Las pestañas de Zélar">
         <table>
           <tr><th>Pestaña</th><th>Qué hace</th></tr>
-          <tr><td><span class="ui">Resumen</span></td><td>Tu punto de partida: botellas en inventario, valor, lo que está en su momento, tus botelleros y la búsqueda.</td></tr>
+          <tr><td><span class="ui">Resumen</span></td><td>Tu punto de partida: botellas en inventario, valor, lo que está listo para beber, tus botelleros y la búsqueda.</td></tr>
           <tr><td><span class="ui">Inventario</span></td><td>Un mapa de cada botellero y cada vinoteca, entre los que deslizas. Toca un hueco o una balda para ver su contenido.</td></tr>
           <tr><td><span class="ui">＋</span></td><td>Añade algo: <span class="ui">Vino al inventario</span>, <span class="ui">Vino catado</span>, <span class="ui">Importar de la IA</span> y <span class="ui">Nuevo botellero o vinoteca</span>.</td></tr>
           <tr><td><span class="ui">Prompts</span></td><td>Tu biblioteca de prompts: prompts listos con tu bodega para tu propia IA.</td></tr>
@@ -134,8 +134,8 @@
       <!-- SCREENSHOT sup-06: The visual slot picker while adding a wine. assets/img/screens/da/sup-06.webp, see icy-pork/zelar-site#2 -->
       <ol>
         <li><strong>Crea una unidad.</strong> Toca <span class="ui">＋</span> → <span class="ui">Nuevo botellero o vinoteca</span>. Un <em>botellero</em> es una cuadrícula de filas y huecos (A1, A2, B1 …); una <em>vinoteca</em> tiene baldas, una temperatura y zonas de temperatura opcionales. Para cajas y almacenamiento suelto está <em>Otro</em>. Todo se puede renombrar y cambiar más adelante.</li>
-        <li><strong>Añade tus vinos.</strong> Toca <span class="ui">＋</span> → <span class="ui">Vino al inventario</span> y rellena lo que sepas. Solo el nombre es obligatorio. Puedes registrar productor, añada (o NV), país, zona, denominación, tipo, estilo, uvas, ecológico y biodinámico, alcohol, precio, ventana de consumo, una nota y fotos. País, zona, denominación, uvas y productor se sugieren mientras escribes.</li>
-        <li><strong>Coloca las botellas.</strong> Elige el número de botellas y un sitio en el selector visual de huecos, por ejemplo "Botellero A · A3". Las botellas sin sitio se reúnen en <span class="ui">Sin ubicación</span>, para que las ordenes más tarde.</li>
+        <li><strong>Añade tus vinos.</strong> Toca <span class="ui">＋</span> → <span class="ui">Vino al inventario</span> y rellena lo que sepas. Solo el nombre es obligatorio. Puedes registrar productor, añada (o NV), país, zona, denominación, tipo, estilo, variedades, ecológico y biodinámico, alcohol, precio, ventana de consumo, una nota y fotos. País, zona, denominación, variedades y productor se sugieren mientras escribes.</li>
+        <li><strong>Coloca las botellas.</strong> Elige el número de botellas y un sitio en el selector visual de huecos, por ejemplo “Botellero A · A3”. Las botellas sin sitio se reúnen en <span class="ui">Sin ubicación</span>, para que las ordenes más tarde.</li>
       </ol>
       <p>¿Ya tienes una bodega en una hoja de cálculo, en otra app o como un montón de etiquetas? Entonces deja que tu propia IA haga el trabajo: consulta <a href="/es/ai/#first-load">Primera carga</a> en la guía de IA.</p>
       <p>Puedes tener varias bodegas (casa, casa de verano, trastero …). Cambia entre ellas en el menú, en <span class="ui">Bodegas</span>.</p>
@@ -185,14 +185,14 @@
       <div class="eyebrow">El perfil del vino</div>
       <h2>Aromas, servicio y decantación</h2>
       <!-- SCREENSHOT sup-09: A wine's page with its profile and serving. assets/img/screens/da/sup-09.webp, see icy-pork/zelar-site#2 -->
-      <p>Además de los datos, un vino puede tener su propio perfil: aromas, un título, una descripción, temperatura de servicio y tiempo de decantación. Sin temperatura, Zélar usa un valor estándar para el tipo de vino (tinto 16, blanco 7, rosado 9, espumoso 7, naranja 13, dulce 8, de licor 15 °C).</p>
+      <p>Además de los datos, un vino puede tener su propio perfil: aromas, un título, una descripción, temperatura de servicio y tiempo de decantación. Sin temperatura, Zélar usa un valor estándar para el tipo de vino (tinto 16, blanco 7, rosado 9, espumoso 7, naranja 13, dulce 8, fortificado 15 °C).</p>
       <p>Los aromas de una copa pertenecen a la botella o a la cata; el perfil del vino es del propio vino. Las temperaturas se muestran en °C o °F según lo que elijas en <span class="ui">Ajustes → Preferencias → Temperatura</span>.</p>
     </div>
 
     <div class="card" id="drikkevinduer">
       <div class="eyebrow">Ventanas de consumo</div>
       <h2>Saber cuándo descorchar</h2>
-      <p>Dale a un vino una ventana de consumo (por ejemplo "2026–2042", si quieres con un año de apogeo), y Zélar sigue dónde está el vino: demasiado joven, listo, en su apogeo, cierra pronto o pasado su apogeo. Resumen muestra lo que está <strong>listo ahora</strong>, y Análisis también muestra lo que deberías <strong>beber pronto</strong>, para que nada se pase en silencio de su ventana.</p>
+      <p>Dale a un vino una ventana de consumo (por ejemplo “2026–2042”, si quieres con un año de apogeo), y Zélar sigue dónde está el vino: demasiado joven, listo, en su apogeo, cierra pronto o pasado su apogeo. Resumen muestra lo que está <strong>listo ahora</strong>, y Análisis también muestra lo que deberías <strong>beber pronto</strong>, para que nada se pase en silencio de su ventana.</p>
     </div>
 
     <div class="card" id="journal">
@@ -212,8 +212,8 @@
       <h2>Tu bodega en cifras, y tu propio gusto</h2>
       <!-- SCREENSHOT sup-11: The Indsigt dashboard. assets/img/screens/da/sup-11.webp, see icy-pork/zelar-site#2 -->
       <!-- SCREENSHOT sup-12: Min smag, unlocked. assets/img/screens/da/sup-12.webp, see icy-pork/zelar-site#2 -->
-      <p><span class="ui">Análisis</span> (en la Biblioteca del menú) es un panel de widgets que eliges y ordenas tú: valor, reparto por tipo, país, añada y uvas, compras y botellas bebidas a lo largo del tiempo, "En su momento ahora" y "Beber pronto". Las cifras pequeñas se dicen con honestidad: una copa no es una tendencia.</p>
-      <p><span class="ui">Mi gusto</span> se desbloquea a medida que valoras vinos. El perfil se basa solo en tus propias valoraciones y aromas: el estilo que más te gusta, tus uvas favoritas y tus mejores botellas. Sin reseñas ajenas, sin puntuación colectiva.</p>
+      <p><span class="ui">Análisis</span> (en la Biblioteca del menú) es un panel de widgets que eliges y ordenas tú: valor, reparto por tipo, país, añada y variedades, compras y botellas bebidas a lo largo del tiempo, “Listo para beber ahora” y “Beber pronto”. Las cifras pequeñas se dicen con honestidad: una copa no es una tendencia.</p>
+      <p><span class="ui">Mi gusto</span> se desbloquea a medida que valoras vinos. El perfil se basa solo en tus propias valoraciones y aromas: el estilo que más te gusta, tus variedades favoritas y tus mejores botellas. Sin reseñas ajenas, sin puntuación colectiva.</p>
     </div>
 
     <div class="card" id="oenskeliste">
@@ -292,8 +292,8 @@
           <tr><th>Pro ofrece</th><th>La vía gratuita para lo mismo</th></tr>
           <tr><td>Zélar AI: escanear etiqueta, completar en línea, líneas en recordatorios</td><td>5 escaneos gratuitos, luego Prompts con tu propia IA</td></tr>
           <tr><td>Exportación a PDF (notas de cata, informe de la bodega)</td><td>Exportación CSV, Markdown y copia de seguridad</td></tr>
-          <tr><td>Todos los gráficos de Análisis</td><td>Contadores y el prompt "valorar mi bodega"</td></tr>
-          <tr><td>Recordatorios para beber y de conservación</td><td>Las listas "Listo ahora" y "Beber pronto"</td></tr>
+          <tr><td>Todos los gráficos de Análisis</td><td>Contadores y el prompt “valorar mi bodega”</td></tr>
+          <tr><td>Recordatorios para beber y de conservación</td><td>Las listas “Listo ahora” y “Beber pronto”</td></tr>
           <tr><td>Tags propios</td><td>Los tags integrados</td></tr>
           <tr><td>Varias monedas</td><td>Una moneda</td></tr>
         </table>
@@ -304,14 +304,14 @@
       <p><span class="ui">＋</span> → <span class="ui">Escanear etiqueta</span>: haz una foto de la etiqueta, y Zélar AI encuentra el vino, su ventana de consumo y su perfil. Todo se puede corregir antes de guardar, y la IA puede equivocarse, así que revísalo. El resultado ofrece <span class="ui">Añadir a la bodega</span> o <span class="ui">Registrar en el diario</span>. Hasta entonces, el vino espera en <span class="ui">Vinos escaneados</span> en la Biblioteca del menú, que también recuerda todos tus escaneos. Con Gratis tienes 5 escaneos en total para probar.</p>
 
       <h3>Completar en línea</h3>
-      <p>Si a un vino le faltan datos, <span class="ui">Completar en línea</span> en la página del vino puede sugerir los datos que faltan y un valor de mercado estimado. Ves las sugerencias campo por campo, y no se guarda nada hasta que las marcas y tocas <span class="ui">Guardar</span>. Solo se envían el nombre, el productor, la añada, el país, la zona, la denominación y las uvas del vino.</p>
+      <p>Si a un vino le faltan datos, <span class="ui">Completar en línea</span> en la página del vino puede sugerir los datos que faltan y un valor de mercado estimado. Ves las sugerencias campo por campo, y no se guarda nada hasta que las marcas y tocas <span class="ui">Guardar</span>. Solo se envían el nombre, el productor, la añada, el país, la zona, la denominación y las variedades del vino.</p>
 
       <h3 id="reminders">Recordatorios</h3>
       <!-- SCREENSHOT sup-18: PRO: Indstillinger → Påmindelser with "Åbnede flasker" on. assets/img/screens/da/sup-18.webp, see icy-pork/zelar-site#2 -->
       <p>En <span class="ui">Ajustes → Recordatorios</span>:</p>
       <ul>
         <li><strong>Recordatorios para beber:</strong> a las horas que elijas (por ejemplo, el viernes a las 15:00), Zélar te sugiere una botella de la bodega que ha pasado su ventana de consumo, está al final de ella o dentro. El mismo vino no vuelve hasta que se hayan sugerido los demás.</li>
-        <li><strong>Sugerir un plato para los vinos que hay que beber:</strong> opcional. Cuando un vino ha pasado su ventana, Zélar AI escribe el recordatorio y sugiere un plato. Solo se envían el nombre, el productor, la añada, el tipo, el origen y las uvas del vino, y cada vino se consulta una sola vez.</li>
+        <li><strong>Sugerir un plato para los vinos que hay que beber:</strong> opcional. Cuando un vino ha pasado su ventana, Zélar AI escribe el recordatorio y sugiere un plato. Solo se envían el nombre, el productor, la añada, el tipo, el origen y las variedades del vino, y cada vino se consulta una sola vez.</li>
         <li><strong>Botellas abiertas:</strong> un recordatorio antes de que una botella abierta o servida con Coravin se pase. Consulta la tabla de abajo.</li>
       </ul>
       <div class="table-wrap" tabindex="0" role="region" aria-label="Conservación de botellas abiertas y servidas con Coravin">
@@ -330,7 +330,7 @@
       <p>Los tiempos son orientativos. El recordatorio llega a las 17:00 de ese día. Las notificaciones deben estar activadas para Zélar en los Ajustes de iOS.</p>
 
       <h3>Varias monedas</h3>
-      <p>Con Pro puedes escribir importes en monedas distintas de la tuya. Los importes conservan la moneda en que se escribieron; los totales se convierten al mostrarse, con los tipos de referencia del Banco Central Europeo, y los importes convertidos aparecen siempre como "aprox." con el tipo y la fecha.</p>
+      <p>Con Pro puedes escribir importes en monedas distintas de la tuya. Los importes conservan la moneda en que se escribieron; los totales se convierten al mostrarse, con los tipos de referencia del Banco Central Europeo, y los importes convertidos aparecen siempre como “aprox.” con el tipo y la fecha.</p>
 
       <h3>Tu plan y el uso razonable</h3>
       <!-- SCREENSHOT sup-19: PRO: "Din plan" on a subscription ("Zélar AI inkluderet"). assets/img/screens/da/sup-19.webp, see icy-pork/zelar-site#2 -->
@@ -338,10 +338,10 @@
       <p><span class="ui">Tu plan</span> está en el menú. Si compraste en otro dispositivo, usa <span class="ui">Restaurar compras</span>.</p>
 
       <h3>Compartir bodega (beta)</h3>
-      <p>Una bodega se puede compartir con hasta otras cuatro personas, cada una con su propio ID de Apple. Se comparten los botelleros, las botellas, los tags y quién se bebió qué; las notas de cata, las valoraciones, el Diario y la lista de deseos siguen siendo privados. El Pro del propietario vale para todos en la bodega compartida. Compartir es una beta que activas en <span class="ui">Ajustes → Experimental</span>, cuando esté disponible.</p>
+      <p>Una bodega se puede compartir con hasta otras cuatro personas, cada una con su propia cuenta de Apple. Se comparten los botelleros, las botellas, los tags y quién se bebió qué; las notas de cata, las valoraciones, el Diario y la lista de deseos siguen siendo privados. El Pro del propietario vale para todos en la bodega compartida. Compartir es una beta que activas en <span class="ui">Ajustes → Experimental</span>, cuando esté disponible.</p>
 
       <h3>Widget y accesos rápidos en el icono de la app</h3>
-      <p>El widget "En su momento" muestra en la pantalla de inicio lo que está listo ahora. Mantén pulsado el icono de Zélar para los accesos rápidos: <span class="ui">Añadir vino</span>, <span class="ui">Añadir cata</span> y <span class="ui">Escanear etiqueta</span>. El widget y los accesos rápidos son gratuitos.</p>
+      <p>El widget “Listo para beber” muestra en la pantalla de inicio lo que está listo ahora. Mantén pulsado el icono de Zélar para los accesos rápidos: <span class="ui">Añadir vino</span>, <span class="ui">Añadir cata</span> y <span class="ui">Escanear etiqueta</span>. El widget y los accesos rápidos son gratuitos.</p>
     </div>
 
     <div class="card" id="faq">

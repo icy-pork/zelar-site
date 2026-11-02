@@ -1,0 +1,280 @@
+<!-- title: Zélar — La tua IA in Zélar -->
+<!-- description: Come usare il tuo Claude o ChatGPT con Zélar: scansiona etichette con un comando rapido, condividi risposte con Zélar, bozze e primo caricamento di un'intera cantina. -->
+<main id="main">
+<div class="wrap wrap--narrow">
+  <div class="page-head">
+    <h1>La tua IA in Zélar</h1>
+    <p class="meta">Ultimo aggiornamento: 1 novembre 2026</p>
+  </div>
+
+    <div class="card">
+      <p>Zélar è costruito perché la tua IA possa lavorare con la tua cantina. Oltre ai prompt e all'importazione incollando in <span class="ui">Prompt</span> puoi usare un comando rapido per scansionare etichette, condividere risposte direttamente dalla tua app di IA e far leggere alla tua IA un'intera cantina la prima volta. È gratis, e resterà gratis.</p>
+      <p>Qualunque sia la via, vale un principio: <strong>tutto ciò che viene da un'IA è una proposta.</strong> Arriva come bozza, che controlli prima che qualcosa entri nelle scorte o nel Diario.</p>
+    </div>
+
+    <nav class="toc" aria-label="Contenuto">
+      <div class="eyebrow">Contenuto</div>
+      <ol>
+        <li><a href="#tre-veje">Tre vie d'ingresso</a></li>
+        <li><a href="#privatliv">Cosa va dove</a></li>
+        <li><a href="#genvej">Installa il comando rapido</a></li>
+        <li><a href="#skan">Scansiona un'etichetta, passo dopo passo</a></li>
+        <li><a href="#share">Condividi dalla tua app di IA</a></li>
+        <li><a href="#drafts">Bozze</a></li>
+        <li><a href="#first-load">Primo caricamento</a></li>
+        <li><a href="#fejl">Risoluzione dei problemi</a></li>
+        <li><a href="#own-prompts">Per i tuoi prompt e comandi rapidi</a></li>
+      </ol>
+    </nav>
+
+    <div class="card" id="tre-veje">
+      <div class="eyebrow">Tre vie d'ingresso</div>
+      <h2>Scegli quella adatta al compito</h2>
+      <ul>
+        <li><strong>Scansiona un'etichetta con un comando rapido.</strong> Scegli una foto; il modello di Apple legge l'etichetta, il comando rapido chiede al tuo Claude o ChatGPT e mette la risposta e la foto in Zélar come bozza. Ideale per una bottiglia alla volta.</li>
+        <li><strong>Condividi dalla tua app di IA.</strong> Hai già parlato di un vino con la tua IA? Condividi la risposta (ed eventualmente la foto) con Zélar dal foglio di condivisione.</li>
+        <li><strong>Primo caricamento.</strong> Un'intera cantina da un foglio di calcolo, dall'esportazione di un'altra app o da un mucchio di foto di etichette — come testo a parti, o come file di backup.</li>
+      </ul>
+      <div class="table-wrap" tabindex="0" role="region" aria-label="Quale via scegliere?">
+        <table>
+          <tr><th>Hai …</th><th>Usa</th></tr>
+          <tr><td>una bottiglia in mano</td><td><a href="#genvej">Il comando rapido</a></td></tr>
+          <tr><td>una conversazione con la tua IA su un vino, una carta dei vini o uno scontrino</td><td><a href="#share">Condividi con Zélar</a></td></tr>
+          <tr><td>un testo copiato da un'app senza pulsante di condivisione</td><td><span class="ui">＋ → Importa dall'IA</span></td></tr>
+          <tr><td>un foglio di calcolo, un'esportazione da un'altra app o molte foto</td><td><a href="#first-load">Primo caricamento</a></td></tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="card" id="privatliv">
+      <div class="eyebrow">Privacy</div>
+      <h2>Cosa va dove</h2>
+      <ul>
+        <li><strong>La foto non va alla tua IA.</strong> Il comando rapido fa leggere l'etichetta al modello di Apple in Private Cloud Compute di Apple, dove Apple non la conserva. Se vuoi che la foto resti sul telefono, usa invece il riconoscimento del testo di iOS (vedi la <a href="#genvej">ricetta</a>).</li>
+        <li><strong>Solo il testo va al tuo Claude o ChatGPT</strong>, con il tuo account. Conta nei limiti del tuo piano lì, e valgono le condizioni di quel servizio.</li>
+        <li><strong>Nel primo caricamento</strong> sei tu a inviare il foglio di calcolo o le foto al tuo account di IA.</li>
+        <li><strong>Zélar non invia nulla.</strong> Le azioni dei comandi rapidi e il foglio di condivisione leggono e scrivono solo file sul tuo dispositivo. Le bozze restano solo sul dispositivo e non vengono sincronizzate.</li>
+      </ul>
+      <p>Vedi anche <a href="{{root}}privacy/">l'informativa sulla privacy</a>.</p>
+    </div>
+
+    <div class="card" id="genvej">
+      <div class="eyebrow">Il comando rapido</div>
+      <h2>Installa "Zélar · Scansiona etichetta"</h2>
+      <!-- SCREENSHOT ai-01: The Shortcut open in the Shortcuts app with its actions (Claude version). assets/img/screens/da/ai-01.webp, see icy-pork/zelar-site#2 -->
+      <!-- SCREENSHOT ai-02: The first-run permission prompt. assets/img/screens/da/ai-02.webp, see icy-pork/zelar-site#2 -->
+      <!-- SCREENSHOT ai-03: Settings → Action Button set to the Shortcut. assets/img/screens/da/ai-03.webp, see icy-pork/zelar-site#2 -->
+      <p>C'è un comando rapido per ogni destinazione: <strong>nelle scorte</strong> (una bottiglia che metti in cantina) e <strong>nel diario</strong> (un vino che stai degustando ora). Ognuno esiste per Claude e per ChatGPT. Scegli quelli adatti all'app di IA che usi.</p>
+      <div class="callout">
+        <strong>Link in arrivo</strong>
+        <p>I comandi rapidi per scorte e diario, per Claude e per ChatGPT, saranno pubblicati qui come link iCloud quando saranno pronti. Fino ad allora puoi costruirlo da te seguendo la ricetta qui sotto; ci vogliono pochi minuti.</p>
+      </div>
+      <!-- When the Shortcuts are built: add the two iCloud links here, with their
+           version ("v1"), e.g. <a class="btn btn--primary" href="https://www.icloud.com/shortcuts/…">Hent til Claude</a>.
+           Then soften the callout above. Screenshots go in assets/img/ai/ (da and en). -->
+
+      <h3>Cosa ti serve</h3>
+      <ul>
+        <li>Zélar e l'app di Claude o ChatGPT, installate e con accesso effettuato.</li>
+        <li>L'app Comandi Rapidi (inclusa in iOS).</li>
+        <li>Apple Intelligence (iPhone 15 Pro o successivo) per l'azione <span class="ui">Usa modello</span>, che legge l'etichetta. Ha limiti giornalieri. Senza Apple Intelligence puoi usare <span class="ui">Estrai testo da immagine</span> al suo posto; funziona sul telefono e gestisce la maggior parte delle etichette.</li>
+      </ul>
+
+      <h3>La prima volta che lo esegui</h3>
+      <p>iOS chiede se il comando rapido può usare Zélar, la tua app di IA e Foto. È il comando rapido a chiederlo, non Zélar, e la risposta vale solo per questo comando rapido. Scegli <span class="ui">Consenti sempre</span>, così non lo chiede ogni volta.</p>
+
+      <h3>Mettilo dove lo usi</h3>
+      <ul>
+        <li><strong>Il tasto Azione</strong> (iPhone 15 Pro e successivi): Impostazioni → Tasto Azione → Comando rapido.</li>
+        <li><strong>La schermata di blocco o il Centro di Controllo</strong>: aggiungi un pulsante Comando rapido.</li>
+        <li><strong>La schermata Home</strong>: tieni premuto il comando rapido in Comandi Rapidi → Condividi → Aggiungi alla schermata Home.</li>
+        <li><strong>Il foglio di condivisione in Foto</strong>: attiva "Mostra nel foglio di condivisione" nei dettagli del comando rapido, così puoi scansionare una foto che hai già scattato.</li>
+      </ul>
+
+      <h3>Costruiscilo da te</h3>
+      <p>Crea un nuovo comando rapido in Comandi Rapidi, per esempio "Zélar · Scansiona etichetta nelle scorte (Claude)", con queste cinque azioni. Le azioni di Zélar si trovano in <span class="ui">App → Zélar</span>.</p>
+      <pre>1  Seleziona foto       Includi: Tutto · Seleziona multipli: no
+2  Usa modello (Cloud)  (il prompt qui sotto) + [Foto]
+3  Ottieni Scansiona etichetta nelle scorte   (Zélar → Ottieni prompt Zélar)
+4  Chiedi a Claude      [Ottieni prompt Zélar] [Risposta]
+5  Crea vino nelle scorte da [Chiedi a Claude]
+     Foto: [Foto]</pre>
+      <p>Il prompt per il passo 2. Chiede al modello solo di leggere l'etichetta; la conoscenza del vino arriva dalla tua IA al passo 4:</p>
+      <pre>This is a photo of a wine label. Extract as much information
+about the bottle as you can from the image, for example name,
+producer, country, region, vintage, alcohol % and any organic
+or biodynamic marks: [Foto]</pre>
+      <ul>
+        <li><strong>Per il diario:</strong> scegli <span class="ui">Scansiona etichetta nel diario</span> al passo 3, e usa <span class="ui">Crea voce di diario</span> al passo 5. Se vuoi includere valutazione e luogo, aggiungi <span class="ui">Chiedi input</span> ("Valutazione, luogo, calice o bottiglia?") prima del passo 3, e metti la risposta nel campo <span class="ui">Nota</span>.</li>
+        <li><strong>ChatGPT:</strong> usa <span class="ui">Chiedi a ChatGPT</span> al passo 4, solo con testo.</li>
+        <li><strong>Scatta la foto subito:</strong> usa <span class="ui">Scatta foto</span> al posto di <span class="ui">Seleziona foto</span>.</li>
+        <li><strong>Senza Apple Intelligence:</strong> usa <span class="ui">Estrai testo da immagine</span> al passo 2. Così la foto non lascia mai il telefono.</li>
+      </ul>
+      <p>Il prompt del passo 3 si aggiorna con Zélar, così non devi rifare il comando rapido se il formato cambia.</p>
+    </div>
+
+    <div class="card" id="skan">
+      <div class="eyebrow">Scansiona un'etichetta</div>
+      <h2>Passo dopo passo</h2>
+      <!-- SCREENSHOT ai-04: The Shortcut running: Claude answering inside Shortcuts. assets/img/screens/da/ai-04.webp, see icy-pork/zelar-site#2 -->
+      <!-- SCREENSHOT ai-05: The draft review screen: AI suggestions, match with an existing wine, placement, Færdiggør. assets/img/screens/da/ai-05.webp, see icy-pork/zelar-site#2 -->
+      <ol>
+        <li><strong>Esegui il comando rapido</strong> per le scorte o per il diario, e scegli una foto dell'etichetta, scattata di fronte e con buona luce. Per il diario puoi scrivere una breve nota, per esempio "4,5 stelle, Ristorante Barolo, un calice".</li>
+        <li><strong>Il modello di Apple legge l'etichetta</strong> e scrive ciò che vede: nome, produttore, annata e così via.</li>
+        <li><strong>Aspetta la tua IA.</strong> Il comando rapido invia ciò che c'era sull'etichetta e il prompt di Zélar a Claude o ChatGPT e aspetta la risposta.</li>
+        <li><strong>Zélar apre la bozza</strong> con la risposta e la foto, pronta da controllare.</li>
+      </ol>
+      <h3>La schermata di controllo</h3>
+      <ul>
+        <li>I campi sono <strong>proposte dell'IA</strong>: controlla nome, produttore e annata rispetto all'etichetta, e correggi ciò che è sbagliato. L'IA può sbagliare.</li>
+        <li>Se il vino è già in cantina, Zélar propone di usarlo, così la bottiglia viene aggiunta al vino esistente invece di diventarne uno nuovo.</li>
+        <li>Scegli numero e posto per le bottiglie. Senza posto finiscono sotto <span class="ui">Senza posizione</span>.</li>
+        <li>Tocca <span class="ui">Completa</span>. Solo ora vengono creati il vino o la degustazione, e la bozza viene eliminata.</li>
+      </ul>
+    </div>
+
+    <div class="card" id="share">
+      <div class="eyebrow">Condividi dalla tua app di IA</div>
+      <h2>La risposta di Claude o ChatGPT direttamente in Zélar</h2>
+      <!-- SCREENSHOT ai-06: A reply in the Claude or ChatGPT app with the share sheet open and Zélar in the row. assets/img/screens/da/ai-06.webp, see icy-pork/zelar-site#2 -->
+      <!-- SCREENSHOT ai-07: The "Del til Zélar" card. assets/img/screens/da/ai-07.webp, see icy-pork/zelar-site#2 -->
+      <!-- SCREENSHOT ai-08: A photo shared to Zélar with "Tilføj til …" for an open draft. assets/img/screens/da/ai-08.webp, see icy-pork/zelar-site#2 -->
+      <ol>
+        <li>Chiedi alla tua IA di rispondere nel formato di Zélar. Il modo più semplice è partire da un prompt di <span class="ui">Prompt</span> o con il formato di <span class="ui">＋ → Importa dall'IA → ?</span>.</li>
+        <li>Tieni premuta la risposta (o usa il pulsante di condivisione) → <span class="ui">Condividi</span> → <span class="ui">Zélar</span>.</li>
+        <li>La scheda "Condividi con Zélar" mostra cosa contiene il testo, per esempio il nome di un vino o "3 vini nel testo", e se sembra una risposta di IA nel formato di Zélar.</li>
+        <li>Scegli <span class="ui">Vino nelle scorte</span> o <span class="ui">Vino degustato</span>. Zélar ha preselezionato l'opzione più adatta. Lo controlli in Zélar prima che venga creato qualcosa.</li>
+      </ol>
+      <h3>Testo e foto separati</h3>
+      <p>Molte app di IA condividono solo testo. Condividi la foto dopo (o prima) da Foto a Zélar, e scegli <span class="ui">Aggiungi a …</span> con la bozza a cui appartiene. Zélar propone la bozza adatta, ma non sceglie mai da solo. Se condividi solo una foto, puoi anche <span class="ui">Salva come bozza</span> e aspettare il testo, o andare direttamente al modulo del vino o della degustazione con le immagini.</p>
+      <p>Se non trovi Zélar nel foglio di condivisione, scorri a destra nella fila delle app, tocca <span class="ui">Altro</span> e attiva Zélar.</p>
+    </div>
+
+    <div class="card" id="drafts">
+      <div class="eyebrow">Bozze</div>
+      <h2>Ciò che ti aspetta</h2>
+      <!-- SCREENSHOT ai-09: The Kladder list showing all three states. assets/img/screens/da/ai-09.webp, see icy-pork/zelar-site#2 -->
+      <p>Finché ci sono bozze, nel menu (dietro il pulsante della cantina in Panoramica) sotto Libreria, e nella barra laterale su iPad, compare <span class="ui">Bozze</span> con un numero. Una bozza può essere:</p>
+      <div class="table-wrap" tabindex="0" role="region" aria-label="Gli stati delle bozze">
+        <table>
+          <tr><th>Stato</th><th>Cosa fai</th></tr>
+          <tr><td>Testo e foto · pronta da controllare</td><td>Toccala per controllarla e crearla.</td></tr>
+          <tr><td>Senza foto · pronta da controllare</td><td>Creala così com'è, o prima condividi una foto per lei.</td></tr>
+          <tr><td>In attesa del testo dell'IA</td><td>Condividi la risposta dalla tua app di IA e scegli <span class="ui">Aggiungi alla bozza</span>, o crea tu stesso il vino ora.</td></tr>
+        </table>
+      </div>
+      <ul>
+        <li><strong>Elimina</strong> una bozza con <span class="ui">Elimina bozza</span>, o fai pulizia con <span class="ui">Elimina le bozze più vecchie di 30 giorni</span>.</li>
+        <li><strong>Il pulsante Incolla</strong> in Bozze salva come bozza una risposta dell'IA copiata. Usalo con le app che sanno solo copiare.</li>
+        <li>Le bozze restano sul dispositivo. Non vengono sincronizzate sugli altri tuoi dispositivi e non entrano nel backup.</li>
+      </ul>
+    </div>
+
+    <div class="card" id="first-load">
+      <div class="eyebrow">Primo caricamento</div>
+      <h2>Tutta la cantina in una volta</h2>
+      <!-- SCREENSHOT ai-10: The Første indlæsning section on Backup, import & eksport. assets/img/screens/da/ai-10.webp, see icy-pork/zelar-site#2 -->
+      <!-- SCREENSHOT ai-11: The "På eget ansvar" confirmation. assets/img/screens/da/ai-11.webp, see icy-pork/zelar-site#2 -->
+      <!-- SCREENSHOT ai-12: Claude or ChatGPT answering a first load in parts. assets/img/screens/da/ai-12.webp, see icy-pork/zelar-site#2 -->
+      <p>Hai già dei vini registrati altrove? Trova <span class="ui">Primo caricamento</span> in <span class="ui">Backup, importazione ed esportazione</span> nel menu. Ci sono due vie.</p>
+
+      <h3>Come testo (consigliato)</h3>
+      <ol>
+        <li>Tocca <span class="ui">Copia le istruzioni per l'IA (testo)</span>.</li>
+        <li>Apri Claude o ChatGPT, incolla le istruzioni e allega il tuo foglio di calcolo, la tua esportazione o le tue foto.</li>
+        <li>L'IA risponde in parti da 40 vini. Scrivi <em>continua</em> per ottenere la parte successiva.</li>
+        <li>Copia ogni parte e incollala in <span class="ui">Incolla vini dall'IA</span> nella stessa sezione, una alla volta. Controlla i vini e tocca <span class="ui">Completa</span>.</li>
+        <li>Le foto si aggiungono dopo, su ogni vino.</li>
+      </ol>
+
+      <h3>Come file di backup — a tuo rischio</h3>
+      <div class="callout callout--warn">
+        <strong>Leggi prima questo</strong>
+        <p>Un file di backup creato da un'IA si ripristina con <span class="ui">Ripristina da file</span>, e ciò <strong>sostituisce tutto in Zélar</strong>. L'IA può commettere errori nel file, e Zélar non può (ancora) unirlo a una cantina esistente. Usalo solo in un'app vuota, e fai prima un backup se hai dei dati.</p>
+      </div>
+      <ol>
+        <li>Tocca <span class="ui">Copia le istruzioni per l'IA (file di backup)</span> e conferma con <span class="ui">Ho capito, copia</span>.</li>
+        <li>Usa un'IA che sa creare file. Incolla le istruzioni e allega i tuoi file; possono esserci anche foto.</li>
+        <li>Scarica il file <code>.zelarbackup</code> creato dall'IA in File.</li>
+        <li>In Zélar: <span class="ui">Backup, importazione ed esportazione</span> → <span class="ui">Ripristina da file</span> → scegli il file in File.</li>
+      </ol>
+      <p>Se il file diventa troppo grande, l'IA lo divide in più file. Ripristinane solo uno, perché ogni ripristino sostituisce il precedente, oppure usa invece la via del testo.</p>
+
+      <h3>Buoni consigli</h3>
+      <ul>
+        <li><strong>Fogli di calcolo:</strong> una riga per vino con intestazioni dà il risultato migliore. Numero di bottiglie e posizione possono stare in colonne separate.</li>
+        <li><strong>Esportazione da un'altra app:</strong> CSV o testo vanno meglio. Di' all'IA da quale app proviene.</li>
+        <li><strong>Molte etichette:</strong> scatta una foto per etichetta, di fronte, e inviale in piccoli gruppi.</li>
+        <li><strong>Posizioni:</strong> costruisci prima i tuoi portabottiglie in Zélar. Così l'IA può usare i tuoi nomi reali, per esempio "Portabottiglie A · B3".</li>
+      </ul>
+    </div>
+
+    <div class="card" id="fejl">
+      <div class="eyebrow">Risoluzione dei problemi</div>
+      <h2>Quando qualcosa non va</h2>
+      <h3>"La risposta usa una versione più recente del formato"</h3>
+      <p>La risposta è scritta per uno Zélar più recente. Aggiorna Zélar dall'App Store e riprova.</p>
+      <h3>Il comando rapido si ferma, o Chiedi a Claude / Chiedi a ChatGPT non dà risposta</h3>
+      <p>Controlla che l'app di IA sia installata e con accesso effettuato, e che tu abbia la rete. Apri una volta l'app di IA, poi esegui il comando rapido dall'app Comandi Rapidi, così vedi quale passo si ferma.</p>
+      <h3>L'etichetta è stata letta male</h3>
+      <p>Rifai la foto di fronte, senza riflessi, e riempi l'immagine con l'etichetta. Se usi il riconoscimento del testo al passo 2, prova invece il modello cloud; legge meglio le etichette difficili. Puoi sempre correggere i campi nella schermata di controllo.</p>
+      <h3>Zélar non è nel foglio di condivisione</h3>
+      <p>Scorri a destra nella fila delle app, tocca <span class="ui">Altro</span>, e attiva Zélar. Apri Zélar una volta dopo una nuova installazione.</p>
+      <h3>"Usa modello" si ferma</h3>
+      <p>Il modello di Apple ha limiti giornalieri. Usa <span class="ui">Estrai testo da immagine</span> al passo 2 fino a domani.</p>
+      <h3>Perché non semplicemente Siri?</h3>
+      <p>Le nuove funzioni IA di Siri non sono ancora disponibili su iPhone nell'UE. I comandi rapidi funzionano ovunque, quindi Zélar si basa su di essi.</p>
+      <h3>Il file è troppo grande</h3>
+      <p>Dividi il contenuto in più volte: invia meno foto alla volta, o usa la via del testo con parti da 40 vini.</p>
+    </div>
+
+    <div class="card" id="own-prompts">
+      <div class="eyebrow">Per i curiosi</div>
+      <h2>Per i tuoi prompt e comandi rapidi</h2>
+      <h3>Il formato</h3>
+      <p>Zélar legge testo con un'informazione per riga (<code>KEY: value</code>) e una riga con <code>---</code> tra i vini. La risposta può iniziare con <code>ZÉLAR-FORMAT: 1</code>, così Zélar sa di quale versione del formato si tratta. Le chiavi sono in inglese (funzionano anche le chiavi danesi delle versioni precedenti), e le righe che Zélar non conosce vengono saltate.</p>
+      <pre>ZÉLAR-FORMAT: 1
+WINE: Château Somewhere
+PRODUCER: A. Christmann
+VINTAGE: 2018
+COUNTRY: Francia
+REGION: Bordeaux, Médoc
+TYPE: Red
+GRAPES: Cabernet Sauvignon, Merlot
+QUANTITY: 2
+DRINKING WINDOW: 2024-2032
+CELLAR: Casa
+LOCATION: Portabottiglie A · B3
+---
+WINE: ...</pre>
+      <p>Il formato completo, con tutti i campi, lo ottieni con <span class="ui">Ottieni formato di importazione</span> in Comandi Rapidi o con <span class="ui">?</span> in <span class="ui">＋ → Importa dall'IA</span>.</p>
+
+      <h3>Le azioni di Zélar in Comandi Rapidi</h3>
+      <div class="table-wrap" tabindex="0" role="region" aria-label="Le azioni di Zélar in Comandi Rapidi">
+        <table>
+          <tr><th>Azione</th><th>Input</th><th>Restituisce</th></tr>
+          <tr><td><span class="ui">Crea vino nelle scorte</span></td><td>Testo (risposta dell'IA nel formato di Zélar), foto (facoltative)</td><td>Una bozza che si apre per il controllo</td></tr>
+          <tr><td><span class="ui">Crea voce di diario</span></td><td>Testo, foto (facoltative)</td><td>Una bozza per il Diario che si apre per il controllo</td></tr>
+          <tr><td><span class="ui">Allega foto alla bozza</span></td><td>Foto, bozza (facoltativa: la più recente in attesa di una foto)</td><td>La foto aggiunta alla bozza</td></tr>
+          <tr><td><span class="ui">Ottieni prompt Zélar</span></td><td>Prompt (scansione per scorte o diario, primo caricamento come testo o file di backup), nota</td><td>Il prompt come testo</td></tr>
+          <tr><td><span class="ui">Ottieni formato di importazione</span></td><td>Vino nelle scorte o vino degustato</td><td>Il formato e la sua versione</td></tr>
+          <tr><td><span class="ui">Ottieni la mia libreria</span></td><td>—</td><td>La tua cantina, le tue degustazioni e la tua lista dei desideri in Markdown</td></tr>
+          <tr><td><span class="ui">Ottieni prompt con la mia cantina</span></td><td>Compito, piatto, dalla cantina o da comprare, dove fai acquisti</td><td>Un prompt da Prompt con la tua cantina, come quando lo copi nell'app</td></tr>
+        </table>
+      </div>
+
+      <h3>La tua libreria di prompt in un comando rapido</h3>
+      <p><span class="ui">Ottieni prompt con la mia cantina</span> seguito da Chiedi a Claude o Chiedi a ChatGPT ti dà i tuoi prompt senza aprire Zélar. Due idee:</p>
+      <ul>
+        <li><strong>Abbinamento a voce:</strong> Detta testo ("Cosa cucini?") → Ottieni prompt con la mia cantina (Abbinamento per cena, Piatto: il dettato) → Chiedi a Claude.</li>
+        <li><strong>Consigli d'acquisto sulla schermata Home:</strong> Ottieni prompt con la mia cantina (Consigli d'acquisto) → Chiedi a ChatGPT.</li>
+      </ul>
+      <p>La risposta resta nell'app di IA. Se usi il compito <em>Completa i dati dei miei vini</em>, incolla la risposta con <span class="ui">Aggiorna vini dall'IA</span> in Zélar, così vedi le modifiche campo per campo.</p>
+    </div>
+
+    <div class="card">
+      <div class="eyebrow">Aiuto</div>
+      <p>Il resto dell'app è descritto nella <a href="{{root}}support/">guida</a>. Se ti blocchi, scrivi a <a href="mailto:zelar@whaaat.co" class="mono">zelar@whaaat.co</a>.</p>
+    </div>
+</div>
+</main>

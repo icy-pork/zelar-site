@@ -51,10 +51,38 @@
         "untranslated": "Cette page n'existe pas encore en français ; elle s'affiche donc en anglais."
       }
     },
-    { "code": "it", "path": "it/", "lang": "it", "og": "it_IT", "name": "Italiano", "ready": false },
-    { "code": "es", "path": "es/", "lang": "es", "og": "es_ES", "name": "Español", "ready": false },
-    { "code": "pt-PT", "path": "pt-pt/", "lang": "pt-PT", "og": "pt_PT", "name": "Português (Portugal)", "ready": false },
-    { "code": "pt-BR", "path": "pt-br/", "lang": "pt-BR", "og": "pt_BR", "name": "Português (Brasil)", "ready": false },
+    {
+      "code": "it", "path": "it/", "lang": "it", "og": "it_IT", "name": "Italiano", "ready": true,
+      "ui": {
+        "skip": "Vai al contenuto", "home": "Home di Zélar", "nav": "Menu principale", "footer": "Piè di pagina", "language": "Lingua",
+        "privacy": "Privacy", "support": "Supporto", "ai": "Guida all'IA",
+        "untranslated": "Questa pagina non esiste ancora in italiano, quindi viene mostrata in inglese."
+      }
+    },
+    {
+      "code": "es", "path": "es/", "lang": "es", "og": "es_ES", "name": "Español", "ready": true,
+      "ui": {
+        "skip": "Ir al contenido", "home": "Inicio de Zélar", "nav": "Menú principal", "footer": "Pie de página", "language": "Idioma",
+        "privacy": "Privacidad", "support": "Soporte", "ai": "Guía de IA",
+        "untranslated": "Esta página aún no existe en español, así que se muestra en inglés."
+      }
+    },
+    {
+      "code": "pt-PT", "path": "pt-pt/", "lang": "pt-PT", "og": "pt_PT", "name": "Português (Portugal)", "ready": true,
+      "ui": {
+        "skip": "Ir para o conteúdo", "home": "Página inicial do Zélar", "nav": "Menu principal", "footer": "Rodapé", "language": "Idioma",
+        "privacy": "Privacidade", "support": "Suporte", "ai": "Guia de IA",
+        "untranslated": "Esta página ainda não existe em português, por isso é mostrada em inglês."
+      }
+    },
+    {
+      "code": "pt-BR", "path": "pt-br/", "lang": "pt-BR", "og": "pt_BR", "name": "Português (Brasil)", "ready": true,
+      "ui": {
+        "skip": "Ir para o conteúdo", "home": "Página inicial do Zélar", "nav": "Menu principal", "footer": "Rodapé", "language": "Idioma",
+        "privacy": "Privacidade", "support": "Suporte", "ai": "Guia de IA",
+        "untranslated": "Esta página ainda não existe em português, então ela é exibida em inglês."
+      }
+    },
     { "code": "nl", "path": "nl/", "lang": "nl", "og": "nl_NL", "name": "Nederlands", "ready": false }
   ],
   "pages": [

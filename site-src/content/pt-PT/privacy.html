@@ -1,0 +1,156 @@
+<!-- title: Zélar — Política de privacidade -->
+<!-- description: Que dados o Zélar recolhe, onde são guardados e que escolhas tem. Os dados da sua garrafeira ficam no seu dispositivo; as funcionalidades de IA são opcionais. -->
+<main id="main">
+<div class="wrap wrap--narrow">
+  <div class="page-head">
+    <h1>Política de privacidade</h1>
+    <p class="meta">Última atualização: 1 de novembro de 2026</p>
+  </div>
+
+    <div class="card">
+      <p>O Zélar é uma app de garrafeira pessoal, desenvolvida e mantida por um único programador independente como um pequeno projeto pessoal. Esta política explica que dados o Zélar recolhe, onde são guardados e que escolhas tem.</p>
+      <p>Em resumo: <strong>os dados da sua garrafeira ficam no seu dispositivo</strong> e, se quiser, no seu próprio iCloud. Além disso, dois tipos de dados saem do seu dispositivo: <strong>estatísticas de utilização anonimizadas</strong>, que pode desativar, e, <strong>apenas se optar por usar as funcionalidades de IA</strong>, a fotografia ou o texto que envia com cada pedido.</p>
+    </div>
+
+    <div class="card">
+      <div class="eyebrow">Os dados da sua garrafeira</div>
+      <h2>Guardados localmente no seu dispositivo</h2>
+      <p>Tudo o que introduz no Zélar — garrafeiras, estantes, prateleiras, vinhos, garrafas, notas de prova, janelas de consumo, fotografias, lista de desejos e rascunhos — é guardado localmente no seu iPhone ou iPad. Não é enviado para o servidor do programador e ninguém além de si tem acesso.</p>
+
+      <h2>Sincronização com o iCloud opcional</h2>
+      <p>O Zélar pode sincronizar a sua garrafeira entre os seus dispositivos através da sua conta pessoal do iCloud (Apple CloudKit). Os seus dados ficam então guardados no seu próprio contentor privado do iCloud, sujeito às práticas de privacidade da Apple.</p>
+      <ul>
+        <li>Pode ativar e desativar a sincronização nas Definições da app.</li>
+        <li>O programador não tem acesso aos dados no seu iCloud — estão associados à sua conta da mesma forma que as suas Fotografias ou Notas.</li>
+        <li>Os rascunhos (respostas da IA e fotografias à espera da sua verificação) ficam apenas no dispositivo e não são sincronizados.</li>
+      </ul>
+
+      <h2>A sua própria IA: área de transferência, partilha e atalhos</h2>
+      <p>O Zélar pode dar-lhe partes da sua garrafeira como texto (prompts e Markdown) para usar num assistente de IA à sua escolha, e consegue ler o texto estruturado que voltar a colar. Isto faz-se através da área de transferência, da folha de partilha ("Partilhar com o Zélar") e das ações do Zélar na app Atalhos da Apple. Nenhuma destas vias usa a rede: apenas leem e escrevem no seu dispositivo. É o utilizador quem leva o texto para a sua IA, e o que lá envia fica entre si e esse serviço, com a sua própria conta e nos termos dela.</p>
+    </div>
+
+    <div class="card">
+      <div class="eyebrow">Zélar AI</div>
+      <h2>Funcionalidades de IA (digitalizar rótulo, etc.)</h2>
+      <p>O Zélar AI faz parte do Zélar Pro e é opcional. As funcionalidades estão desativadas até aceitar o ecrã de consentimento da primeira vez que usar uma delas. Pode retirar o consentimento a qualquer momento em <span class="ui">Definições → Funcionalidades de IA</span>, e param de imediato.</p>
+
+      <h3>O que é enviado</h3>
+      <ul>
+        <li><strong>Digitalizar rótulo:</strong> a fotografia que tirou, em versão reduzida (no máximo 1568 píxeis no lado maior). O servidor acrescenta uma instrução fixa e envia ambas à Anthropic, que lê o rótulo e devolve os dados do vinho.</li>
+        <li><strong>Completar online:</strong> apenas texto — nome, produtor, colheita, país, região, denominação e castas de um vinho. Recebe sugestões, que revê antes de algo ser guardado. A resposta pode incluir um valor de mercado estimado.</li>
+        <li><strong>Sugestão de um prato nos lembretes</strong> (opcional, ativa-se à parte): os mesmos campos mais o tipo de vinho, para um vinho que passou a sua janela de consumo, no máximo uma vez por vinho.</li>
+      </ul>
+      <p>Nada mais da sua garrafeira é enviado — nem notas, preços, avaliações, etiquetas ou outros vinhos. O servidor rejeita pedidos com outros campos.</p>
+
+      <h3>ID do dispositivo</h3>
+      <p>Para evitar abusos e acompanhar a sua utilização do Zélar AI, a app prova ao nosso servidor que é um Zélar autêntico com o App Attest da Apple. Isto cria uma chave no Secure Enclave do seu dispositivo; o servidor guarda o ID da chave, a sua chave pública e um contador. Não é o seu ID Apple, não é partilhado com ninguém e muda se reinstalar a app.</p>
+
+      <h3>Comprovativo de compra (Zélar Pro)</h3>
+      <p>Se comprar o Zélar Pro, a app envia também, com cada pedido de IA, as informações assinadas da Apple sobre a compra, para que o servidor lhe possa dar o Zélar AI como parte do Pro. As informações são criadas e assinadas pela Apple. Contêm o bundle ID da app, que produto Pro comprou (mensal, anual ou vitalício), quando o comprou, quando uma subscrição expira ou foi reembolsada, se foi comprado na App Store ou no ambiente de testes da Apple, e os IDs de transação da Apple. Não contêm o seu nome, o seu e-mail, o seu ID Apple, o seu método de pagamento nem o preço.</p>
+      <p>O servidor verifica a assinatura da Apple e guarda apenas o ID de transação original. É o mesmo para a compra em todos os seus dispositivos e após uma reinstalação, pelo que o Zélar AI acompanha a compra. Se uma renovação falhar e a Apple lhe der um prazo para corrigir o pagamento, a app envia também o estado de renovação assinado da Apple, para que mantenha o Zélar AI até lá; o servidor apenas o verifica e não guarda nada dele. Nada disto é enviado antes de aceitar as funcionalidades de IA, e nunca é usado para publicidade nem partilhado com terceiros.</p>
+
+      <h3>Utilização razoável</h3>
+      <p>Com uma subscrição, o Zélar AI está incluído com utilização razoável: até 60 ações de IA por mês e 30 por dia. Para o acompanhar, o servidor conta as suas ações por ID do dispositivo ou por compra. O contador não contém qualquer informação sobre os seus vinhos.</p>
+
+      <h3>Quem os trata</h3>
+      <ul>
+        <li><strong>Cloudflare, Inc.</strong> opera o nosso servidor. Os pedidos passam pela rede da Cloudflare.</li>
+        <li><strong>Anthropic, PBC</strong> opera o modelo de IA. A Anthropic trata a fotografia ou o texto para responder ao pedido e não os usa para treinar os seus modelos. A Anthropic apaga automaticamente pedidos e respostas após um curto período, que a Anthropic indica no seu <a href="https://privacy.claude.com/" rel="noopener">Privacy Center</a>, e só os guarda durante mais tempo se for necessário para fazer cumprir a política de utilização da Anthropic ou para cumprir a lei.</li>
+      </ul>
+      <p>Ambos são nossos subcontratantes ao abrigo de acordos de tratamento de dados, e o tratamento ocorre nos Estados Unidos. A transferência baseia-se, no caso da Anthropic, nas cláusulas contratuais-tipo da UE incluídas no acordo de tratamento de dados, juntamente com os aditamentos britânico e suíço, e, no caso da Cloudflare, na certificação da empresa ao abrigo do EU-U.S. Data Privacy Framework, com as cláusulas contratuais-tipo da UE como alternativa.</p>
+
+      <h3>O que o nosso servidor guarda</h3>
+      <p>Nenhuma fotografia e nenhum texto. O servidor guarda apenas o ID do App Attest, a chave pública e o contador, o seu contador de utilização, o ID de transação original se tiver comprado o Pro, e os registos de funcionamento. Os registos contêm o tipo de pedido, o código de resultado, o plano, o número de ações, o número de tokens, o custo estimado e a duração — nunca a fotografia, o texto, a resposta da IA ou o seu endereço IP. Os registos de funcionamento são apagados automaticamente após, no máximo, 7 dias.</p>
+
+
+      <h3>A IA pode errar</h3>
+      <p>As respostas de uma IA podem estar erradas, incluindo dados e preços. Verifique-as antes de guardar. O Zélar não guarda nada de uma digitalização ou de um completar antes de o rever e tocar em guardar.</p>
+
+      <h3>Fundamento jurídico</h3>
+      <p>O seu consentimento (RGPD art. 6.º, n.º 1, alínea a). Se o retirar, isso não afeta os pedidos já enviados.</p>
+
+      <h3>Os seus dados são seus</h3>
+      <p>O resultado de uma digitalização é guardado apenas no seu dispositivo e no seu iCloud, como tudo o resto que introduz.</p>
+    </div>
+
+    <div class="card">
+      <div class="eyebrow">Do nosso servidor</div>
+      <h2>Definições e taxas de câmbio</h2>
+      <p>O Zélar descarrega do nosso servidor um pequeno ficheiro de definições, por exemplo quantas garrafas o plano gratuito comporta, e eventuais mensagens do programador. Quando usa uma moeda diferente da sua, a app descarrega também taxas de câmbio: as taxas de referência do euro do Banco Central Europeu, que o nosso servidor obtém do BCE e reencaminha sem alterações.</p>
+      <p>Nenhum destes pedidos contém um ID ou algo sobre si ou a sua garrafeira — nem sequer que moedas usa — e todos recebem a mesma resposta. A Cloudflare vê o seu endereço IP para poder entregar a resposta; nós não o registamos. Estes pedidos não exigem consentimento para as funcionalidades de IA.</p>
+    </div>
+
+    <div class="card">
+      <div class="eyebrow">Partilhar uma garrafeira</div>
+      <h2>Partilha de uma garrafeira (beta)</h2>
+      <p>Pode partilhar uma garrafeira com até quatro outras pessoas. A partilha é opcional e está desativada até a ativar em Definições → Experimental.</p>
+      <ul>
+        <li><strong>Como funciona.</strong> A partilha usa o iCloud da Apple: cada pessoa usa o seu próprio ID Apple, e o Zélar não tem qualquer conta nem cópia dos seus dados. Uma garrafeira partilhada fica no iCloud do proprietário; os convidados leem-na e alteram-na através do seu próprio iCloud. A Apple mostra aos outros o nome ou o endereço de e-mail de cada pessoa, como em qualquer partilha do iCloud.</li>
+        <li><strong>O que os outros veem.</strong> As estantes e as garrafas da garrafeira partilhada, quem as bebeu, as etiquetas e as fotografias dos vinhos. Se o proprietário tiver o Zélar Pro, a garrafeira contém também um comprovativo da compra na App Store, para que a app dos outros veja que a garrafeira é Pro. Fica no iCloud e nunca é enviado para o nosso servidor.</li>
+        <li><strong>O que continua privado.</strong> As suas notas de prova, avaliações e ocasiões, o Diário, a sua lista de desejos, as suas digitalizações de rótulos e as suas outras garrafeiras nunca são partilhados.</li>
+        <li><strong>Sair.</strong> Pode sair de uma garrafeira partilhada, e o proprietário pode remover pessoas ou parar a partilha, a qualquer momento. As suas próprias notas de prova ficam consigo.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <div class="eyebrow">Estatísticas de utilização</div>
+      <h2>PostHog</h2>
+      <p>O Zélar usa o <a href="https://posthog.com" target="_blank" rel="noopener">PostHog</a>, um serviço de análise de produto, para perceber como a app é usada e encontrar erros e possibilidades de melhoria. Os dados de análise são tratados nos <strong>servidores da PostHog na UE</strong>.</p>
+      <p>As estatísticas limitam-se a eventos anonimizados sobre a utilização da app, por exemplo que ecrãs são abertos, que funcionalidades são usadas, e números ou códigos. Nunca contêm os seus vinhos, notas, preços ou outros dados pessoais, e o Zélar foi concebido para não o poder identificar.</p>
+      <ul>
+        <li>Pode <strong>desativar as estatísticas a qualquer momento</strong> em Definições → Privacidade. A partir daí, não são enviados mais dados de utilização.</li>
+        <li>As estatísticas estão separadas dos dados da sua garrafeira e do Zélar AI.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <div class="eyebrow">Resumo</div>
+      <h2>O que fica onde</h2>
+      <div class="table-wrap" tabindex="0" role="region" aria-label="Resumo dos dados">
+        <table>
+          <tr><th>Dados</th><th>Onde</th><th>O seu controlo</th></tr>
+          <tr><td>Dados da garrafeira (vinhos, garrafas, notas, fotografias)</td><td>Localmente no seu dispositivo</td><td>Totalmente seus; só saem do dispositivo se os exportar, partilhar ou sincronizar</td></tr>
+          <tr><td>Sincronização com o iCloud (opcional)</td><td>O seu iCloud pessoal (Apple CloudKit)</td><td>Ativar/desativar nas Definições</td></tr>
+          <tr><td>Garrafeira partilhada (beta, opcional)</td><td>O iCloud do proprietário, partilhado através da Apple</td><td>Saia ou pare a partilha a qualquer momento</td></tr>
+          <tr><td>Fotografia ou texto do vinho para o Zélar AI</td><td>Enviados através da Cloudflare para a Anthropic; não são guardados no nosso servidor</td><td>Apenas após consentimento; retire-o nas Definições</td></tr>
+          <tr><td>ID do App Attest, contador de utilização, ID de transação</td><td>O nosso servidor (Cloudflare)</td><td>Apenas após consentimento; pode ser apagado mediante pedido</td></tr>
+          <tr><td>Estatísticas de utilização anonimizadas</td><td>PostHog, servidores na UE</td><td>Desative-as a qualquer momento nas Definições</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="eyebrow">O que o Zélar não faz</div>
+      <ul>
+        <li>Sem contas, registos ou palavras-passe.</li>
+        <li>Sem publicidade e sem redes de anúncios de terceiros.</li>
+        <li>Sem rastreamento entre apps ou sites.</li>
+        <li>Sem venda ou partilha dos seus dados com terceiros para fins de marketing.</li>
+        <li>Nenhuma funcionalidade de IA envia nada antes de aceitar, e nenhuma envia a garrafeira inteira.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <div class="eyebrow">Privacidade das crianças</div>
+      <p>O Zélar é uma app para gerir garrafeiras e destina-se a adultos com a idade legal para consumir álcool no seu país. Não se dirige a crianças e não recolhe conscientemente dados de crianças.</p>
+    </div>
+
+    <div class="card">
+      <div class="eyebrow">Os seus direitos e escolhas</div>
+      <p>Dependendo de onde vive, pode ter direitos ao abrigo de legislação como o Regulamento Geral sobre a Proteção de Dados da UE (RGPD) ou a California Consumer Privacy Act (CCPA), incluindo o direito de aceder, retificar, apagar ou exportar os seus dados.</p>
+      <p>Como os dados da sua garrafeira são guardados no seu dispositivo, tem controlo direto sobre eles: pode exportá-los, editá-los ou apagá-los na app, ou removê-los por completo apagando a app.</p>
+      <p>Retira o consentimento para as funcionalidades de IA em Definições → Funcionalidades de IA. Se quiser que o seu ID do App Attest e o seu contador de utilização sejam apagados do nosso servidor, escreva para <a href="mailto:zelar@whaaat.co">zelar@whaaat.co</a> com a data em que usou as funcionalidades de IA pela primeira vez. Como não temos qualquer conta nem nome, podemos pedir-lhe que reinstale a app, o que cria um novo ID. Para questões sobre os dados da PostHog, pode escrever para o mesmo endereço ou desativar as estatísticas na app.</p>
+    </div>
+
+    <div class="card">
+      <div class="eyebrow">Alterações a esta política</div>
+      <p>A política pode ser atualizada para refletir alterações na app ou na legislação. A data «Última atualização» no topo indica sempre a versão mais recente. A utilização continuada do Zélar depois de as alterações entrarem em vigor é considerada aceitação da política atualizada.</p>
+    </div>
+
+    <div class="card">
+      <div class="eyebrow">Contacto</div>
+      <p>O Zélar é desenvolvido por um único programador independente. Se tiver questões sobre esta política ou sobre os seus dados, escreva para:</p>
+      <p><a href="mailto:zelar@whaaat.co" class="mono">zelar@whaaat.co</a></p>
+    </div>
+</div>
+</main>

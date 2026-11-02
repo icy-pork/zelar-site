@@ -1,0 +1,280 @@
+<!-- title: Zélar — A sua própria IA no Zélar -->
+<!-- description: Como usar o seu próprio Claude ou ChatGPT com o Zélar: digitalize rótulos com um atalho, partilhe respostas com o Zélar, rascunhos e primeiro carregamento de uma garrafeira inteira. -->
+<main id="main">
+<div class="wrap wrap--narrow">
+  <div class="page-head">
+    <h1>A sua própria IA no Zélar</h1>
+    <p class="meta">Última atualização: 1 de novembro de 2026</p>
+  </div>
+
+    <div class="card">
+      <p>O Zélar foi feito para que a sua própria IA possa trabalhar com a sua garrafeira. Além dos prompts e da importação por colagem em <span class="ui">Prompts</span> pode usar um atalho para digitalizar rótulos, partilhar respostas diretamente da sua app de IA e deixar a sua IA carregar uma garrafeira inteira da primeira vez. É gratuito, e vai continuar a ser.</p>
+      <p>Seja qual for o caminho, vale um princípio: <strong>tudo o que vem de uma IA é uma sugestão.</strong> Chega como rascunho, que verifica antes de algo entrar no stock ou no Diário.</p>
+    </div>
+
+    <nav class="toc" aria-label="Conteúdo">
+      <div class="eyebrow">Conteúdo</div>
+      <ol>
+        <li><a href="#tre-veje">Três caminhos de entrada</a></li>
+        <li><a href="#privatliv">O que vai para onde</a></li>
+        <li><a href="#genvej">Instale o atalho</a></li>
+        <li><a href="#skan">Digitalize um rótulo, passo a passo</a></li>
+        <li><a href="#share">Partilhe a partir da sua app de IA</a></li>
+        <li><a href="#drafts">Rascunhos</a></li>
+        <li><a href="#first-load">Primeiro carregamento</a></li>
+        <li><a href="#fejl">Resolução de problemas</a></li>
+        <li><a href="#own-prompts">Para os seus próprios prompts e atalhos</a></li>
+      </ol>
+    </nav>
+
+    <div class="card" id="tre-veje">
+      <div class="eyebrow">Três caminhos de entrada</div>
+      <h2>Escolha o que se adequa à tarefa</h2>
+      <ul>
+        <li><strong>Digitalize um rótulo com um atalho.</strong> Escolha uma fotografia; o modelo da Apple lê o rótulo, o atalho pergunta ao seu próprio Claude ou ChatGPT e coloca a resposta e a fotografia no Zélar como rascunho. Ideal para uma garrafa de cada vez.</li>
+        <li><strong>Partilhe a partir da sua app de IA.</strong> Já falou de um vinho com a sua IA? Partilhe a resposta (e, se quiser, a fotografia) com o Zélar a partir da folha de partilha.</li>
+        <li><strong>Primeiro carregamento.</strong> Uma garrafeira inteira a partir de uma folha de cálculo, da exportação de outra app ou de um monte de fotografias de rótulos — como texto em partes, ou como ficheiro de cópia de segurança.</li>
+      </ul>
+      <div class="table-wrap" tabindex="0" role="region" aria-label="Que caminho devo escolher?">
+        <table>
+          <tr><th>Tem …</th><th>Use</th></tr>
+          <tr><td>uma garrafa na mão</td><td><a href="#genvej">O atalho</a></td></tr>
+          <tr><td>uma conversa com a sua IA sobre um vinho, uma carta de vinhos ou um recibo</td><td><a href="#share">Partilhar com o Zélar</a></td></tr>
+          <tr><td>um texto copiado de uma app sem botão de partilha</td><td><span class="ui">＋ → Importar da IA</span></td></tr>
+          <tr><td>uma folha de cálculo, uma exportação de outra app ou muitas fotografias</td><td><a href="#first-load">Primeiro carregamento</a></td></tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="card" id="privatliv">
+      <div class="eyebrow">Privacidade</div>
+      <h2>O que vai para onde</h2>
+      <ul>
+        <li><strong>A fotografia não vai para a sua IA.</strong> O atalho deixa o modelo da Apple ler o rótulo no Private Cloud Compute da Apple, onde a Apple não o guarda. Se quiser que a fotografia fique no telemóvel, use antes o reconhecimento de texto do iOS (veja a <a href="#genvej">receita</a>).</li>
+        <li><strong>Só o texto vai para o seu próprio Claude ou ChatGPT</strong>, com a sua própria conta. Conta para os limites do seu plano lá, e aplicam-se os termos desse serviço.</li>
+        <li><strong>No primeiro carregamento</strong> é o utilizador quem envia a folha de cálculo ou as fotografias para a sua própria conta de IA.</li>
+        <li><strong>O Zélar não envia nada.</strong> As ações dos atalhos e a folha de partilha apenas leem e escrevem ficheiros no seu dispositivo. Os rascunhos ficam apenas no dispositivo e não são sincronizados.</li>
+      </ul>
+      <p>Veja também a <a href="{{root}}privacy/">política de privacidade</a>.</p>
+    </div>
+
+    <div class="card" id="genvej">
+      <div class="eyebrow">O atalho</div>
+      <h2>Instale «Zélar · Digitalizar rótulo»</h2>
+      <!-- SCREENSHOT ai-01: The Shortcut open in the Shortcuts app with its actions (Claude version). assets/img/screens/da/ai-01.webp, see icy-pork/zelar-site#2 -->
+      <!-- SCREENSHOT ai-02: The first-run permission prompt. assets/img/screens/da/ai-02.webp, see icy-pork/zelar-site#2 -->
+      <!-- SCREENSHOT ai-03: Settings → Action Button set to the Shortcut. assets/img/screens/da/ai-03.webp, see icy-pork/zelar-site#2 -->
+      <p>Há um atalho para cada destino: <strong>para o stock</strong> (uma garrafa que guarda na garrafeira) e <strong>para o diário</strong> (um vinho que está a provar agora). Cada um existe para o Claude e para o ChatGPT. Escolha os que correspondem à app de IA que usa.</p>
+      <div class="callout">
+        <strong>Ligações em breve</strong>
+        <p>Os atalhos para stock e diário, para o Claude e para o ChatGPT, serão publicados aqui como ligações do iCloud quando estiverem prontos. Até lá, pode criá-lo seguindo a receita abaixo; demora poucos minutos.</p>
+      </div>
+      <!-- When the Shortcuts are built: add the two iCloud links here, with their
+           version ("v1"), e.g. <a class="btn btn--primary" href="https://www.icloud.com/shortcuts/…">Hent til Claude</a>.
+           Then soften the callout above. Screenshots go in assets/img/ai/ (da and en). -->
+
+      <h3>O que precisa</h3>
+      <ul>
+        <li>O Zélar e a app do Claude ou do ChatGPT, instalados e com sessão iniciada.</li>
+        <li>A app Atalhos (incluída no iOS).</li>
+        <li>Apple Intelligence (iPhone 15 Pro ou posterior) para a ação <span class="ui">Usar modelo</span>, que lê o rótulo. Tem limites diários. Sem Apple Intelligence pode usar <span class="ui">Extrair texto da imagem</span> em alternativa; funciona no telemóvel e lida com a maioria dos rótulos.</li>
+      </ul>
+
+      <h3>Da primeira vez que o executa</h3>
+      <p>O iOS pergunta se o atalho pode usar o Zélar, a sua app de IA e as Fotografias. É o atalho que pergunta, não o Zélar, e a resposta vale apenas para este atalho. Escolha <span class="ui">Permitir sempre</span>, para que não pergunte sempre.</p>
+
+      <h3>Coloque-o onde o usa</h3>
+      <ul>
+        <li><strong>O botão de ação</strong> (iPhone 15 Pro e posteriores): Definições → Botão de ação → Atalho.</li>
+        <li><strong>O ecrã bloqueado ou a central de controlo</strong>: adicione um botão de atalho.</li>
+        <li><strong>O ecrã principal</strong>: mantenha premido o atalho em Atalhos → Partilhar → Adicionar ao ecrã principal.</li>
+        <li><strong>A folha de partilha nas Fotografias</strong>: ative «Mostrar na folha de partilha» nos detalhes do atalho, para poder digitalizar uma fotografia que já tirou.</li>
+      </ul>
+
+      <h3>Crie-o você mesmo</h3>
+      <p>Crie um novo atalho em Atalhos, por exemplo «Zélar · Digitalizar rótulo para o stock (Claude)», com estas cinco ações. As ações do Zélar estão em <span class="ui">Apps → Zélar</span>.</p>
+      <pre>1  Selecionar fotografias   Incluir: Tudo · Selecionar várias: não
+2  Usar modelo (cloud)  (o prompt abaixo) + [Fotografias]
+3  Obter Digitalizar rótulo para o stock   (Zélar → Obter prompt do Zélar)
+4  Perguntar ao Claude  [Obter prompt do Zélar] [Resposta]
+5  Criar vinho em stock a partir de [Perguntar ao Claude]
+     Fotografias: [Fotografias]</pre>
+      <p>O prompt para o passo 2. Pede ao modelo apenas que leia o rótulo; o conhecimento sobre o vinho vem da sua própria IA no passo 4:</p>
+      <pre>This is a photo of a wine label. Extract as much information
+about the bottle as you can from the image, for example name,
+producer, country, region, vintage, alcohol % and any organic
+or biodynamic marks: [Fotografias]</pre>
+      <ul>
+        <li><strong>Para o diário:</strong> escolha <span class="ui">Digitalizar rótulo para o diário</span> no passo 3, e use <span class="ui">Criar entrada de diário</span> no passo 5. Se quiser incluir classificação e local, adicione <span class="ui">Pedir entrada</span> («Classificação, local, copo ou garrafa?») antes do passo 3, e coloque a resposta no campo <span class="ui">Nota</span>.</li>
+        <li><strong>ChatGPT:</strong> use <span class="ui">Perguntar ao ChatGPT</span> no passo 4, apenas com texto.</li>
+        <li><strong>Tire a fotografia na hora:</strong> use <span class="ui">Tirar fotografia</span> em vez de <span class="ui">Selecionar fotografias</span>.</li>
+        <li><strong>Sem Apple Intelligence:</strong> use <span class="ui">Extrair texto da imagem</span> no passo 2. Assim, a fotografia nunca sai do telemóvel.</li>
+      </ul>
+      <p>O prompt do passo 3 é atualizado com o Zélar, por isso não precisa de refazer o atalho se o formato mudar.</p>
+    </div>
+
+    <div class="card" id="skan">
+      <div class="eyebrow">Digitalize um rótulo</div>
+      <h2>Passo a passo</h2>
+      <!-- SCREENSHOT ai-04: The Shortcut running: Claude answering inside Shortcuts. assets/img/screens/da/ai-04.webp, see icy-pork/zelar-site#2 -->
+      <!-- SCREENSHOT ai-05: The draft review screen: AI suggestions, match with an existing wine, placement, Færdiggør. assets/img/screens/da/ai-05.webp, see icy-pork/zelar-site#2 -->
+      <ol>
+        <li><strong>Execute o atalho</strong> para o stock ou para o diário, e escolha uma fotografia do rótulo, tirada de frente e com boa luz. Para o diário pode escrever uma nota curta, por exemplo «4,5 estrelas, Restaurante Barolo, um copo».</li>
+        <li><strong>O modelo da Apple lê o rótulo</strong> e escreve o que consegue ver: nome, produtor, colheita e assim por diante.</li>
+        <li><strong>Aguarde pela sua IA.</strong> O atalho envia o que estava no rótulo e o prompt do Zélar para o Claude ou o ChatGPT e aguarda a resposta.</li>
+        <li><strong>O Zélar abre o rascunho</strong> com a resposta e a fotografia, pronto a verificar.</li>
+      </ol>
+      <h3>O ecrã de verificação</h3>
+      <ul>
+        <li>Os campos são <strong>sugestões da IA</strong>: verifique nome, produtor e colheita com o rótulo, e corrija o que estiver errado. A IA pode errar.</li>
+        <li>Se o vinho já estiver na garrafeira, o Zélar propõe usá-lo, para que a garrafa seja adicionada ao vinho existente em vez de se tornar um novo.</li>
+        <li>Escolha o número e o lugar das garrafas. Sem lugar, ficam em <span class="ui">Sem localização</span>.</li>
+        <li>Toque em <span class="ui">Concluir</span>. Só então o vinho ou a prova são criados, e o rascunho é apagado.</li>
+      </ul>
+    </div>
+
+    <div class="card" id="share">
+      <div class="eyebrow">Partilhe a partir da sua app de IA</div>
+      <h2>A resposta do Claude ou do ChatGPT diretamente no Zélar</h2>
+      <!-- SCREENSHOT ai-06: A reply in the Claude or ChatGPT app with the share sheet open and Zélar in the row. assets/img/screens/da/ai-06.webp, see icy-pork/zelar-site#2 -->
+      <!-- SCREENSHOT ai-07: The "Del til Zélar" card. assets/img/screens/da/ai-07.webp, see icy-pork/zelar-site#2 -->
+      <!-- SCREENSHOT ai-08: A photo shared to Zélar with "Tilføj til …" for an open draft. assets/img/screens/da/ai-08.webp, see icy-pork/zelar-site#2 -->
+      <ol>
+        <li>Peça à sua IA que responda no formato do Zélar. O mais simples é começar com um prompt de <span class="ui">Prompts</span> ou com o formato de <span class="ui">＋ → Importar da IA → ?</span>.</li>
+        <li>Mantenha premida a resposta (ou use o botão de partilha) → <span class="ui">Partilhar</span> → <span class="ui">Zélar</span>.</li>
+        <li>O cartão «Partilhar com o Zélar» mostra o que o texto contém, por exemplo o nome de um vinho ou «3 vinhos no texto», e se parece uma resposta da IA no formato do Zélar.</li>
+        <li>Escolha <span class="ui">Vinho para o stock</span> ou <span class="ui">Vinho provado</span>. O Zélar pré-selecionou o que melhor se adequa. Verifica no Zélar antes de ser criado qualquer coisa.</li>
+      </ol>
+      <h3>Texto e fotografia em separado</h3>
+      <p>Muitas apps de IA só partilham texto. Partilhe a fotografia depois (ou antes) a partir das Fotografias para o Zélar, e escolha <span class="ui">Adicionar a …</span> com o rascunho a que pertence. O Zélar sugere o rascunho certo, mas nunca escolhe sozinho. Se partilhar só uma fotografia, também pode <span class="ui">Guardar como rascunho</span> e esperar pelo texto, ou ir diretamente para o formulário do vinho ou da prova com as imagens.</p>
+      <p>Se não encontrar o Zélar na folha de partilha, deslize para a direita na fila de apps, toque em <span class="ui">Mais</span> e ative o Zélar.</p>
+    </div>
+
+    <div class="card" id="drafts">
+      <div class="eyebrow">Rascunhos</div>
+      <h2>O que está à sua espera</h2>
+      <!-- SCREENSHOT ai-09: The Kladder list showing all three states. assets/img/screens/da/ai-09.webp, see icy-pork/zelar-site#2 -->
+      <p>Enquanto houver rascunhos, aparece no menu (por trás do botão da garrafeira no Resumo), em Biblioteca, e na barra lateral do iPad, <span class="ui">Rascunhos</span> com um número. Um rascunho pode estar:</p>
+      <div class="table-wrap" tabindex="0" role="region" aria-label="Os estados dos rascunhos">
+        <table>
+          <tr><th>Estado</th><th>O que faz</th></tr>
+          <tr><td>Texto e fotografia · pronto a verificar</td><td>Toque nele para o verificar e criar.</td></tr>
+          <tr><td>Sem fotografia · pronto a verificar</td><td>Crie-o tal como está, ou partilhe primeiro uma fotografia para ele.</td></tr>
+          <tr><td>À espera do texto da IA</td><td>Partilhe a resposta a partir da sua app de IA e escolha <span class="ui">Adicionar ao rascunho</span>, ou crie o vinho você mesmo agora.</td></tr>
+        </table>
+      </div>
+      <ul>
+        <li><strong>Apague</strong> um rascunho com <span class="ui">Apagar rascunho</span>, ou faça uma limpeza com <span class="ui">Apagar rascunhos com mais de 30 dias</span>.</li>
+        <li><strong>O botão Colar</strong> em Rascunhos guarda como rascunho uma resposta da IA copiada. Use-o com apps que só conseguem copiar.</li>
+        <li>Os rascunhos ficam no dispositivo. Não são sincronizados com os seus outros dispositivos e não entram na cópia de segurança.</li>
+      </ul>
+    </div>
+
+    <div class="card" id="first-load">
+      <div class="eyebrow">Primeiro carregamento</div>
+      <h2>A garrafeira inteira de uma só vez</h2>
+      <!-- SCREENSHOT ai-10: The Første indlæsning section on Backup, import & eksport. assets/img/screens/da/ai-10.webp, see icy-pork/zelar-site#2 -->
+      <!-- SCREENSHOT ai-11: The "På eget ansvar" confirmation. assets/img/screens/da/ai-11.webp, see icy-pork/zelar-site#2 -->
+      <!-- SCREENSHOT ai-12: Claude or ChatGPT answering a first load in parts. assets/img/screens/da/ai-12.webp, see icy-pork/zelar-site#2 -->
+      <p>Já tem vinhos registados noutro sítio? Encontre <span class="ui">Primeiro carregamento</span> em <span class="ui">Cópia de segurança, importação e exportação</span> no menu. Há dois caminhos.</p>
+
+      <h3>Como texto (recomendado)</h3>
+      <ol>
+        <li>Toque em <span class="ui">Copiar instruções para a IA (texto)</span>.</li>
+        <li>Abra o Claude ou o ChatGPT, cole as instruções e anexe a sua folha de cálculo, a sua exportação ou as suas fotografias.</li>
+        <li>A IA responde em partes de 40 vinhos. Escreva <em>continua</em> para obter a parte seguinte.</li>
+        <li>Copie cada parte e cole-a em <span class="ui">Colar vinhos da IA</span> na mesma secção, uma de cada vez. Verifique os vinhos e toque em <span class="ui">Concluir</span>.</li>
+        <li>As fotografias são adicionadas depois, em cada vinho.</li>
+      </ol>
+
+      <h3>Como ficheiro de cópia de segurança — por sua conta e risco</h3>
+      <div class="callout callout--warn">
+        <strong>Leia isto primeiro</strong>
+        <p>Um ficheiro de cópia de segurança feito por uma IA é restaurado com <span class="ui">Restaurar de ficheiro</span>, e isso <strong>substitui tudo no Zélar</strong>. A IA pode cometer erros no ficheiro, e o Zélar não consegue (ainda) juntá-lo a uma garrafeira existente. Use-o apenas numa app vazia, e faça primeiro uma cópia de segurança se tiver dados.</p>
+      </div>
+      <ol>
+        <li>Toque em <span class="ui">Copiar instruções para a IA (ficheiro de cópia de segurança)</span> e confirme com <span class="ui">Compreendo, copiar</span>.</li>
+        <li>Use uma IA que consiga criar ficheiros. Cole as instruções e anexe os seus ficheiros; podem incluir fotografias.</li>
+        <li>Descarregue o ficheiro <code>.zelarbackup</code> criado pela IA para Ficheiros.</li>
+        <li>No Zélar: <span class="ui">Cópia de segurança, importação e exportação</span> → <span class="ui">Restaurar de ficheiro</span> → escolha o ficheiro em Ficheiros.</li>
+      </ol>
+      <p>Se o ficheiro ficar demasiado grande, a IA divide-o em vários. Restaure apenas um deles, porque cada restauro substitui o anterior, ou use antes o caminho do texto.</p>
+
+      <h3>Bons conselhos</h3>
+      <ul>
+        <li><strong>Folhas de cálculo:</strong> uma linha por vinho com cabeçalhos dá o melhor resultado. O número de garrafas e a localização podem ficar em colunas separadas.</li>
+        <li><strong>Exportação de outra app:</strong> CSV ou texto é o melhor. Diga à IA de que app vem.</li>
+        <li><strong>Muitos rótulos:</strong> tire uma fotografia por rótulo, de frente, e envie-as em pequenos lotes.</li>
+        <li><strong>Localizações:</strong> monte primeiro as suas estantes no Zélar. Assim a IA pode usar os seus nomes reais, por exemplo «Estante A · B3».</li>
+      </ul>
+    </div>
+
+    <div class="card" id="fejl">
+      <div class="eyebrow">Resolução de problemas</div>
+      <h2>Quando algo corre mal</h2>
+      <h3>«A resposta usa uma versão mais recente do formato»</h3>
+      <p>A resposta foi escrita para um Zélar mais recente. Atualize o Zélar na App Store e tente novamente.</p>
+      <h3>O atalho para, ou Perguntar ao Claude / Perguntar ao ChatGPT não dá resposta</h3>
+      <p>Verifique se a app de IA está instalada e com sessão iniciada, e se tem rede. Abra a app de IA uma vez e depois execute o atalho a partir da app Atalhos, para ver que passo para.</p>
+      <h3>O rótulo foi mal lido</h3>
+      <p>Volte a tirar a fotografia de frente, sem reflexos, e preencha a imagem com o rótulo. Se usar o reconhecimento de texto no passo 2, experimente antes o modelo cloud; lê melhor rótulos difíceis. Pode sempre corrigir os campos no ecrã de verificação.</p>
+      <h3>O Zélar não está na folha de partilha</h3>
+      <p>Deslize para a direita na fila de apps, toque em <span class="ui">Mais</span>, e ative o Zélar. Abra o Zélar uma vez após uma nova instalação.</p>
+      <h3>«Usar modelo» para</h3>
+      <p>O modelo da Apple tem limites diários. Use <span class="ui">Extrair texto da imagem</span> no passo 2 até amanhã.</p>
+      <h3>Porque não simplesmente a Siri?</h3>
+      <p>As novas funcionalidades de IA da Siri ainda não estão disponíveis no iPhone na UE. Os atalhos funcionam em todo o lado, por isso o Zélar baseia-se neles.</p>
+      <h3>O ficheiro é demasiado grande</h3>
+      <p>Divida o conteúdo em várias vezes: envie menos fotografias de cada vez, ou use o caminho do texto com partes de 40 vinhos.</p>
+    </div>
+
+    <div class="card" id="own-prompts">
+      <div class="eyebrow">Para os curiosos</div>
+      <h2>Para os seus próprios prompts e atalhos</h2>
+      <h3>O formato</h3>
+      <p>O Zélar lê texto com uma informação por linha (<code>KEY: value</code>) e uma linha com <code>---</code> entre os vinhos. A resposta pode começar com <code>ZÉLAR-FORMAT: 1</code>, para que o Zélar saiba qual é a versão do formato. As chaves estão em inglês (as chaves dinamarquesas de versões anteriores também funcionam), e as linhas que o Zélar não conhece são ignoradas.</p>
+      <pre>ZÉLAR-FORMAT: 1
+WINE: Château Somewhere
+PRODUCER: A. Christmann
+VINTAGE: 2018
+COUNTRY: França
+REGION: Bordeaux, Médoc
+TYPE: Red
+GRAPES: Cabernet Sauvignon, Merlot
+QUANTITY: 2
+DRINKING WINDOW: 2024-2032
+CELLAR: Casa
+LOCATION: Estante A · B3
+---
+WINE: ...</pre>
+      <p>O formato completo, com todos os campos, obtém-se com <span class="ui">Obter formato de importação</span> em Atalhos ou com <span class="ui">?</span> em <span class="ui">＋ → Importar da IA</span>.</p>
+
+      <h3>As ações do Zélar em Atalhos</h3>
+      <div class="table-wrap" tabindex="0" role="region" aria-label="As ações do Zélar em Atalhos">
+        <table>
+          <tr><th>Ação</th><th>Entrada</th><th>Devolve</th></tr>
+          <tr><td><span class="ui">Criar vinho em stock</span></td><td>Texto (resposta da IA no formato do Zélar), fotografias (opcional)</td><td>Um rascunho que abre para verificação</td></tr>
+          <tr><td><span class="ui">Criar entrada de diário</span></td><td>Texto, fotografias (opcional)</td><td>Um rascunho para o Diário que abre para verificação</td></tr>
+          <tr><td><span class="ui">Anexar fotografia ao rascunho</span></td><td>Fotografias, rascunho (opcional: o mais recente à espera de uma fotografia)</td><td>A fotografia adicionada ao rascunho</td></tr>
+          <tr><td><span class="ui">Obter prompt do Zélar</span></td><td>Prompt (digitalização para stock ou diário, primeiro carregamento como texto ou ficheiro de cópia de segurança), nota</td><td>O prompt como texto</td></tr>
+          <tr><td><span class="ui">Obter formato de importação</span></td><td>Vinho para o stock ou vinho provado</td><td>O formato e a sua versão</td></tr>
+          <tr><td><span class="ui">Obter a minha biblioteca</span></td><td>—</td><td>A sua garrafeira, as suas provas e a sua lista de desejos em Markdown</td></tr>
+          <tr><td><span class="ui">Obter prompt com a minha garrafeira</span></td><td>Tarefa, prato, da garrafeira ou comprar novo, onde faz compras</td><td>Um prompt de Prompts com a sua garrafeira, como quando o copia na app</td></tr>
+        </table>
+      </div>
+
+      <h3>A sua biblioteca de prompts num atalho</h3>
+      <p><span class="ui">Obter prompt com a minha garrafeira</span> seguido de Perguntar ao Claude ou Perguntar ao ChatGPT dá-lhe os seus prompts sem abrir o Zélar. Duas ideias:</p>
+      <ul>
+        <li><strong>Harmonização por voz:</strong> Ditar texto («O que está a cozinhar?») → Obter prompt com a minha garrafeira (Harmonização para o jantar, Prato: o ditado) → Perguntar ao Claude.</li>
+        <li><strong>Sugestões de compra no ecrã principal:</strong> Obter prompt com a minha garrafeira (Sugestões de compra) → Perguntar ao ChatGPT.</li>
+      </ul>
+      <p>A resposta fica na app de IA. Se usar a tarefa <em>Completar os dados dos meus vinhos</em>, cole a resposta com <span class="ui">Atualizar vinhos da IA</span> no Zélar, para ver as alterações campo a campo.</p>
+    </div>
+
+    <div class="card">
+      <div class="eyebrow">Ajuda</div>
+      <p>O resto da app está descrito no <a href="{{root}}support/">guia</a>. Se ficar bloqueado, escreva para <a href="mailto:zelar@whaaat.co" class="mono">zelar@whaaat.co</a>.</p>
+    </div>
+</div>
+</main>

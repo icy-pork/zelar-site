@@ -1,0 +1,156 @@
+<!-- title: Zélar — Política de privacidad -->
+<!-- description: Qué datos recoge Zélar, dónde se guardan y qué opciones tienes. Los datos de tu bodega se quedan en tu dispositivo; las funciones de IA son opcionales. -->
+<main id="main">
+<div class="wrap wrap--narrow">
+  <div class="page-head">
+    <h1>Política de privacidad</h1>
+    <p class="meta">Última actualización: 1 de noviembre de 2026</p>
+  </div>
+
+    <div class="card">
+      <p>Zélar es una app de bodega personal, desarrollada y mantenida por un único desarrollador independiente como un pequeño proyecto personal. Esta política explica qué datos recoge Zélar, dónde se guardan y qué opciones tienes.</p>
+      <p>En resumen: <strong>los datos de tu bodega se quedan en tu dispositivo</strong> y, si quieres, en tu propio iCloud. Aparte de eso, dos tipos de datos salen de tu dispositivo: <strong>estadísticas de uso anonimizadas</strong>, que puedes desactivar, y, <strong>solo si decides usar las funciones de IA</strong>, la foto o el texto que envías con cada solicitud.</p>
+    </div>
+
+    <div class="card">
+      <div class="eyebrow">Los datos de tu bodega</div>
+      <h2>Guardados localmente en tu dispositivo</h2>
+      <p>Todo lo que introduces en Zélar — bodegas, botelleros, baldas, vinos, botellas, notas de cata, ventanas de consumo, fotos, lista de deseos y borradores — se guarda localmente en tu iPhone o iPad. No se envía al servidor del desarrollador y nadie más que tú tiene acceso a ello.</p>
+
+      <h2>Sincronización con iCloud opcional</h2>
+      <p>Zélar puede sincronizar tu bodega entre tus dispositivos mediante tu cuenta personal de iCloud (Apple CloudKit). Tus datos se guardan entonces en tu propio contenedor privado de iCloud, sujeto a las prácticas de privacidad de Apple.</p>
+      <ul>
+        <li>Puedes activar y desactivar la sincronización en los Ajustes de la app.</li>
+        <li>El desarrollador no tiene acceso a los datos de tu iCloud — están vinculados a tu cuenta igual que tus Fotos o Notas.</li>
+        <li>Los borradores (respuestas de IA y fotos que esperan tu revisión) se quedan solo en el dispositivo y no se sincronizan.</li>
+      </ul>
+
+      <h2>Tu propia IA: portapapeles, compartir y atajos</h2>
+      <p>Zélar puede darte partes de tu bodega como texto (prompts y Markdown) para que las uses con el asistente de IA que elijas, y puede leer el texto estructurado que vuelvas a pegar. Esto se hace mediante el portapapeles, la hoja de compartir (“Compartir con Zélar”) y las acciones de Zélar en la app Atajos de Apple. Ninguna de estas vías usa la red: solo leen y escriben en tu dispositivo. Eres tú quien lleva el texto a tu IA, y lo que envías allí queda entre tú y ese servicio, con tu propia cuenta y sus condiciones.</p>
+    </div>
+
+    <div class="card">
+      <div class="eyebrow">Zélar AI</div>
+      <h2>Funciones de IA (escanear etiqueta, etc.)</h2>
+      <p>Zélar AI forma parte de Zélar Pro y es opcional. Las funciones están desactivadas hasta que aceptas la pantalla de consentimiento la primera vez que usas una de ellas. Puedes retirar el consentimiento en cualquier momento en <span class="ui">Ajustes → Funciones de IA</span>, y se detienen al instante.</p>
+
+      <h3>Qué se envía</h3>
+      <ul>
+        <li><strong>Escanear etiqueta:</strong> la foto que has hecho, en versión reducida (como máximo 1568 píxeles en el lado largo). El servidor añade una instrucción fija y envía ambas cosas a Anthropic, que lee la etiqueta y devuelve los datos del vino.</li>
+        <li><strong>Completar en línea:</strong> solo texto — nombre, productor, añada, país, región, denominación y variedades de un vino. Recibes sugerencias, que revisas antes de que se guarde nada. La respuesta puede incluir un valor de mercado estimado.</li>
+        <li><strong>Sugerencia de un plato en los recordatorios</strong> (opcional, se activa por separado): los mismos campos más el tipo de vino, para un vino que ha pasado su ventana de consumo, como máximo una vez por vino.</li>
+      </ul>
+      <p>No se envía nada más de tu bodega — ni notas, ni precios, ni valoraciones, ni tags, ni otros vinos. El servidor rechaza las solicitudes con otros campos.</p>
+
+      <h3>ID del dispositivo</h3>
+      <p>Para evitar abusos y llevar la cuenta de tu uso de Zélar AI, la app demuestra a nuestro servidor que es un Zélar auténtico mediante App Attest de Apple. Esto crea una clave en la Secure Enclave de tu dispositivo; el servidor guarda el ID de la clave, su clave pública y un contador. No es tu cuenta de Apple, no se comparte con nadie y cambia si reinstalas la app.</p>
+
+      <h3>Prueba de compra (Zélar Pro)</h3>
+      <p>Si compras Zélar Pro, la app también envía con cada solicitud de IA la información firmada de Apple sobre la compra, para que el servidor pueda darte Zélar AI como parte de Pro. La información la crea y la firma Apple. Contiene el bundle ID de la app, qué producto Pro has comprado (mensual, anual o de por vida), cuándo lo compraste, cuándo vence o se reembolsó una suscripción, si se compró en el App Store o en el entorno de pruebas de Apple, y los ID de transacción de Apple. No contiene tu nombre, tu correo, tu cuenta de Apple, tu método de pago ni el precio.</p>
+      <p>El servidor comprueba la firma de Apple y solo guarda el ID de transacción original. Es el mismo para la compra en todos tus dispositivos y tras una reinstalación, así que Zélar AI sigue a la compra. Si una renovación falla y Apple te da un plazo para arreglar el pago, la app también envía el estado de renovación firmado de Apple, para que conserves Zélar AI hasta entonces; el servidor solo lo comprueba y no guarda nada de él. Nada de esto se envía antes de que hayas aceptado las funciones de IA, y nunca se usa para publicidad ni se comparte con otros.</p>
+
+      <h3>Uso razonable</h3>
+      <p>Con una suscripción, Zélar AI está incluido con uso razonable: hasta 60 acciones de IA al mes y 30 al día. Para llevar la cuenta, el servidor cuenta tus acciones por ID de dispositivo o por compra. El contador no contiene ninguna información sobre tus vinos.</p>
+
+      <h3>Quién lo trata</h3>
+      <ul>
+        <li><strong>Cloudflare, Inc.</strong> opera nuestro servidor. Las solicitudes pasan por la red de Cloudflare.</li>
+        <li><strong>Anthropic, PBC</strong> opera el modelo de IA. Anthropic trata la foto o el texto para responder a la solicitud y no los usa para entrenar sus modelos. Anthropic borra automáticamente las solicitudes y respuestas tras un breve periodo, que Anthropic indica en su <a href="https://privacy.claude.com/" rel="noopener">Privacy Center</a>, y solo los conserva más tiempo si es necesario para hacer cumplir su política de uso o para cumplir la ley.</li>
+      </ul>
+      <p>Ambos son nuestros encargados del tratamiento en virtud de acuerdos de tratamiento de datos, y el tratamiento se realiza en Estados Unidos. La transferencia se basa, para Anthropic, en las cláusulas contractuales tipo de la UE del acuerdo de tratamiento de datos, junto con los anexos británico y suizo, y, para Cloudflare, en la certificación de la empresa en el marco del EU-U.S. Data Privacy Framework, con las cláusulas contractuales tipo de la UE como respaldo.</p>
+
+      <h3>Qué guarda nuestro servidor</h3>
+      <p>Ninguna foto y ningún texto. El servidor solo guarda el ID de App Attest, la clave pública y el contador, tu contador de uso, el ID de transacción original si has comprado Pro, y los registros de funcionamiento. Los registros contienen el tipo de solicitud, el código de resultado, el plan, el número de acciones, el número de tokens, el coste estimado y la duración — nunca la foto, el texto, la respuesta de la IA ni tu dirección IP. Los registros de funcionamiento se borran automáticamente tras 7 días como máximo.</p>
+
+
+      <h3>La IA puede equivocarse</h3>
+      <p>Las respuestas de una IA pueden ser incorrectas, también datos y precios. Revísalas antes de guardar. Zélar no guarda nada de un escaneo o de un completado hasta que tú lo hayas revisado y hayas tocado guardar.</p>
+
+      <h3>Base jurídica</h3>
+      <p>Tu consentimiento (RGPD art. 6, apdo. 1, letra a). Si lo retiras, no afecta a las solicitudes ya enviadas.</p>
+
+      <h3>Tus datos son tuyos</h3>
+      <p>El resultado de un escaneo se guarda solo en tu dispositivo y en tu iCloud, como todo lo demás que introduces.</p>
+    </div>
+
+    <div class="card">
+      <div class="eyebrow">Desde nuestro servidor</div>
+      <h2>Ajustes y tipos de cambio</h2>
+      <p>Zélar descarga de nuestro servidor un pequeño archivo de ajustes, por ejemplo cuántas botellas admite el plan gratuito, y posibles mensajes del desarrollador. Cuando usas una moneda distinta de la tuya, la app también descarga tipos de cambio: los tipos de referencia del euro del Banco Central Europeo, que nuestro servidor obtiene del BCE y reenvía sin cambios.</p>
+      <p>Ninguna de estas solicitudes contiene un ID ni nada sobre ti o tu bodega — tampoco qué monedas usas — y todos reciben la misma respuesta. Cloudflare ve tu dirección IP para poder entregar la respuesta; nosotros no la registramos. Estas solicitudes no requieren consentimiento para las funciones de IA.</p>
+    </div>
+
+    <div class="card">
+      <div class="eyebrow">Compartir una bodega</div>
+      <h2>Compartir una bodega (beta)</h2>
+      <p>Puedes compartir una bodega con hasta otras cuatro personas. Compartir es opcional y está desactivado hasta que lo activas en Ajustes → Experimental.</p>
+      <ul>
+        <li><strong>Cómo funciona.</strong> Compartir usa iCloud de Apple: cada persona usa su propia cuenta de Apple, y Zélar no tiene ninguna cuenta ni ninguna copia de tus datos. Una bodega compartida está en el iCloud de su propietario; los invitados la leen y la modifican a través de su propio iCloud. Apple muestra a los demás el nombre o el correo de cada persona, como en cualquier uso compartido de iCloud.</li>
+        <li><strong>Qué ven los demás.</strong> Los botelleros y las botellas de la bodega compartida, quién se las bebió, los tags y las fotos de los vinos. Si el propietario tiene Zélar Pro, en la bodega hay también una prueba de la compra en el App Store, para que la app de los demás vea que la bodega es Pro. Se queda en iCloud y nunca se envía a nuestro servidor.</li>
+        <li><strong>Qué sigue siendo privado.</strong> Tus notas de cata, valoraciones y ocasiones, el Diario, tu lista de deseos, tus escaneos de etiquetas y tus otras bodegas nunca se comparten.</li>
+        <li><strong>Salir.</strong> Puedes salir de una bodega compartida, y el propietario puede quitar personas o dejar de compartir, en cualquier momento. Tus propias notas de cata se quedan contigo.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <div class="eyebrow">Estadísticas de uso</div>
+      <h2>PostHog</h2>
+      <p>Zélar usa <a href="https://posthog.com" target="_blank" rel="noopener">PostHog</a>, un servicio de analítica de producto, para entender cómo se usa la app y para encontrar errores y posibles mejoras. Los datos de analítica se tratan en los <strong>servidores de PostHog en la UE</strong>.</p>
+      <p>Las estadísticas se limitan a eventos anonimizados sobre el uso de la app, por ejemplo qué pantallas se abren, qué funciones se usan, y cifras o códigos. Nunca contienen tus vinos, notas, precios ni otros datos personales, y Zélar está diseñado para que no pueda identificarte.</p>
+      <ul>
+        <li>Puedes <strong>desactivar las estadísticas en cualquier momento</strong> en Ajustes → Privacidad. A partir de entonces no se envían más datos de uso.</li>
+        <li>Las estadísticas están separadas de los datos de tu bodega y de Zélar AI.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <div class="eyebrow">Resumen</div>
+      <h2>Qué está dónde</h2>
+      <div class="table-wrap" tabindex="0" role="region" aria-label="Resumen de los datos">
+        <table>
+          <tr><th>Datos</th><th>Dónde</th><th>Tu control</th></tr>
+          <tr><td>Datos de la bodega (vinos, botellas, notas, fotos)</td><td>Localmente en tu dispositivo</td><td>Totalmente tuyos; solo salen del dispositivo si los exportas, compartes o sincronizas</td></tr>
+          <tr><td>Sincronización con iCloud (opcional)</td><td>Tu iCloud personal (Apple CloudKit)</td><td>Activar/desactivar en Ajustes</td></tr>
+          <tr><td>Bodega compartida (beta, opcional)</td><td>El iCloud del propietario, compartido mediante Apple</td><td>Sal o deja de compartir en cualquier momento</td></tr>
+          <tr><td>Foto o texto del vino para Zélar AI</td><td>Se envían a través de Cloudflare a Anthropic; no se guardan en nuestro servidor</td><td>Solo tras el consentimiento; retíralo en Ajustes</td></tr>
+          <tr><td>ID de App Attest, contador de uso, ID de transacción</td><td>Nuestro servidor (Cloudflare)</td><td>Solo tras el consentimiento; se puede borrar a petición</td></tr>
+          <tr><td>Estadísticas de uso anonimizadas</td><td>PostHog, servidores en la UE</td><td>Desactívalas en cualquier momento en Ajustes</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="eyebrow">Lo que Zélar no hace</div>
+      <ul>
+        <li>Sin cuentas, registros ni contraseñas.</li>
+        <li>Sin publicidad y sin redes publicitarias de terceros.</li>
+        <li>Sin seguimiento entre apps o sitios web.</li>
+        <li>Sin venta ni cesión de tus datos a terceros con fines de marketing.</li>
+        <li>Ninguna función de IA envía nada antes de que hayas aceptado, y ninguna envía toda tu bodega.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <div class="eyebrow">Privacidad de los menores</div>
+      <p>Zélar es una app para gestionar bodegas y está pensada para adultos que tienen la edad legal para consumir alcohol en su país. No está dirigida a menores y no recoge datos de menores de forma consciente.</p>
+    </div>
+
+    <div class="card">
+      <div class="eyebrow">Tus derechos y opciones</div>
+      <p>Según dónde vivas, puedes tener derechos en virtud de normas como el Reglamento General de Protección de Datos de la UE (RGPD) o la California Consumer Privacy Act (CCPA), incluido el derecho a acceder, rectificar, suprimir o exportar tus datos.</p>
+      <p>Como los datos de tu bodega se guardan en tu dispositivo, los controlas directamente: puedes exportarlos, editarlos o borrarlos en la app, o eliminarlos por completo borrando la app.</p>
+      <p>Retiras el consentimiento para las funciones de IA en Ajustes → Funciones de IA. Si quieres que se borren de nuestro servidor tu ID de App Attest y tu contador de uso, escribe a <a href="mailto:zelar@whaaat.co">zelar@whaaat.co</a> indicando la fecha en que usaste por primera vez las funciones de IA. Como no tenemos ninguna cuenta ni ningún nombre, puede que te pidamos que reinstales la app, lo que crea un nuevo ID. Si tienes preguntas sobre los datos de PostHog, puedes escribir a la misma dirección o desactivar las estadísticas en la app.</p>
+    </div>
+
+    <div class="card">
+      <div class="eyebrow">Cambios en esta política</div>
+      <p>La política puede actualizarse para reflejar cambios en la app o en la legislación. La fecha “Última actualización” de arriba indica siempre la versión más reciente. El uso continuado de Zélar después de que los cambios entren en vigor se considera aceptación de la política actualizada.</p>
+    </div>
+
+    <div class="card">
+      <div class="eyebrow">Contacto</div>
+      <p>Zélar lo desarrolla un único desarrollador independiente. Si tienes preguntas sobre esta política o tus datos, escribe a:</p>
+      <p><a href="mailto:zelar@whaaat.co" class="mono">zelar@whaaat.co</a></p>
+    </div>
+</div>
+</main>

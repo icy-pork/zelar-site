@@ -1,0 +1,280 @@
+<!-- title: Zélar – Din egen AI i Zélar -->
+<!-- description: Slik bruker du din egen Claude eller ChatGPT med Zélar: skann etiketter med en snarvei, del svar til Zélar, utkast og første innlasting av en hel kjeller. -->
+<main id="main">
+<div class="wrap wrap--narrow">
+  <div class="page-head">
+    <h1>Din egen AI i Zélar</h1>
+    <p class="meta">Sist oppdatert: 1. november 2026</p>
+  </div>
+
+    <div class="card">
+      <p>Zélar er bygget slik at din egen AI kan jobbe med kjelleren din. I tillegg til prompter og import ved innliming under <span class="ui">Prompter</span> kan du bruke en snarvei til å skanne etiketter, dele svar rett fra AI-appen din og la AI-en din lese inn en hel kjeller første gang. Det er gratis, og det fortsetter å være gratis.</p>
+      <p>Uansett vei gjelder ett prinsipp: <strong>alt som kommer fra en AI, er et forslag.</strong> Det lander som et utkast du sjekker før noe havner på lager eller i Journalen.</p>
+    </div>
+
+    <nav class="toc" aria-label="Innhold">
+      <div class="eyebrow">Innhold</div>
+      <ol>
+        <li><a href="#tre-veje">Tre veier inn</a></li>
+        <li><a href="#privatliv">Hva som sendes hvor</a></li>
+        <li><a href="#genvej">Installer snarveien</a></li>
+        <li><a href="#skan">Skann en etikett, trinn for trinn</a></li>
+        <li><a href="#share">Del fra AI-appen din</a></li>
+        <li><a href="#drafts">Utkast</a></li>
+        <li><a href="#first-load">Første innlasting</a></li>
+        <li><a href="#fejl">Feilsøking</a></li>
+        <li><a href="#own-prompts">For dine egne prompter og snarveier</a></li>
+      </ol>
+    </nav>
+
+    <div class="card" id="tre-veje">
+      <div class="eyebrow">Tre veier inn</div>
+      <h2>Velg den som passer til oppgaven</h2>
+      <ul>
+        <li><strong>Skann en etikett med en snarvei.</strong> Velg et bilde; Apples modell leser etiketten, snarveien spør din egen Claude eller ChatGPT og legger svaret og bildet i Zélar som et utkast. Best for én flaske om gangen.</li>
+        <li><strong>Del fra AI-appen din.</strong> Har du allerede snakket med AI-en din om en vin, så del svaret (og eventuelt bildet) til Zélar fra delingsarket.</li>
+        <li><strong>Første innlasting.</strong> En hel kjeller fra et regneark, en annen apps eksport eller en bunke etikettbilder – som tekst i deler, eller som en sikkerhetskopifil.</li>
+      </ul>
+      <div class="table-wrap" tabindex="0" role="region" aria-label="Hvilken vei skal jeg velge?">
+        <table>
+          <tr><th>Du har …</th><th>Bruk</th></tr>
+          <tr><td>én flaske i hånden</td><td><a href="#genvej">Snarveien</a></td></tr>
+          <tr><td>en samtale med AI-en din om en vin, et vinkart eller en kvittering</td><td><a href="#share">Del til Zélar</a></td></tr>
+          <tr><td>en kopiert tekst fra en app uten delingsknapp</td><td><span class="ui">＋ → Importer fra AI</span></td></tr>
+          <tr><td>et regneark, en eksport fra en annen app eller mange bilder</td><td><a href="#first-load">Første innlasting</a></td></tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="card" id="privatliv">
+      <div class="eyebrow">Personvern</div>
+      <h2>Hva som sendes hvor</h2>
+      <ul>
+        <li><strong>Bildet går ikke til AI-en din.</strong> Snarveien lar Apples modell lese etiketten i Apples Private Cloud Compute, der Apple ikke lagrer det. Vil du at bildet skal bli på telefonen, så bruk tekstgjenkjenningen i iOS i stedet (se <a href="#genvej">oppskriften</a>).</li>
+        <li><strong>Bare tekst går til din egen Claude eller ChatGPT</strong>, under din egen konto. Det teller med i planens grenser der, og den tjenestens vilkår gjelder.</li>
+        <li><strong>Ved første innlasting</strong> sender du selv regnearket eller bildene dine til din egen AI-konto.</li>
+        <li><strong>Zélar sender ingenting.</strong> Snarveihandlingene og delingsarket leser og skriver bare filer på enheten din. Utkast ligger bare på enheten og synkroniseres ikke.</li>
+      </ul>
+      <p>Se også <a href="{{root}}privacy/">personvernerklæringen</a>.</p>
+    </div>
+
+    <div class="card" id="genvej">
+      <div class="eyebrow">Snarveien</div>
+      <h2>Installer «Zélar · Skann etikett»</h2>
+      <!-- SCREENSHOT ai-01: The Shortcut open in the Shortcuts app with its actions (Claude version). assets/img/screens/da/ai-01.webp, see icy-pork/zelar-site#2 -->
+      <!-- SCREENSHOT ai-02: The first-run permission prompt. assets/img/screens/da/ai-02.webp, see icy-pork/zelar-site#2 -->
+      <!-- SCREENSHOT ai-03: Settings → Action Button set to the Shortcut. assets/img/screens/da/ai-03.webp, see icy-pork/zelar-site#2 -->
+      <p>Det finnes en snarvei for hvert mål: <strong>til lager</strong> (en flaske du legger i kjelleren) og <strong>til journalen</strong> (en vin du smaker nå). Hver finnes for Claude og for ChatGPT. Velg dem som passer til AI-appen du bruker.</p>
+      <div class="callout">
+        <strong>Lenker kommer</strong>
+        <p>Snarveiene til lager og journal, for Claude og for ChatGPT, legges her som iCloud-lenker når de er klare. Frem til da kan du bygge dem selv etter oppskriften nedenfor; det tar et par minutter.</p>
+      </div>
+      <!-- When the Shortcuts are built: add the two iCloud links here, with their
+           version ("v1"), e.g. <a class="btn btn--primary" href="https://www.icloud.com/shortcuts/…">Hent til Claude</a>.
+           Then soften the callout above. Screenshots go in assets/img/ai/ (da and en). -->
+
+      <h3>Dette trenger du</h3>
+      <ul>
+        <li>Zélar, og Claude- eller ChatGPT-appen, installert og logget inn.</li>
+        <li>Snarveier-appen (følger med iOS).</li>
+        <li>Apple Intelligence (iPhone 15 Pro eller nyere) for handlingen <span class="ui">Bruk modell</span>, som leser etiketten. Den har daglige grenser. Uten Apple Intelligence kan du bruke <span class="ui">Hent ut tekst fra bilde</span> i stedet; den virker på telefonen og klarer de fleste etiketter.</li>
+      </ul>
+
+      <h3>Første gang du kjører den</h3>
+      <p>iOS spør om snarveien kan bruke Zélar, AI-appen din og Bilder. Det er snarveien som spør, ikke Zélar, og svaret gjelder bare denne snarveien. Velg <span class="ui">Tillat alltid</span>, så spør den ikke hver gang.</p>
+
+      <h3>Legg den der du bruker den</h3>
+      <ul>
+        <li><strong>Handlingsknappen</strong> (iPhone 15 Pro og nyere): Innstillinger → Handlingsknapp → Snarvei.</li>
+        <li><strong>Låseskjermen eller Kontrollsenter</strong>: legg til en Snarvei-knapp.</li>
+        <li><strong>Hjem-skjermen</strong>: trykk og hold på snarveien i Snarveier → Del → Legg til på Hjem-skjerm.</li>
+        <li><strong>Delingsarket i Bilder</strong>: slå på «Vis på delingsark» i detaljene for snarveien, så kan du skanne et bilde du allerede har tatt.</li>
+      </ul>
+
+      <h3>Bygg den selv</h3>
+      <p>Opprett en ny snarvei i Snarveier, f.eks. «Zélar · Skann etikett til lager (Claude)», med disse fem handlingene. Zélars handlinger finnes under <span class="ui">Apper → Zélar</span>.</p>
+      <pre>1  Velg bilder         Inkluder: Alle · Velg flere: av
+2  Bruk skymodellen    (prompten nedenfor) + [Bilder]
+3  Hent Skann etikett til lager        (Zélar → Hent Zélar-prompt)
+4  Spør Claude          [Hent Zélar-prompt] [Svar]
+5  Opprett vin på lager fra [Spør Claude]
+     Bilder: [Bilder]</pre>
+      <p>Prompten til trinn 2. Den ber bare modellen om å lese etiketten; kunnskapen om vinen kommer fra din egen AI i trinn 4:</p>
+      <pre>This is a photo of a wine label. Extract as much information
+about the bottle as you can from the image, for example name,
+producer, country, region, vintage, alcohol % and any organic
+or biodynamic marks: [Bilder]</pre>
+      <ul>
+        <li><strong>Til journalen:</strong> velg <span class="ui">Skann etikett til journalen</span> i trinn 3, og bruk <span class="ui">Opprett journalnotat</span> i trinn 5. Vil du ha med vurdering og sted, så legg til <span class="ui">Be om inndata</span> («Vurdering, sted, glass eller flaske?») før trinn 3, og legg svaret i trinn 3s <span class="ui">Notat</span>.</li>
+        <li><strong>ChatGPT:</strong> bruk <span class="ui">Spør ChatGPT</span> i trinn 4, bare med tekst.</li>
+        <li><strong>Ta bildet med en gang:</strong> bruk <span class="ui">Ta bilde</span> i stedet for <span class="ui">Velg bilder</span>.</li>
+        <li><strong>Uten Apple Intelligence:</strong> bruk <span class="ui">Hent ut tekst fra bilde</span> i trinn 2. Da forlater bildet aldri telefonen.</li>
+      </ul>
+      <p>Prompten i trinn 3 holdes oppdatert når Zélar oppdateres, så snarveien ikke må lages på nytt hvis formatet endres.</p>
+    </div>
+
+    <div class="card" id="skan">
+      <div class="eyebrow">Skann en etikett</div>
+      <h2>Trinn for trinn</h2>
+      <!-- SCREENSHOT ai-04: The Shortcut running: Claude answering inside Shortcuts. assets/img/screens/da/ai-04.webp, see icy-pork/zelar-site#2 -->
+      <!-- SCREENSHOT ai-05: The draft review screen: AI suggestions, match with an existing wine, placement, Færdiggør. assets/img/screens/da/ai-05.webp, see icy-pork/zelar-site#2 -->
+      <ol>
+        <li><strong>Kjør snarveien</strong> til lager eller til journalen, og velg et bilde av etiketten, tatt rett forfra og i godt lys. Til journalen kan du skrive et kort notat, f.eks. «4,5 stjerner, Restaurant Barolo, ett glass».</li>
+        <li><strong>Apples modell leser etiketten</strong> og skriver det den kan se: navn, produsent, årgang og så videre.</li>
+        <li><strong>Vent på AI-en din.</strong> Snarveien sender det som sto på etiketten, og Zélars prompt til Claude eller ChatGPT og venter på svaret.</li>
+        <li><strong>Zélar åpner utkastet</strong> med svaret og bildet, klart til å sjekkes.</li>
+      </ol>
+      <h3>Sjekkeskjermen</h3>
+      <ul>
+        <li>Feltene er <strong>AI-forslag</strong>: sjekk navn, produsent og årgang mot etiketten, og rett det som er feil. AI kan ta feil.</li>
+        <li>Finnes vinen allerede i kjelleren, foreslår Zélar å bruke den, så flasken legges til den eksisterende vinen i stedet for å bli en ny.</li>
+        <li>Velg antall og plass til flaskene. Uten plass havner de under <span class="ui">Uten plass</span>.</li>
+        <li>Trykk på <span class="ui">Fullfør</span>. Først nå opprettes vinen eller smakingen, og utkastet slettes.</li>
+      </ul>
+    </div>
+
+    <div class="card" id="share">
+      <div class="eyebrow">Del fra AI-appen din</div>
+      <h2>Svaret fra Claude eller ChatGPT rett til Zélar</h2>
+      <!-- SCREENSHOT ai-06: A reply in the Claude or ChatGPT app with the share sheet open and Zélar in the row. assets/img/screens/da/ai-06.webp, see icy-pork/zelar-site#2 -->
+      <!-- SCREENSHOT ai-07: The "Del til Zélar" card. assets/img/screens/da/ai-07.webp, see icy-pork/zelar-site#2 -->
+      <!-- SCREENSHOT ai-08: A photo shared to Zélar with "Tilføj til …" for an open draft. assets/img/screens/da/ai-08.webp, see icy-pork/zelar-site#2 -->
+      <ol>
+        <li>Be AI-en din om å svare i Zélars format. Det enkleste er å starte med en prompt fra <span class="ui">Prompter</span> eller formatet fra <span class="ui">＋ → Importer fra AI → ?</span>.</li>
+        <li>Trykk og hold på svaret (eller bruk delingsknappen) → <span class="ui">Del</span> → <span class="ui">Zélar</span>.</li>
+        <li>Kortet «Del til Zélar» viser hva teksten inneholder, f.eks. navnet på en vin eller «3 viner i teksten», og om det ligner et AI-svar i Zélars format.</li>
+        <li>Velg <span class="ui">Vin til lager</span> eller <span class="ui">Smakt vin</span>. Zélar har forhåndsvalgt det som passer best. Du sjekker det i Zélar før noe opprettes.</li>
+      </ol>
+      <h3>Tekst og bilde hver for seg</h3>
+      <p>Mange AI-apper deler bare tekst. Del bildet etterpå (eller først) fra Bilder til Zélar, og velg <span class="ui">Legg til i …</span> med utkastet det hører til. Zélar foreslår utkastet som passer, men velger aldri av seg selv. Deler du et bilde alene, kan du også <span class="ui">Lagre som utkast</span> og vente på teksten, eller gå rett til vin- eller smakingsskjemaet med bildene.</p>
+      <p>Finner du ikke Zélar på delingsarket, så rull til høyre i app-raden, trykk på <span class="ui">Mer</span> og slå på Zélar.</p>
+    </div>
+
+    <div class="card" id="drafts">
+      <div class="eyebrow">Utkast</div>
+      <h2>Det som venter på deg</h2>
+      <!-- SCREENSHOT ai-09: The Kladder list showing all three states. assets/img/screens/da/ai-09.webp, see icy-pork/zelar-site#2 -->
+      <p>Så lenge det finnes utkast, står <span class="ui">Utkast</span> med et tall i menyen (bak kjellerknappen på Oversikt) under Bibliotek, og i sidefeltet på iPad. Et utkast kan være:</p>
+      <div class="table-wrap" tabindex="0" role="region" aria-label="Utkastenes tilstander">
+        <table>
+          <tr><th>Tilstand</th><th>Hva du gjør</th></tr>
+          <tr><td>Tekst og bilde · klar til å sjekkes</td><td>Trykk på det for å sjekke og opprette.</td></tr>
+          <tr><td>Uten bilde · klar til å sjekkes</td><td>Opprett det som det er, eller del et bilde til det først.</td></tr>
+          <tr><td>Venter på AI-ens tekst</td><td>Del svaret fra AI-appen din, og velg <span class="ui">Legg til i utkast</span>, eller opprett vinen selv nå.</td></tr>
+        </table>
+      </div>
+      <ul>
+        <li><strong>Slett</strong> et utkast med <span class="ui">Slett utkast</span>, eller rydd opp med <span class="ui">Slett utkast eldre enn 30 dager</span>.</li>
+        <li><strong>Lim inn-knappen</strong> i Utkast lagrer et kopiert AI-svar som utkast. Bruk den med apper som bare kan kopiere.</li>
+        <li>Utkast blir på enheten. De synkroniseres ikke til de andre enhetene dine og blir ikke med i sikkerhetskopien.</li>
+      </ul>
+    </div>
+
+    <div class="card" id="first-load">
+      <div class="eyebrow">Første innlasting</div>
+      <h2>Hele kjelleren inn på én gang</h2>
+      <!-- SCREENSHOT ai-10: The Første indlæsning section on Backup, import & eksport. assets/img/screens/da/ai-10.webp, see icy-pork/zelar-site#2 -->
+      <!-- SCREENSHOT ai-11: The "På eget ansvar" confirmation. assets/img/screens/da/ai-11.webp, see icy-pork/zelar-site#2 -->
+      <!-- SCREENSHOT ai-12: Claude or ChatGPT answering a first load in parts. assets/img/screens/da/ai-12.webp, see icy-pork/zelar-site#2 -->
+      <p>Har du allerede viner registrert et annet sted? Finn <span class="ui">Første innlasting</span> under <span class="ui">Sikkerhetskopi, import og eksport</span> i menyen. Det finnes to veier.</p>
+
+      <h3>Som tekst (anbefalt)</h3>
+      <ol>
+        <li>Trykk på <span class="ui">Kopier AI-instruksjoner (tekst)</span>.</li>
+        <li>Åpne Claude eller ChatGPT, lim inn instruksjonene og legg ved regnearket, eksporten eller bildene dine.</li>
+        <li>AI-en svarer i deler på 40 viner. Skriv <em>fortsett</em> for å få neste del.</li>
+        <li>Kopier hver del, og lim den inn under <span class="ui">Lim inn viner fra AI</span> i samme seksjon, én om gangen. Sjekk vinene, og trykk på <span class="ui">Fullfør</span>.</li>
+        <li>Bilder legges til etterpå på hver vin.</li>
+      </ol>
+
+      <h3>Som sikkerhetskopifil – på eget ansvar</h3>
+      <div class="callout callout--warn">
+        <strong>Les dette først</strong>
+        <p>En sikkerhetskopifil fra en AI gjenopprettes med <span class="ui">Gjenopprett fra fil</span>, og det <strong>erstatter alt i Zélar</strong>. AI-en kan gjøre feil i filen, og Zélar kan (ennå) ikke flette den inn i en eksisterende kjeller. Bruk den bare i en tom app, og ta en sikkerhetskopi først hvis du har data.</p>
+      </div>
+      <ol>
+        <li>Trykk på <span class="ui">Kopier AI-instruksjoner (sikkerhetskopifil)</span> og bekreft med <span class="ui">Jeg forstår, kopier</span>.</li>
+        <li>Bruk en AI som kan lage filer. Lim inn instruksjonene, og legg ved filene dine; bilder kan bli med.</li>
+        <li>Last ned <code>.zelarbackup</code>-filen AI-en lager, til Filer.</li>
+        <li>I Zélar: <span class="ui">Sikkerhetskopi, import og eksport</span> → <span class="ui">Gjenopprett fra fil</span> → velg filen i Filer.</li>
+      </ol>
+      <p>Blir filen for stor, deler AI-en den i flere. Gjenopprett bare én av dem, for hver gjenoppretting erstatter den forrige, eller bruk tekstveien i stedet.</p>
+
+      <h3>Gode råd</h3>
+      <ul>
+        <li><strong>Regneark:</strong> én rad per vin med overskrifter gir det beste resultatet. Antall flasker og plassering kan stå i hver sin kolonne.</li>
+        <li><strong>Eksport fra en annen app:</strong> CSV eller tekst er best. Fortell AI-en hvilken app den kommer fra.</li>
+        <li><strong>Mange etiketter:</strong> ta ett bilde per etikett, rett forfra, og send dem i mindre bunker.</li>
+        <li><strong>Plasseringer:</strong> bygg vinstativene dine i Zélar først. Da kan AI-en bruke de ekte navnene dine, f.eks. «Vinstativ A · B3».</li>
+      </ul>
+    </div>
+
+    <div class="card" id="fejl">
+      <div class="eyebrow">Feilsøking</div>
+      <h2>Når noe krøller seg</h2>
+      <h3>«Svaret bruker en nyere versjon av formatet»</h3>
+      <p>Svaret er skrevet for en nyere Zélar. Oppdater Zélar i App Store, og prøv igjen.</p>
+      <h3>Snarveien stopper, eller Spør Claude / Spør ChatGPT gir ikke noe svar</h3>
+      <p>Sjekk at AI-appen er installert og logget inn, og at du har nettverk. Åpne AI-appen én gang, og kjør deretter snarveien fra Snarveier-appen, så du kan se hvilket trinn som stopper.</p>
+      <h3>Etiketten ble lest feil</h3>
+      <p>Ta bildet på nytt rett forfra, uten gjenskinn, og fyll bildet med etiketten. Bruker du tekstgjenkjenning i trinn 2, så prøv skymodellen i stedet; den leser vanskelige etiketter bedre. Du kan alltid rette feltene på sjekkeskjermen.</p>
+      <h3>Zélar er ikke på delingsarket</h3>
+      <p>Rull til høyre i raden med apper, trykk på <span class="ui">Mer</span>, og slå på Zélar. Åpne Zélar én gang etter en ny installasjon.</p>
+      <h3>«Bruk modell» sier stopp</h3>
+      <p>Apples modell har daglige grenser. Bruk <span class="ui">Hent ut tekst fra bilde</span> i trinn 2 til i morgen.</p>
+      <h3>Hvorfor ikke bare Siri?</h3>
+      <p>Siris nye AI-funksjoner finnes ikke på iPhone i EU ennå. Snarveier virker overalt, så Zélar bygger på dem.</p>
+      <h3>Filen er for stor</h3>
+      <p>Del innholdet opp i flere omganger: send færre bilder om gangen, eller bruk tekstveien med deler på 40 viner.</p>
+    </div>
+
+    <div class="card" id="own-prompts">
+      <div class="eyebrow">For de nysgjerrige</div>
+      <h2>For dine egne prompter og snarveier</h2>
+      <h3>Formatet</h3>
+      <p>Zélar leser tekst med én opplysning per linje (<code>KEY: value</code>) og en linje med <code>---</code> mellom vinene. Svaret kan starte med <code>ZÉLAR-FORMAT: 1</code>, så Zélar vet hvilken versjon av formatet det er. Nøklene skrives på engelsk (danske nøkler fra eldre versjoner virker også), og linjer Zélar ikke kjenner, hoppes over.</p>
+      <pre>ZÉLAR-FORMAT: 1
+WINE: Château Somewhere
+PRODUCER: A. Christmann
+VINTAGE: 2018
+COUNTRY: Frankrike
+REGION: Bordeaux, Médoc
+TYPE: Red
+GRAPES: Cabernet Sauvignon, Merlot
+QUANTITY: 2
+DRINKING WINDOW: 2024-2032
+CELLAR: Hjemme
+LOCATION: Vinstativ A · B3
+---
+WINE: ...</pre>
+      <p>Hele formatet, med alle felt, får du med <span class="ui">Hent importformat</span> i Snarveier eller med <span class="ui">?</span> under <span class="ui">＋ → Importer fra AI</span>.</p>
+
+      <h3>Zélars handlinger i Snarveier</h3>
+      <div class="table-wrap" tabindex="0" role="region" aria-label="Zélars handlinger i Snarveier">
+        <table>
+          <tr><th>Handling</th><th>Inndata</th><th>Gir</th></tr>
+          <tr><td><span class="ui">Opprett vin på lager</span></td><td>Tekst (AI-svar i Zélars format), bilder (valgfritt)</td><td>Et utkast som åpnes for sjekk</td></tr>
+          <tr><td><span class="ui">Opprett journalnotat</span></td><td>Tekst, bilder (valgfritt)</td><td>Et utkast til Journalen som åpnes for sjekk</td></tr>
+          <tr><td><span class="ui">Legg bilde til utkast</span></td><td>Bilder, utkast (valgfritt: det nyeste som venter på et bilde)</td><td>Bildet lagt til utkastet</td></tr>
+          <tr><td><span class="ui">Hent Zélar-prompt</span></td><td>Prompt (skann til lager eller journal, første innlasting som tekst eller sikkerhetskopifil), notat</td><td>Prompten som tekst</td></tr>
+          <tr><td><span class="ui">Hent importformat</span></td><td>Vin til lager eller smakt vin</td><td>Formatet og versjonen av det</td></tr>
+          <tr><td><span class="ui">Hent biblioteket mitt</span></td><td>—</td><td>Kjelleren, smakingene og ønskelisten din som Markdown</td></tr>
+          <tr><td><span class="ui">Hent prompt med kjelleren min</span></td><td>Oppgave, rett, fra kjelleren eller kjøp nytt, hvor du handler</td><td>En prompt fra Prompter med kjelleren din, som når du kopierer den i appen</td></tr>
+        </table>
+      </div>
+
+      <h3>Promptbiblioteket ditt i en snarvei</h3>
+      <p><span class="ui">Hent prompt med kjelleren min</span> etterfulgt av Spør Claude eller Spør ChatGPT gir deg promptene dine uten å åpne Zélar. To ideer:</p>
+      <ul>
+        <li><strong>Matmatch med stemmen:</strong> Dikter tekst («Hva lager du?») → Hent prompt med kjelleren min (Matmatch til middagen, Rett: dikteringen) → Spør Claude.</li>
+        <li><strong>Innkjøpsforslag på Hjem-skjermen:</strong> Hent prompt med kjelleren min (Innkjøpsforslag) → Spør ChatGPT.</li>
+      </ul>
+      <p>Svaret blir i AI-appen. Bruker du oppgaven <em>Berik vinopplysningene mine</em>, så lim inn svaret med <span class="ui">Oppdater viner fra AI</span> i Zélar, så du kan se endringene felt for felt.</p>
+    </div>
+
+    <div class="card">
+      <div class="eyebrow">Hjelp</div>
+      <p>Resten av appen er beskrevet i <a href="{{root}}support/">brukerveiledningen</a>. Står du fast, så skriv til <a href="mailto:zelar@whaaat.co" class="mono">zelar@whaaat.co</a>.</p>
+    </div>
+</div>
+</main>

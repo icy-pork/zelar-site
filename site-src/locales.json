@@ -35,8 +35,22 @@
         "untranslated": "Siden finnes ikke på norsk ennå, så den vises på engelsk."
       }
     },
-    { "code": "de", "path": "de/", "lang": "de", "og": "de_DE", "name": "Deutsch", "ready": false },
-    { "code": "fr", "path": "fr/", "lang": "fr", "og": "fr_FR", "name": "Français", "ready": false },
+    {
+      "code": "de", "path": "de/", "lang": "de", "og": "de_DE", "name": "Deutsch", "ready": true,
+      "ui": {
+        "skip": "Zum Inhalt springen", "home": "Zélar Startseite", "nav": "Hauptmenü", "footer": "Fußzeile", "language": "Sprache",
+        "privacy": "Datenschutz", "support": "Support", "ai": "KI-Anleitung",
+        "untranslated": "Diese Seite gibt es noch nicht auf Deutsch, daher wird sie auf Englisch angezeigt."
+      }
+    },
+    {
+      "code": "fr", "path": "fr/", "lang": "fr", "og": "fr_FR", "name": "Français", "ready": true,
+      "ui": {
+        "skip": "Aller au contenu", "home": "Accueil Zélar", "nav": "Menu principal", "footer": "Pied de page", "language": "Langue",
+        "privacy": "Confidentialité", "support": "Assistance", "ai": "Guide de l'IA",
+        "untranslated": "Cette page n'existe pas encore en français ; elle s'affiche donc en anglais."
+      }
+    },
     { "code": "it", "path": "it/", "lang": "it", "og": "it_IT", "name": "Italiano", "ready": false },
     { "code": "es", "path": "es/", "lang": "es", "og": "es_ES", "name": "Español", "ready": false },
     { "code": "pt-PT", "path": "pt-pt/", "lang": "pt-PT", "og": "pt_PT", "name": "Português (Portugal)", "ready": false },

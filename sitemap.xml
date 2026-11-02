@@ -6,6 +6,8 @@
     <xhtml:link rel="alternate" hreflang="da" href="https://zelar.whaaat.co/da/"/>
     <xhtml:link rel="alternate" hreflang="sv" href="https://zelar.whaaat.co/sv/"/>
     <xhtml:link rel="alternate" hreflang="nb" href="https://zelar.whaaat.co/nb/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zelar.whaaat.co/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zelar.whaaat.co/fr/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://zelar.whaaat.co/"/>
   </url>
   <url>
@@ -14,6 +16,8 @@
     <xhtml:link rel="alternate" hreflang="da" href="https://zelar.whaaat.co/da/"/>
     <xhtml:link rel="alternate" hreflang="sv" href="https://zelar.whaaat.co/sv/"/>
     <xhtml:link rel="alternate" hreflang="nb" href="https://zelar.whaaat.co/nb/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zelar.whaaat.co/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zelar.whaaat.co/fr/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://zelar.whaaat.co/"/>
   </url>
   <url>
@@ -22,6 +26,8 @@
     <xhtml:link rel="alternate" hreflang="da" href="https://zelar.whaaat.co/da/"/>
     <xhtml:link rel="alternate" hreflang="sv" href="https://zelar.whaaat.co/sv/"/>
     <xhtml:link rel="alternate" hreflang="nb" href="https://zelar.whaaat.co/nb/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zelar.whaaat.co/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zelar.whaaat.co/fr/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://zelar.whaaat.co/"/>
   </url>
   <url>
@@ -30,6 +36,28 @@
     <xhtml:link rel="alternate" hreflang="da" href="https://zelar.whaaat.co/da/"/>
     <xhtml:link rel="alternate" hreflang="sv" href="https://zelar.whaaat.co/sv/"/>
     <xhtml:link rel="alternate" hreflang="nb" href="https://zelar.whaaat.co/nb/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zelar.whaaat.co/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zelar.whaaat.co/fr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zelar.whaaat.co/"/>
+  </url>
+  <url>
+    <loc>https://zelar.whaaat.co/de/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zelar.whaaat.co/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://zelar.whaaat.co/da/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://zelar.whaaat.co/sv/"/>
+    <xhtml:link rel="alternate" hreflang="nb" href="https://zelar.whaaat.co/nb/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zelar.whaaat.co/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zelar.whaaat.co/fr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zelar.whaaat.co/"/>
+  </url>
+  <url>
+    <loc>https://zelar.whaaat.co/fr/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zelar.whaaat.co/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://zelar.whaaat.co/da/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://zelar.whaaat.co/sv/"/>
+    <xhtml:link rel="alternate" hreflang="nb" href="https://zelar.whaaat.co/nb/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zelar.whaaat.co/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zelar.whaaat.co/fr/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://zelar.whaaat.co/"/>
   </url>
   <url>
@@ -38,6 +66,8 @@
     <xhtml:link rel="alternate" hreflang="da" href="https://zelar.whaaat.co/da/privacy/"/>
     <xhtml:link rel="alternate" hreflang="sv" href="https://zelar.whaaat.co/sv/privacy/"/>
     <xhtml:link rel="alternate" hreflang="nb" href="https://zelar.whaaat.co/nb/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zelar.whaaat.co/de/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zelar.whaaat.co/fr/privacy/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://zelar.whaaat.co/privacy/"/>
   </url>
   <url>
@@ -46,6 +76,8 @@
     <xhtml:link rel="alternate" hreflang="da" href="https://zelar.whaaat.co/da/privacy/"/>
     <xhtml:link rel="alternate" hreflang="sv" href="https://zelar.whaaat.co/sv/privacy/"/>
     <xhtml:link rel="alternate" hreflang="nb" href="https://zelar.whaaat.co/nb/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zelar.whaaat.co/de/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zelar.whaaat.co/fr/privacy/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://zelar.whaaat.co/privacy/"/>
   </url>
   <url>
@@ -54,6 +86,8 @@
     <xhtml:link rel="alternate" hreflang="da" href="https://zelar.whaaat.co/da/privacy/"/>
     <xhtml:link rel="alternate" hreflang="sv" href="https://zelar.whaaat.co/sv/privacy/"/>
     <xhtml:link rel="alternate" hreflang="nb" href="https://zelar.whaaat.co/nb/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zelar.whaaat.co/de/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zelar.whaaat.co/fr/privacy/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://zelar.whaaat.co/privacy/"/>
   </url>
   <url>
@@ -62,6 +96,28 @@
     <xhtml:link rel="alternate" hreflang="da" href="https://zelar.whaaat.co/da/privacy/"/>
     <xhtml:link rel="alternate" hreflang="sv" href="https://zelar.whaaat.co/sv/privacy/"/>
     <xhtml:link rel="alternate" hreflang="nb" href="https://zelar.whaaat.co/nb/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zelar.whaaat.co/de/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zelar.whaaat.co/fr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zelar.whaaat.co/privacy/"/>
+  </url>
+  <url>
+    <loc>https://zelar.whaaat.co/de/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zelar.whaaat.co/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://zelar.whaaat.co/da/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://zelar.whaaat.co/sv/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="nb" href="https://zelar.whaaat.co/nb/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zelar.whaaat.co/de/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zelar.whaaat.co/fr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zelar.whaaat.co/privacy/"/>
+  </url>
+  <url>
+    <loc>https://zelar.whaaat.co/fr/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zelar.whaaat.co/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://zelar.whaaat.co/da/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://zelar.whaaat.co/sv/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="nb" href="https://zelar.whaaat.co/nb/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zelar.whaaat.co/de/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zelar.whaaat.co/fr/privacy/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://zelar.whaaat.co/privacy/"/>
   </url>
   <url>
@@ -70,6 +126,8 @@
     <xhtml:link rel="alternate" hreflang="da" href="https://zelar.whaaat.co/da/support/"/>
     <xhtml:link rel="alternate" hreflang="sv" href="https://zelar.whaaat.co/sv/support/"/>
     <xhtml:link rel="alternate" hreflang="nb" href="https://zelar.whaaat.co/nb/support/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zelar.whaaat.co/de/support/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zelar.whaaat.co/fr/support/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://zelar.whaaat.co/support/"/>
   </url>
   <url>
@@ -78,6 +136,8 @@
     <xhtml:link rel="alternate" hreflang="da" href="https://zelar.whaaat.co/da/support/"/>
     <xhtml:link rel="alternate" hreflang="sv" href="https://zelar.whaaat.co/sv/support/"/>
     <xhtml:link rel="alternate" hreflang="nb" href="https://zelar.whaaat.co/nb/support/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zelar.whaaat.co/de/support/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zelar.whaaat.co/fr/support/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://zelar.whaaat.co/support/"/>
   </url>
   <url>
@@ -86,6 +146,8 @@
     <xhtml:link rel="alternate" hreflang="da" href="https://zelar.whaaat.co/da/support/"/>
     <xhtml:link rel="alternate" hreflang="sv" href="https://zelar.whaaat.co/sv/support/"/>
     <xhtml:link rel="alternate" hreflang="nb" href="https://zelar.whaaat.co/nb/support/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zelar.whaaat.co/de/support/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zelar.whaaat.co/fr/support/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://zelar.whaaat.co/support/"/>
   </url>
   <url>
@@ -94,6 +156,28 @@
     <xhtml:link rel="alternate" hreflang="da" href="https://zelar.whaaat.co/da/support/"/>
     <xhtml:link rel="alternate" hreflang="sv" href="https://zelar.whaaat.co/sv/support/"/>
     <xhtml:link rel="alternate" hreflang="nb" href="https://zelar.whaaat.co/nb/support/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zelar.whaaat.co/de/support/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zelar.whaaat.co/fr/support/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zelar.whaaat.co/support/"/>
+  </url>
+  <url>
+    <loc>https://zelar.whaaat.co/de/support/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zelar.whaaat.co/support/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://zelar.whaaat.co/da/support/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://zelar.whaaat.co/sv/support/"/>
+    <xhtml:link rel="alternate" hreflang="nb" href="https://zelar.whaaat.co/nb/support/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zelar.whaaat.co/de/support/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zelar.whaaat.co/fr/support/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zelar.whaaat.co/support/"/>
+  </url>
+  <url>
+    <loc>https://zelar.whaaat.co/fr/support/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zelar.whaaat.co/support/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://zelar.whaaat.co/da/support/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://zelar.whaaat.co/sv/support/"/>
+    <xhtml:link rel="alternate" hreflang="nb" href="https://zelar.whaaat.co/nb/support/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zelar.whaaat.co/de/support/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zelar.whaaat.co/fr/support/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://zelar.whaaat.co/support/"/>
   </url>
   <url>
@@ -102,6 +186,8 @@
     <xhtml:link rel="alternate" hreflang="da" href="https://zelar.whaaat.co/da/ai/"/>
     <xhtml:link rel="alternate" hreflang="sv" href="https://zelar.whaaat.co/sv/ai/"/>
     <xhtml:link rel="alternate" hreflang="nb" href="https://zelar.whaaat.co/nb/ai/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zelar.whaaat.co/de/ai/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zelar.whaaat.co/fr/ai/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://zelar.whaaat.co/ai/"/>
   </url>
   <url>
@@ -110,6 +196,8 @@
     <xhtml:link rel="alternate" hreflang="da" href="https://zelar.whaaat.co/da/ai/"/>
     <xhtml:link rel="alternate" hreflang="sv" href="https://zelar.whaaat.co/sv/ai/"/>
     <xhtml:link rel="alternate" hreflang="nb" href="https://zelar.whaaat.co/nb/ai/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zelar.whaaat.co/de/ai/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zelar.whaaat.co/fr/ai/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://zelar.whaaat.co/ai/"/>
   </url>
   <url>
@@ -118,6 +206,8 @@
     <xhtml:link rel="alternate" hreflang="da" href="https://zelar.whaaat.co/da/ai/"/>
     <xhtml:link rel="alternate" hreflang="sv" href="https://zelar.whaaat.co/sv/ai/"/>
     <xhtml:link rel="alternate" hreflang="nb" href="https://zelar.whaaat.co/nb/ai/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zelar.whaaat.co/de/ai/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zelar.whaaat.co/fr/ai/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://zelar.whaaat.co/ai/"/>
   </url>
   <url>
@@ -126,6 +216,28 @@
     <xhtml:link rel="alternate" hreflang="da" href="https://zelar.whaaat.co/da/ai/"/>
     <xhtml:link rel="alternate" hreflang="sv" href="https://zelar.whaaat.co/sv/ai/"/>
     <xhtml:link rel="alternate" hreflang="nb" href="https://zelar.whaaat.co/nb/ai/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zelar.whaaat.co/de/ai/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zelar.whaaat.co/fr/ai/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zelar.whaaat.co/ai/"/>
+  </url>
+  <url>
+    <loc>https://zelar.whaaat.co/de/ai/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zelar.whaaat.co/ai/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://zelar.whaaat.co/da/ai/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://zelar.whaaat.co/sv/ai/"/>
+    <xhtml:link rel="alternate" hreflang="nb" href="https://zelar.whaaat.co/nb/ai/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zelar.whaaat.co/de/ai/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zelar.whaaat.co/fr/ai/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zelar.whaaat.co/ai/"/>
+  </url>
+  <url>
+    <loc>https://zelar.whaaat.co/fr/ai/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zelar.whaaat.co/ai/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://zelar.whaaat.co/da/ai/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://zelar.whaaat.co/sv/ai/"/>
+    <xhtml:link rel="alternate" hreflang="nb" href="https://zelar.whaaat.co/nb/ai/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://zelar.whaaat.co/de/ai/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://zelar.whaaat.co/fr/ai/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://zelar.whaaat.co/ai/"/>
   </url>
 </urlset>

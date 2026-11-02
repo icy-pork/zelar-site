@@ -1,0 +1,280 @@
+<!-- title: Zélar – Votre propre IA dans Zélar -->
+<!-- description: Comment utiliser votre propre Claude ou ChatGPT avec Zélar : scanner des étiquettes avec un raccourci, partager des réponses vers Zélar, les brouillons et le premier chargement d'une cave entière. -->
+<main id="main">
+<div class="wrap wrap--narrow">
+  <div class="page-head">
+    <h1>Votre propre IA dans Zélar</h1>
+    <p class="meta">Dernière mise à jour : 1er novembre 2026</p>
+  </div>
+
+    <div class="card">
+      <p>Zélar est conçu pour que votre propre IA puisse travailler avec votre cave. L'onglet <span class="ui">Prompts</span> propose des prompts et l'import par collage ; vous pouvez aussi utiliser un raccourci pour scanner des étiquettes, partager des réponses directement depuis votre app d'IA et laisser votre IA importer une cave entière la première fois. C'est gratuit, et ça le restera.</p>
+      <p>Quelle que soit la voie, un principe s'applique : <strong>tout ce qui vient d'une IA est une suggestion.</strong> Cela arrive sous forme de brouillon, que vous vérifiez avant que quoi que ce soit n'entre en stock ou dans le Journal.</p>
+    </div>
+
+    <nav class="toc" aria-label="Sommaire">
+      <div class="eyebrow">Sommaire</div>
+      <ol>
+        <li><a href="#tre-veje">Trois voies d'entrée</a></li>
+        <li><a href="#privatliv">Ce qui est envoyé, et où</a></li>
+        <li><a href="#genvej">Installer le raccourci</a></li>
+        <li><a href="#skan">Scanner une étiquette, étape par étape</a></li>
+        <li><a href="#share">Partager depuis votre app d'IA</a></li>
+        <li><a href="#drafts">Brouillons</a></li>
+        <li><a href="#first-load">Premier chargement</a></li>
+        <li><a href="#fejl">Dépannage</a></li>
+        <li><a href="#own-prompts">Pour vos propres prompts et raccourcis</a></li>
+      </ol>
+    </nav>
+
+    <div class="card" id="tre-veje">
+      <div class="eyebrow">Trois voies d'entrée</div>
+      <h2>Choisissez celle qui convient à la tâche</h2>
+      <ul>
+        <li><strong>Scanner une étiquette avec un raccourci.</strong> Choisissez une photo ; le modèle d'Apple lit l'étiquette, le raccourci interroge votre propre Claude ou ChatGPT et place la réponse et la photo dans Zélar sous forme de brouillon. Idéal pour une bouteille à la fois.</li>
+        <li><strong>Partager depuis votre app d'IA.</strong> Si vous avez déjà parlé d'un vin avec votre IA, partagez la réponse (et éventuellement la photo) vers Zélar depuis la feuille de partage.</li>
+        <li><strong>Premier chargement.</strong> Une cave entière à partir d'un tableur, de l'export d'une autre app ou d'une pile de photos d'étiquettes – en texte, par parties, ou en fichier de sauvegarde.</li>
+      </ul>
+      <div class="table-wrap" tabindex="0" role="region" aria-label="Quelle voie choisir ?">
+        <table>
+          <tr><th>Vous avez…</th><th>Utilisez</th></tr>
+          <tr><td>une bouteille en main</td><td><a href="#genvej">Le raccourci</a></td></tr>
+          <tr><td>une conversation avec votre IA sur un vin, une carte des vins ou un ticket de caisse</td><td><a href="#share">Partager avec Zélar</a></td></tr>
+          <tr><td>un texte copié depuis une app sans bouton de partage</td><td><span class="ui">＋ → Importer depuis l'IA</span></td></tr>
+          <tr><td>un tableur, un export d'une autre app ou de nombreuses photos</td><td><a href="#first-load">Premier chargement</a></td></tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="card" id="privatliv">
+      <div class="eyebrow">Confidentialité</div>
+      <h2>Ce qui est envoyé, et où</h2>
+      <ul>
+        <li><strong>La photo ne va pas à votre IA.</strong> Le raccourci fait lire l'étiquette par le modèle d'Apple dans le Private Cloud Compute d'Apple, où Apple ne la conserve pas. Si vous voulez que la photo reste sur le téléphone, utilisez plutôt la reconnaissance de texte d'iOS (voir la <a href="#genvej">recette</a>).</li>
+        <li><strong>Seul du texte va à votre propre Claude ou ChatGPT</strong>, sous votre propre compte. Cela compte dans les limites de votre forfait chez ce service, et ses conditions s'appliquent.</li>
+        <li><strong>Lors du premier chargement,</strong> c'est vous qui envoyez votre tableur ou vos photos à votre propre compte d'IA.</li>
+        <li><strong>Zélar n'envoie rien.</strong> Les actions de raccourci et la feuille de partage lisent et écrivent uniquement des fichiers sur votre appareil. Les brouillons restent sur l'appareil et ne sont pas synchronisés.</li>
+      </ul>
+      <p>Voir aussi la <a href="{{root}}privacy/">politique de confidentialité</a>.</p>
+    </div>
+
+    <div class="card" id="genvej">
+      <div class="eyebrow">Le raccourci</div>
+      <h2>Installer « Zélar · Scanner l'étiquette »</h2>
+      <!-- SCREENSHOT ai-01: The Shortcut open in the Shortcuts app with its actions (Claude version). assets/img/screens/da/ai-01.webp, see icy-pork/zelar-site#2 -->
+      <!-- SCREENSHOT ai-02: The first-run permission prompt. assets/img/screens/da/ai-02.webp, see icy-pork/zelar-site#2 -->
+      <!-- SCREENSHOT ai-03: Settings → Action Button set to the Shortcut. assets/img/screens/da/ai-03.webp, see icy-pork/zelar-site#2 -->
+      <p>Il existe un raccourci pour chaque destination : <strong>vers le stock</strong> (une bouteille que vous mettez en cave) et <strong>vers le journal</strong> (un vin que vous dégustez maintenant). Chacun existe pour Claude et pour ChatGPT. Choisissez ceux qui correspondent à votre app d'IA.</p>
+      <div class="callout">
+        <strong>Liens à venir</strong>
+        <p>Les raccourcis vers le stock et le journal, pour Claude et pour ChatGPT, seront ajoutés ici sous forme de liens iCloud dès qu'ils seront prêts. D'ici là, vous pouvez les créer vous-même avec la recette ci-dessous ; cela prend quelques minutes.</p>
+      </div>
+      <!-- When the Shortcuts are built: add the two iCloud links here, with their
+           version ("v1"), e.g. <a class="btn btn--primary" href="https://www.icloud.com/shortcuts/…">Hent til Claude</a>.
+           Then soften the callout above. Screenshots go in assets/img/ai/ (da and en). -->
+
+      <h3>Ce qu'il vous faut</h3>
+      <ul>
+        <li>Zélar et l'app Claude ou ChatGPT, installés et connectés.</li>
+        <li>L'app Raccourcis (fournie avec iOS).</li>
+        <li>Apple Intelligence (iPhone 15 Pro ou plus récent) pour l'action <span class="ui">Utiliser le modèle</span>, qui lit l'étiquette. Elle a des limites quotidiennes. Sans Apple Intelligence, vous pouvez utiliser <span class="ui">Extraire le texte de l'image</span> à la place ; cela fonctionne sur le téléphone et réussit la plupart des étiquettes.</li>
+      </ul>
+
+      <h3>À la première exécution</h3>
+      <p>iOS demande si le raccourci peut utiliser Zélar, votre app d'IA et Photos. C'est le raccourci qui demande, pas Zélar, et la réponse ne vaut que pour ce raccourci. Choisissez <span class="ui">Toujours autoriser</span>, pour qu'il ne redemande pas à chaque fois.</p>
+
+      <h3>Placez-le là où vous l'utilisez</h3>
+      <ul>
+        <li><strong>Le bouton Action</strong> (iPhone 15 Pro et plus récents) : Réglages → Bouton Action → Raccourci.</li>
+        <li><strong>L'écran verrouillé ou le centre de contrôle</strong> : ajoutez un bouton Raccourci.</li>
+        <li><strong>L'écran d'accueil</strong> : maintenez le raccourci dans Raccourcis → Partager → Sur l'écran d'accueil.</li>
+        <li><strong>La feuille de partage dans Photos</strong> : activez « Afficher dans la feuille de partage » dans les détails du raccourci, et vous pourrez scanner une photo déjà prise.</li>
+      </ul>
+
+      <h3>Le créer vous-même</h3>
+      <p>Créez un nouveau raccourci dans Raccourcis, p. ex. « Zélar · Scanner l'étiquette vers le stock (Claude) », avec ces cinq actions. Les actions de Zélar se trouvent dans <span class="ui">Apps → Zélar</span>.</p>
+      <pre>1  Sélectionner des photos   Inclure : Tout · Sélection multiple : non
+2  Utiliser le modèle   modèle cloud (prompt ci-dessous) + [Photos]
+3  Obtenir Scanner l'étiquette vers le stock   (Zélar → Obtenir un prompt Zélar)
+4  Demander à Claude    [Obtenir un prompt Zélar] [Réponse]
+5  Créer un vin en stock à partir de [Demander à Claude]
+     Photos : [Photos]</pre>
+      <p>Le prompt de l'étape 2. Il demande seulement au modèle de lire l'étiquette ; la connaissance du vin vient de votre propre IA à l'étape 4 :</p>
+      <pre>This is a photo of a wine label. Extract as much information
+about the bottle as you can from the image, for example name,
+producer, country, region, vintage, alcohol % and any organic
+or biodynamic marks: [Photos]</pre>
+      <ul>
+        <li><strong>Vers le journal :</strong> choisissez <span class="ui">Scanner l'étiquette vers le journal</span> à l'étape 3, et utilisez <span class="ui">Créer une entrée de journal</span> à l'étape 5. Pour inclure la note et le lieu, ajoutez <span class="ui">Demander une entrée</span> (« Note, lieu, verre ou bouteille ? ») avant l'étape 3, et placez la réponse dans le champ <span class="ui">Remarque</span>.</li>
+        <li><strong>ChatGPT :</strong> utilisez <span class="ui">Demander à ChatGPT</span> à l'étape 4, avec du texte uniquement.</li>
+        <li><strong>Prendre la photo tout de suite :</strong> utilisez <span class="ui">Prendre une photo</span> au lieu de <span class="ui">Sélectionner des photos</span>.</li>
+        <li><strong>Sans Apple Intelligence :</strong> utilisez <span class="ui">Extraire le texte de l'image</span> à l'étape 2. La photo ne quitte alors jamais le téléphone.</li>
+      </ul>
+      <p>Le prompt de l'étape 3 reste à jour quand Zélar est mis à jour, pour que le raccourci n'ait pas à être refait si le format change.</p>
+    </div>
+
+    <div class="card" id="skan">
+      <div class="eyebrow">Scanner une étiquette</div>
+      <h2>Étape par étape</h2>
+      <!-- SCREENSHOT ai-04: The Shortcut running: Claude answering inside Shortcuts. assets/img/screens/da/ai-04.webp, see icy-pork/zelar-site#2 -->
+      <!-- SCREENSHOT ai-05: The draft review screen: AI suggestions, match with an existing wine, placement, Færdiggør. assets/img/screens/da/ai-05.webp, see icy-pork/zelar-site#2 -->
+      <ol>
+        <li><strong>Lancez le raccourci</strong> vers le stock ou le journal, et choisissez une photo de l'étiquette, prise bien de face et sous une bonne lumière. Pour le journal, vous pouvez écrire une courte remarque, p. ex. « 4,5 étoiles, Restaurant Barolo, un verre ».</li>
+        <li><strong>Le modèle d'Apple lit l'étiquette</strong> et écrit ce qu'il peut voir : nom, producteur, millésime, etc.</li>
+        <li><strong>Attendez votre IA.</strong> Le raccourci envoie ce qui figurait sur l'étiquette et le prompt de Zélar à Claude ou ChatGPT, puis attend la réponse.</li>
+        <li><strong>Zélar ouvre le brouillon</strong> avec la réponse et la photo, prêt à vérifier.</li>
+      </ol>
+      <h3>L'écran de vérification</h3>
+      <ul>
+        <li>Les champs sont des <strong>suggestions de l'IA</strong> : vérifiez le nom, le producteur et le millésime d'après l'étiquette, et corrigez ce qui est faux. L'IA peut se tromper.</li>
+        <li>Si le vin est déjà dans la cave, Zélar propose de l'utiliser, pour que la bouteille s'ajoute au vin existant au lieu d'en créer un nouveau.</li>
+        <li>Choisissez le nombre et la case des bouteilles. Sans case, elles arrivent dans <span class="ui">Sans emplacement</span>.</li>
+        <li>Touchez <span class="ui">Finaliser</span>. Ce n'est qu'à ce moment que le vin ou la dégustation est créé, et le brouillon supprimé.</li>
+      </ul>
+    </div>
+
+    <div class="card" id="share">
+      <div class="eyebrow">Partager depuis votre app d'IA</div>
+      <h2>La réponse de Claude ou ChatGPT directement dans Zélar</h2>
+      <!-- SCREENSHOT ai-06: A reply in the Claude or ChatGPT app with the share sheet open and Zélar in the row. assets/img/screens/da/ai-06.webp, see icy-pork/zelar-site#2 -->
+      <!-- SCREENSHOT ai-07: The "Del til Zélar" card. assets/img/screens/da/ai-07.webp, see icy-pork/zelar-site#2 -->
+      <!-- SCREENSHOT ai-08: A photo shared to Zélar with "Tilføj til …" for an open draft. assets/img/screens/da/ai-08.webp, see icy-pork/zelar-site#2 -->
+      <ol>
+        <li>Demandez à votre IA de répondre au format Zélar. Le plus simple est de partir d'un prompt de <span class="ui">Prompts</span> ou du format dans <span class="ui">＋ → Importer depuis l'IA → ?</span>.</li>
+        <li>Maintenez la réponse (ou utilisez le bouton de partage) → <span class="ui">Partager</span> → <span class="ui">Zélar</span>.</li>
+        <li>La fiche « Partager avec Zélar » montre ce que contient le texte, p. ex. le nom d'un vin ou « 3 vins dans le texte », et s'il ressemble à une réponse d'IA au format Zélar.</li>
+        <li>Choisissez <span class="ui">Vin en stock</span> ou <span class="ui">Vin dégusté</span>. Zélar a présélectionné ce qui convient le mieux. Vous vérifiez dans Zélar avant toute création.</li>
+      </ol>
+      <h3>Texte et photo séparément</h3>
+      <p>Beaucoup d'apps d'IA ne partagent que du texte. Partagez ensuite (ou d'abord) la photo depuis Photos vers Zélar, et choisissez <span class="ui">Ajouter à…</span> avec le brouillon auquel elle appartient. Zélar propose le brouillon qui correspond, mais ne choisit jamais tout seul. Si vous partagez une photo seule, vous pouvez aussi <span class="ui">Enregistrer comme brouillon</span> et attendre le texte, ou aller directement au formulaire du vin ou de la dégustation avec les images.</p>
+      <p>Si Zélar n'apparaît pas dans la feuille de partage, faites défiler la rangée d'apps vers la droite, touchez <span class="ui">Plus</span> et activez Zélar.</p>
+    </div>
+
+    <div class="card" id="drafts">
+      <div class="eyebrow">Brouillons</div>
+      <h2>Ce qui vous attend</h2>
+      <!-- SCREENSHOT ai-09: The Kladder list showing all three states. assets/img/screens/da/ai-09.webp, see icy-pork/zelar-site#2 -->
+      <p>Tant qu'il y a des brouillons, <span class="ui">Brouillons</span> apparaît avec un nombre dans le menu (derrière le bouton de cave sur Aperçu) sous Bibliothèque, et dans la barre latérale sur iPad. Un brouillon peut être :</p>
+      <div class="table-wrap" tabindex="0" role="region" aria-label="États des brouillons">
+        <table>
+          <tr><th>État</th><th>Ce que vous faites</th></tr>
+          <tr><td>Texte et photo · prêt à vérifier</td><td>Touchez-le pour vérifier et créer.</td></tr>
+          <tr><td>Sans photo · prêt à vérifier</td><td>Créez-le tel quel, ou partagez-y d'abord une photo.</td></tr>
+          <tr><td>En attente du texte de l'IA</td><td>Partagez la réponse depuis votre app d'IA et choisissez <span class="ui">Ajouter au brouillon</span>, ou créez le vin vous-même maintenant.</td></tr>
+        </table>
+      </div>
+      <ul>
+        <li><strong>Supprimez</strong> un brouillon avec <span class="ui">Supprimer le brouillon</span>, ou faites le ménage avec <span class="ui">Supprimer les brouillons de plus de 30 jours</span>.</li>
+        <li><strong>Le bouton Coller</strong> dans Brouillons enregistre une réponse d'IA copiée comme brouillon. Utilisez-le avec les apps qui ne savent que copier.</li>
+        <li>Les brouillons restent sur l'appareil. Ils ne sont pas synchronisés avec vos autres appareils et ne sont pas inclus dans la sauvegarde.</li>
+      </ul>
+    </div>
+
+    <div class="card" id="first-load">
+      <div class="eyebrow">Premier chargement</div>
+      <h2>Toute la cave d'un coup</h2>
+      <!-- SCREENSHOT ai-10: The Første indlæsning section on Backup, import & eksport. assets/img/screens/da/ai-10.webp, see icy-pork/zelar-site#2 -->
+      <!-- SCREENSHOT ai-11: The "På eget ansvar" confirmation. assets/img/screens/da/ai-11.webp, see icy-pork/zelar-site#2 -->
+      <!-- SCREENSHOT ai-12: Claude or ChatGPT answering a first load in parts. assets/img/screens/da/ai-12.webp, see icy-pork/zelar-site#2 -->
+      <p>Vos vins sont déjà enregistrés ailleurs ? Vous trouverez <span class="ui">Premier chargement</span> dans <span class="ui">Sauvegarde, import et export</span> dans le menu. Il y a deux voies.</p>
+
+      <h3>En texte (recommandé)</h3>
+      <ol>
+        <li>Touchez <span class="ui">Copier les instructions pour l'IA (texte)</span>.</li>
+        <li>Ouvrez Claude ou ChatGPT, collez les instructions et joignez votre tableur, votre export ou vos photos.</li>
+        <li>L'IA répond par parties de 40 vins. Tapez <em>continue</em> pour obtenir la partie suivante.</li>
+        <li>Copiez chaque partie et collez-la, une à la fois, dans <span class="ui">Coller des vins depuis l'IA</span> dans la même section. Vérifiez les vins et touchez <span class="ui">Finaliser</span>.</li>
+        <li>Les photos s'ajoutent ensuite sur chaque vin.</li>
+      </ol>
+
+      <h3>En fichier de sauvegarde – à vos risques</h3>
+      <div class="callout callout--warn">
+        <strong>À lire d'abord</strong>
+        <p>Un fichier de sauvegarde produit par une IA se restaure avec <span class="ui">Restaurer depuis un fichier</span>, et cela <strong>remplace tout dans Zélar</strong>. L'IA peut faire des erreurs dans le fichier, et Zélar ne sait pas (encore) le fusionner avec une cave existante. Ne l'utilisez que dans une app vide, et faites d'abord une sauvegarde si vous avez des données.</p>
+      </div>
+      <ol>
+        <li>Touchez <span class="ui">Copier les instructions pour l'IA (fichier de sauvegarde)</span> et confirmez avec <span class="ui">J'ai compris, copier</span>.</li>
+        <li>Utilisez une IA capable de créer des fichiers. Collez les instructions et joignez vos fichiers ; des photos peuvent être incluses.</li>
+        <li>Téléchargez le fichier <code>.zelarbackup</code> créé par l'IA dans Fichiers.</li>
+        <li>Dans Zélar : <span class="ui">Sauvegarde, import et export</span> → <span class="ui">Restaurer depuis un fichier</span> → choisissez le fichier dans Fichiers.</li>
+      </ol>
+      <p>Si le fichier devient trop gros, l'IA le divise en plusieurs. N'en restaurez qu'un, car chaque restauration remplace la précédente, ou utilisez plutôt la voie texte.</p>
+
+      <h3>Bons conseils</h3>
+      <ul>
+        <li><strong>Tableur :</strong> une ligne par vin avec des en-têtes donne le meilleur résultat. Le nombre de bouteilles et l'emplacement peuvent figurer dans des colonnes à part.</li>
+        <li><strong>Export d'une autre app :</strong> le CSV ou le texte sont préférables. Indiquez à l'IA de quelle app il provient.</li>
+        <li><strong>Beaucoup d'étiquettes :</strong> une photo par étiquette, bien de face, et envoyez-les par petits lots.</li>
+        <li><strong>Emplacements :</strong> créez d'abord vos casiers dans Zélar. L'IA peut alors utiliser vos vrais noms, p. ex. « Casier A · B3 ».</li>
+      </ul>
+    </div>
+
+    <div class="card" id="fejl">
+      <div class="eyebrow">Dépannage</div>
+      <h2>Quand quelque chose coince</h2>
+      <h3>« La réponse utilise une version plus récente du format »</h3>
+      <p>La réponse a été écrite pour une version plus récente de Zélar. Mettez à jour Zélar dans l'App Store et réessayez.</p>
+      <h3>Le raccourci s'arrête, ou Demander à Claude / Demander à ChatGPT ne donne aucune réponse</h3>
+      <p>Vérifiez que l'app d'IA est installée et connectée, et que vous avez du réseau. Ouvrez une fois l'app d'IA, puis lancez le raccourci depuis l'app Raccourcis pour voir à quelle étape il s'arrête.</p>
+      <h3>L'étiquette a été mal lue</h3>
+      <p>Reprenez la photo bien de face, sans reflets, en remplissant l'image avec l'étiquette. Si vous utilisez la reconnaissance de texte à l'étape 2, essayez plutôt le modèle dans le cloud ; il lit mieux les étiquettes difficiles. Vous pouvez toujours corriger les champs sur l'écran de vérification.</p>
+      <h3>Zélar n'est pas dans la feuille de partage</h3>
+      <p>Faites défiler la rangée d'apps vers la droite, touchez <span class="ui">Plus</span> et activez Zélar. Ouvrez Zélar une fois après une nouvelle installation.</p>
+      <h3>« Utiliser le modèle » s'arrête</h3>
+      <p>Le modèle d'Apple a des limites quotidiennes. Utilisez <span class="ui">Extraire le texte de l'image</span> à l'étape 2 jusqu'à demain.</p>
+      <h3>Pourquoi pas simplement Siri ?</h3>
+      <p>Les nouvelles fonctions d'IA de Siri ne sont pas encore disponibles sur iPhone dans l'UE. Les raccourcis fonctionnent partout, Zélar s'appuie donc sur eux.</p>
+      <h3>Le fichier est trop gros</h3>
+      <p>Répartissez le contenu en plusieurs fois : envoyez moins de photos à la fois, ou utilisez la voie texte avec des parties de 40 vins.</p>
+    </div>
+
+    <div class="card" id="own-prompts">
+      <div class="eyebrow">Pour les curieux</div>
+      <h2>Pour vos propres prompts et raccourcis</h2>
+      <h3>Le format</h3>
+      <p>Zélar lit du texte avec une information par ligne (<code>KEY: value</code>) et une ligne <code>---</code> entre les vins. La réponse peut commencer par <code>ZÉLAR-FORMAT: 1</code>, pour que Zélar sache de quelle version du format il s'agit. Les clés sont en anglais (les clés danoises des anciennes versions fonctionnent aussi), et les lignes que Zélar ne connaît pas sont ignorées.</p>
+      <pre>ZÉLAR-FORMAT: 1
+WINE: Château Somewhere
+PRODUCER: A. Christmann
+VINTAGE: 2018
+COUNTRY: France
+REGION: Bordeaux, Médoc
+TYPE: Red
+GRAPES: Cabernet Sauvignon, Merlot
+QUANTITY: 2
+DRINKING WINDOW: 2024-2032
+CELLAR: À la maison
+LOCATION: Casier A · B3
+---
+WINE: ...</pre>
+      <p>Le format complet, avec tous les champs, s'obtient avec <span class="ui">Obtenir le format d'import</span> dans Raccourcis ou avec <span class="ui">?</span> dans <span class="ui">＋ → Importer depuis l'IA</span>.</p>
+
+      <h3>Les actions de Zélar dans Raccourcis</h3>
+      <div class="table-wrap" tabindex="0" role="region" aria-label="Les actions de Zélar dans Raccourcis">
+        <table>
+          <tr><th>Action</th><th>Entrée</th><th>Renvoie</th></tr>
+          <tr><td><span class="ui">Créer un vin en stock</span></td><td>Texte (réponse d'IA au format Zélar), photos (facultatif)</td><td>Un brouillon qui s'ouvre pour vérification</td></tr>
+          <tr><td><span class="ui">Créer une entrée de journal</span></td><td>Texte, photos (facultatif)</td><td>Un brouillon pour le Journal, qui s'ouvre pour vérification</td></tr>
+          <tr><td><span class="ui">Ajouter une photo au brouillon</span></td><td>Photos, brouillon (facultatif : le plus récent qui attend une photo)</td><td>La photo ajoutée au brouillon</td></tr>
+          <tr><td><span class="ui">Obtenir un prompt Zélar</span></td><td>Prompt (scan vers le stock ou le journal, premier chargement en texte ou en fichier de sauvegarde), remarque</td><td>Le prompt en texte</td></tr>
+          <tr><td><span class="ui">Obtenir le format d'import</span></td><td>Vin en stock ou vin dégusté</td><td>Le format et sa version</td></tr>
+          <tr><td><span class="ui">Obtenir ma bibliothèque</span></td><td>—</td><td>Votre cave, vos dégustations et votre liste d'envies en Markdown</td></tr>
+          <tr><td><span class="ui">Obtenir un prompt avec ma cave</span></td><td>Tâche, plat, de la cave ou à acheter, où vous faites vos achats</td><td>Un prompt de Prompts avec votre cave, comme quand vous le copiez dans l'app</td></tr>
+        </table>
+      </div>
+
+      <h3>Votre bibliothèque de prompts dans un raccourci</h3>
+      <p><span class="ui">Obtenir un prompt avec ma cave</span> suivi de Demander à Claude ou Demander à ChatGPT vous donne vos prompts sans ouvrir Zélar. Deux idées :</p>
+      <ul>
+        <li><strong>Accord mets-vin à la voix :</strong> Dicter le texte (« Que cuisinez-vous ? ») → Obtenir un prompt avec ma cave (Accord mets-vin pour le dîner, Plat : le texte dicté) → Demander à Claude.</li>
+        <li><strong>Suggestions d'achat sur l'écran d'accueil :</strong> Obtenir un prompt avec ma cave (Suggestions d'achat) → Demander à ChatGPT.</li>
+      </ul>
+      <p>La réponse reste dans l'app d'IA. Si vous utilisez la tâche <em>Compléter mes informations de vins</em>, collez la réponse avec <span class="ui">Mettre à jour des vins depuis l'IA</span> dans Zélar, pour voir les modifications champ par champ.</p>
+    </div>
+
+    <div class="card">
+      <div class="eyebrow">Aide</div>
+      <p>Le reste de l'app est décrit dans le <a href="{{root}}support/">guide d'utilisation</a>. Si vous êtes bloqué, écrivez à <a href="mailto:zelar@whaaat.co" class="mono">zelar@whaaat.co</a>.</p>
+    </div>
+</div>
+</main>

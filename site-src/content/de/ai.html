@@ -1,0 +1,280 @@
+<!-- title: Zélar – Deine eigene KI in Zélar -->
+<!-- description: So nutzt du deine eigene Claude- oder ChatGPT-App mit Zélar: Etiketten per Kurzbefehl scannen, Antworten mit Zélar teilen, Entwürfe und der erste Import eines ganzen Kellers. -->
+<main id="main">
+<div class="wrap wrap--narrow">
+  <div class="page-head">
+    <h1>Deine eigene KI in Zélar</h1>
+    <p class="meta">Zuletzt aktualisiert: 1. November 2026</p>
+  </div>
+
+    <div class="card">
+      <p>Zélar ist so gebaut, dass deine eigene KI mit deinem Keller arbeiten kann. Neben Prompts und dem Import per Einfügen unter <span class="ui">Prompts</span> kannst du einen Kurzbefehl nutzen, um Etiketten zu scannen, Antworten direkt aus deiner KI-App zu teilen und deine KI beim ersten Mal einen ganzen Keller einlesen zu lassen. Das ist kostenlos und bleibt kostenlos.</p>
+      <p>Egal auf welchem Weg, es gilt ein Grundsatz: <strong>Alles, was von einer KI kommt, ist ein Vorschlag.</strong> Es landet als Entwurf, den du prüfst, bevor etwas in den Bestand oder ins Journal kommt.</p>
+    </div>
+
+    <nav class="toc" aria-label="Inhalt">
+      <div class="eyebrow">Inhalt</div>
+      <ol>
+        <li><a href="#tre-veje">Drei Wege hinein</a></li>
+        <li><a href="#privatliv">Was wohin gesendet wird</a></li>
+        <li><a href="#genvej">Den Kurzbefehl installieren</a></li>
+        <li><a href="#skan">Ein Etikett scannen, Schritt für Schritt</a></li>
+        <li><a href="#share">Aus deiner KI-App teilen</a></li>
+        <li><a href="#drafts">Entwürfe</a></li>
+        <li><a href="#first-load">Erster Import</a></li>
+        <li><a href="#fejl">Fehlerbehebung</a></li>
+        <li><a href="#own-prompts">Für deine eigenen Prompts und Kurzbefehle</a></li>
+      </ol>
+    </nav>
+
+    <div class="card" id="tre-veje">
+      <div class="eyebrow">Drei Wege hinein</div>
+      <h2>Wähle den, der zur Aufgabe passt</h2>
+      <ul>
+        <li><strong>Ein Etikett per Kurzbefehl scannen.</strong> Wähle ein Foto; Apples Modell liest das Etikett, der Kurzbefehl fragt deine eigene Claude- oder ChatGPT-App und legt die Antwort und das Foto als Entwurf in Zélar ab. Am besten für eine Flasche nach der anderen.</li>
+        <li><strong>Aus deiner KI-App teilen.</strong> Hast du schon mit deiner KI über einen Wein gesprochen, teile die Antwort (und gegebenenfalls das Foto) über das Teilen-Menü mit Zélar.</li>
+        <li><strong>Erster Import.</strong> Ein ganzer Keller aus einer Tabelle, dem Export einer anderen App oder einem Stapel Etikettfotos – als Text in Teilen oder als Backup-Datei.</li>
+      </ul>
+      <div class="table-wrap" tabindex="0" role="region" aria-label="Welchen Weg soll ich wählen?">
+        <table>
+          <tr><th>Du hast …</th><th>Nutze</th></tr>
+          <tr><td>eine Flasche in der Hand</td><td><a href="#genvej">Den Kurzbefehl</a></td></tr>
+          <tr><td>ein Gespräch mit deiner KI über einen Wein, eine Weinkarte oder einen Kassenbon</td><td><a href="#share">Mit Zélar teilen</a></td></tr>
+          <tr><td>einen kopierten Text aus einer App ohne Teilen-Taste</td><td><span class="ui">＋ → Von KI importieren</span></td></tr>
+          <tr><td>eine Tabelle, einen Export aus einer anderen App oder viele Fotos</td><td><a href="#first-load">Erster Import</a></td></tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="card" id="privatliv">
+      <div class="eyebrow">Datenschutz</div>
+      <h2>Was wohin gesendet wird</h2>
+      <ul>
+        <li><strong>Das Foto geht nicht an deine KI.</strong> Der Kurzbefehl lässt Apples Modell das Etikett in Apples Private Cloud Compute lesen, wo Apple es nicht speichert. Soll das Foto auf dem Telefon bleiben, nutze stattdessen die Texterkennung von iOS (siehe <a href="#genvej">die Anleitung</a>).</li>
+        <li><strong>Nur Text geht an deine eigene Claude- oder ChatGPT-App</strong>, unter deinem eigenen Account. Das zählt dort zu den Grenzen deines Tarifs, und es gelten die Bedingungen dieses Dienstes.</li>
+        <li><strong>Beim ersten Import</strong> sendest du deine Tabelle oder deine Fotos selbst an deinen eigenen KI-Account.</li>
+        <li><strong>Zélar sendet nichts.</strong> Die Kurzbefehl-Aktionen und das Teilen-Menü lesen und schreiben nur Dateien auf deinem Gerät. Entwürfe liegen nur auf dem Gerät und werden nicht synchronisiert.</li>
+      </ul>
+      <p>Siehe auch die <a href="{{root}}privacy/">Datenschutzerklärung</a>.</p>
+    </div>
+
+    <div class="card" id="genvej">
+      <div class="eyebrow">Der Kurzbefehl</div>
+      <h2>„Zélar · Etikett scannen“ installieren</h2>
+      <!-- SCREENSHOT ai-01: The Shortcut open in the Shortcuts app with its actions (Claude version). assets/img/screens/da/ai-01.webp, see icy-pork/zelar-site#2 -->
+      <!-- SCREENSHOT ai-02: The first-run permission prompt. assets/img/screens/da/ai-02.webp, see icy-pork/zelar-site#2 -->
+      <!-- SCREENSHOT ai-03: Settings → Action Button set to the Shortcut. assets/img/screens/da/ai-03.webp, see icy-pork/zelar-site#2 -->
+      <p>Es gibt einen Kurzbefehl für jedes Ziel: <strong>in den Bestand</strong> (eine Flasche, die du in den Keller legst) und <strong>ins Journal</strong> (ein Wein, den du gerade verkostest). Jeden gibt es für Claude und für ChatGPT. Wähle die, die zu deiner KI-App passen.</p>
+      <div class="callout">
+        <strong>Links folgen</strong>
+        <p>Die Kurzbefehle für Bestand und Journal, für Claude und für ChatGPT, kommen hier als iCloud-Links hin, sobald sie fertig sind. Bis dahin kannst du sie nach der Anleitung unten selbst bauen; das dauert ein paar Minuten.</p>
+      </div>
+      <!-- When the Shortcuts are built: add the two iCloud links here, with their
+           version ("v1"), e.g. <a class="btn btn--primary" href="https://www.icloud.com/shortcuts/…">Hent til Claude</a>.
+           Then soften the callout above. Screenshots go in assets/img/ai/ (da and en). -->
+
+      <h3>Das brauchst du</h3>
+      <ul>
+        <li>Zélar und die Claude- oder ChatGPT-App, installiert und angemeldet.</li>
+        <li>Die App Kurzbefehle (gehört zu iOS).</li>
+        <li>Apple Intelligence (iPhone 15 Pro oder neuer) für die Aktion <span class="ui">Modell verwenden</span>, die das Etikett liest. Sie hat Tageslimits. Ohne Apple Intelligence kannst du stattdessen <span class="ui">Text aus Bild extrahieren</span> nutzen; das läuft auf dem Telefon und schafft die meisten Etiketten.</li>
+      </ul>
+
+      <h3>Beim ersten Ausführen</h3>
+      <p>iOS fragt, ob der Kurzbefehl Zélar, deine KI-App und Fotos verwenden darf. Es fragt der Kurzbefehl, nicht Zélar, und die Antwort gilt nur für diesen Kurzbefehl. Wähle <span class="ui">Immer erlauben</span>, damit er nicht jedes Mal fragt.</p>
+
+      <h3>Leg ihn dorthin, wo du ihn nutzt</h3>
+      <ul>
+        <li><strong>Die Aktionstaste</strong> (iPhone 15 Pro und neuer): Einstellungen → Aktionstaste → Kurzbefehl.</li>
+        <li><strong>Sperrbildschirm oder Kontrollzentrum</strong>: Füge eine Kurzbefehl-Taste hinzu.</li>
+        <li><strong>Home-Bildschirm</strong>: Halte den Kurzbefehl in Kurzbefehle gedrückt → Teilen → Zum Home-Bildschirm.</li>
+        <li><strong>Teilen-Menü in Fotos</strong>: Aktiviere „Im Teilen-Menü anzeigen“ in den Details des Kurzbefehls, dann kannst du ein Foto scannen, das du schon aufgenommen hast.</li>
+      </ul>
+
+      <h3>Selbst bauen</h3>
+      <p>Lege in Kurzbefehle einen neuen Kurzbefehl an, z. B. „Zélar · Etikett in den Bestand scannen (Claude)“, mit diesen fünf Aktionen. Die Aktionen von Zélar findest du unter <span class="ui">Apps → Zélar</span>.</p>
+      <pre>1  Fotos auswählen      Einbeziehen: Alle · Mehrere auswählen: aus
+2  Modell verwenden     Cloud-Modell (Prompt unten) + [Fotos]
+3  Etikett in den Bestand scannen abrufen   (Zélar → Zélar-Prompt abrufen)
+4  Claude fragen        [Zélar-Prompt abrufen] [Antwort]
+5  Wein im Bestand anlegen aus [Claude fragen]
+     Fotos: [Fotos]</pre>
+      <p>Der Prompt für Schritt 2. Er bittet das Modell nur, das Etikett zu lesen; das Wissen über den Wein kommt in Schritt 4 von deiner eigenen KI:</p>
+      <pre>This is a photo of a wine label. Extract as much information
+about the bottle as you can from the image, for example name,
+producer, country, region, vintage, alcohol % and any organic
+or biodynamic marks: [Fotos]</pre>
+      <ul>
+        <li><strong>Ins Journal:</strong> Wähle <span class="ui">Etikett ins Journal scannen</span> in Schritt 3 und nutze <span class="ui">Journaleintrag erstellen</span> in Schritt 5. Möchtest du Bewertung und Ort dabeihaben, füge <span class="ui">Nach Eingabe fragen</span> („Bewertung, Ort, Glas oder Flasche?“) vor Schritt 3 hinzu und setze die Antwort in Schritt 3 bei <span class="ui">Notiz</span>.</li>
+        <li><strong>ChatGPT:</strong> Nutze <span class="ui">ChatGPT fragen</span> in Schritt 4, nur mit Text.</li>
+        <li><strong>Foto sofort aufnehmen:</strong> Nutze <span class="ui">Foto aufnehmen</span> statt <span class="ui">Fotos auswählen</span>.</li>
+        <li><strong>Ohne Apple Intelligence:</strong> Nutze <span class="ui">Text aus Bild extrahieren</span> in Schritt 2. Dann verlässt das Foto nie das Telefon.</li>
+      </ul>
+      <p>Der Prompt in Schritt 3 bleibt aktuell, wenn Zélar aktualisiert wird, sodass der Kurzbefehl nicht neu gebaut werden muss, wenn sich das Format ändert.</p>
+    </div>
+
+    <div class="card" id="skan">
+      <div class="eyebrow">Ein Etikett scannen</div>
+      <h2>Schritt für Schritt</h2>
+      <!-- SCREENSHOT ai-04: The Shortcut running: Claude answering inside Shortcuts. assets/img/screens/da/ai-04.webp, see icy-pork/zelar-site#2 -->
+      <!-- SCREENSHOT ai-05: The draft review screen: AI suggestions, match with an existing wine, placement, Færdiggør. assets/img/screens/da/ai-05.webp, see icy-pork/zelar-site#2 -->
+      <ol>
+        <li><strong>Führe den Kurzbefehl aus</strong> für den Bestand oder das Journal und wähle ein Foto des Etiketts, gerade von vorn und bei gutem Licht aufgenommen. Fürs Journal kannst du eine kurze Notiz schreiben, z. B. „4,5 Sterne, Restaurant Barolo, ein Glas“.</li>
+        <li><strong>Apples Modell liest das Etikett</strong> und schreibt, was es sehen kann: Name, Erzeuger, Jahrgang und so weiter.</li>
+        <li><strong>Warte auf deine KI.</strong> Der Kurzbefehl sendet, was auf dem Etikett stand, und den Prompt von Zélar an Claude oder ChatGPT und wartet auf die Antwort.</li>
+        <li><strong>Zélar öffnet den Entwurf</strong> mit der Antwort und dem Foto, bereit zum Prüfen.</li>
+      </ol>
+      <h3>Der Prüfbildschirm</h3>
+      <ul>
+        <li>Die Felder sind <strong>KI-Vorschläge</strong>: Prüfe Name, Erzeuger und Jahrgang anhand des Etiketts und korrigiere, was falsch ist. KI kann sich irren.</li>
+        <li>Ist der Wein schon im Keller, schlägt Zélar vor, ihn zu nutzen, sodass die Flasche zum vorhandenen Wein kommt, statt ein neuer zu werden.</li>
+        <li>Wähle Anzahl und Platz für die Flaschen. Ohne Platz landen sie unter <span class="ui">Ohne Platz</span>.</li>
+        <li>Tippe auf <span class="ui">Abschließen</span>. Erst jetzt wird der Wein oder die Verkostung angelegt, und der Entwurf wird gelöscht.</li>
+      </ul>
+    </div>
+
+    <div class="card" id="share">
+      <div class="eyebrow">Aus deiner KI-App teilen</div>
+      <h2>Die Antwort von Claude oder ChatGPT direkt an Zélar</h2>
+      <!-- SCREENSHOT ai-06: A reply in the Claude or ChatGPT app with the share sheet open and Zélar in the row. assets/img/screens/da/ai-06.webp, see icy-pork/zelar-site#2 -->
+      <!-- SCREENSHOT ai-07: The "Del til Zélar" card. assets/img/screens/da/ai-07.webp, see icy-pork/zelar-site#2 -->
+      <!-- SCREENSHOT ai-08: A photo shared to Zélar with "Tilføj til …" for an open draft. assets/img/screens/da/ai-08.webp, see icy-pork/zelar-site#2 -->
+      <ol>
+        <li>Bitte deine KI, im Zélar-Format zu antworten. Am einfachsten startest du mit einem Prompt aus <span class="ui">Prompts</span> oder dem Format aus <span class="ui">＋ → Von KI importieren → ?</span>.</li>
+        <li>Halte die Antwort gedrückt (oder nutze die Teilen-Taste) → <span class="ui">Teilen</span> → <span class="ui">Zélar</span>.</li>
+        <li>Die Karte „Mit Zélar teilen“ zeigt, was der Text enthält, z. B. den Namen eines Weins oder „3 Weine im Text“, und ob er wie eine KI-Antwort im Zélar-Format aussieht.</li>
+        <li>Wähle <span class="ui">Wein in den Bestand</span> oder <span class="ui">Verkosteter Wein</span>. Zélar hat vorausgewählt, was am besten passt. Du prüfst es in Zélar, bevor etwas angelegt wird.</li>
+      </ol>
+      <h3>Text und Foto getrennt</h3>
+      <p>Viele KI-Apps teilen nur Text. Teile das Foto danach (oder vorher) aus Fotos mit Zélar und wähle <span class="ui">Zu … hinzufügen</span> mit dem Entwurf, zu dem es gehört. Zélar schlägt den passenden Entwurf vor, wählt aber nie von selbst. Teilst du nur ein Foto, kannst du auch <span class="ui">Als Entwurf sichern</span> und auf den Text warten oder direkt mit den Bildern zum Wein- oder Verkostungsformular gehen.</p>
+      <p>Findest du Zélar nicht im Teilen-Menü, wische in der App-Reihe nach rechts, tippe auf <span class="ui">Mehr</span> und aktiviere Zélar.</p>
+    </div>
+
+    <div class="card" id="drafts">
+      <div class="eyebrow">Entwürfe</div>
+      <h2>Was auf dich wartet</h2>
+      <!-- SCREENSHOT ai-09: The Kladder list showing all three states. assets/img/screens/da/ai-09.webp, see icy-pork/zelar-site#2 -->
+      <p>Solange es Entwürfe gibt, steht <span class="ui">Entwürfe</span> mit einer Zahl im Menü (hinter der Keller-Taste in der Übersicht) unter Bibliothek und auf dem iPad in der Seitenleiste. Ein Entwurf kann sein:</p>
+      <div class="table-wrap" tabindex="0" role="region" aria-label="Zustände der Entwürfe">
+        <table>
+          <tr><th>Zustand</th><th>Was du tust</th></tr>
+          <tr><td>Text und Foto · bereit zum Prüfen</td><td>Tippe darauf, um zu prüfen und anzulegen.</td></tr>
+          <tr><td>Ohne Foto · bereit zum Prüfen</td><td>Lege ihn an, wie er ist, oder teile vorher ein Foto dazu.</td></tr>
+          <tr><td>Wartet auf den Text der KI</td><td>Teile die Antwort aus deiner KI-App und wähle <span class="ui">Zum Entwurf hinzufügen</span>, oder lege den Wein jetzt selbst an.</td></tr>
+        </table>
+      </div>
+      <ul>
+        <li><strong>Lösche</strong> einen Entwurf mit <span class="ui">Entwurf löschen</span>, oder räum auf mit <span class="ui">Entwürfe älter als 30 Tage löschen</span>.</li>
+        <li><strong>Die Einfügen-Taste</strong> in Entwürfe sichert eine kopierte KI-Antwort als Entwurf. Nutze sie mit Apps, die nur kopieren können.</li>
+        <li>Entwürfe bleiben auf dem Gerät. Sie werden nicht mit deinen anderen Geräten synchronisiert und sind nicht im Backup enthalten.</li>
+      </ul>
+    </div>
+
+    <div class="card" id="first-load">
+      <div class="eyebrow">Erster Import</div>
+      <h2>Der ganze Keller auf einmal</h2>
+      <!-- SCREENSHOT ai-10: The Første indlæsning section on Backup, import & eksport. assets/img/screens/da/ai-10.webp, see icy-pork/zelar-site#2 -->
+      <!-- SCREENSHOT ai-11: The "På eget ansvar" confirmation. assets/img/screens/da/ai-11.webp, see icy-pork/zelar-site#2 -->
+      <!-- SCREENSHOT ai-12: Claude or ChatGPT answering a first load in parts. assets/img/screens/da/ai-12.webp, see icy-pork/zelar-site#2 -->
+      <p>Hast du schon Weine woanders erfasst? Du findest <span class="ui">Erster Import</span> unter <span class="ui">Backup, Import und Export</span> im Menü. Es gibt zwei Wege.</p>
+
+      <h3>Als Text (empfohlen)</h3>
+      <ol>
+        <li>Tippe auf <span class="ui">KI-Anleitung kopieren (Text)</span>.</li>
+        <li>Öffne Claude oder ChatGPT, füge die Anleitung ein und hänge deine Tabelle, deinen Export oder deine Fotos an.</li>
+        <li>Die KI antwortet in Teilen zu 40 Weinen. Schreib <em>weiter</em> um den nächsten Teil zu bekommen.</li>
+        <li>Kopiere jeden Teil und füge ihn einzeln ein unter <span class="ui">Weine von KI einfügen</span> im selben Abschnitt. Prüfe die Weine und tippe auf <span class="ui">Abschließen</span>.</li>
+        <li>Fotos fügst du danach an jedem Wein hinzu.</li>
+      </ol>
+
+      <h3>Als Backup-Datei – auf eigene Verantwortung</h3>
+      <div class="callout callout--warn">
+        <strong>Zuerst lesen</strong>
+        <p>Eine Backup-Datei von einer KI wird eingespielt mit <span class="ui">Aus Datei wiederherstellen</span>, und das <strong>ersetzt alles in Zélar</strong>. Die KI kann Fehler in der Datei machen, und Zélar kann sie (noch) nicht in einen bestehenden Keller einfügen. Nutze sie nur in einer leeren App und mach vorher ein Backup, wenn du Daten hast.</p>
+      </div>
+      <ol>
+        <li>Tippe auf <span class="ui">KI-Anleitung kopieren (Backup-Datei)</span> und bestätige mit <span class="ui">Verstanden, kopieren</span>.</li>
+        <li>Nutze eine KI, die Dateien erstellen kann. Füge die Anleitung ein und hänge deine Dateien an; Fotos können mit.</li>
+        <li>Lade die <code>.zelarbackup</code>-Datei, die die KI erstellt, in Dateien.</li>
+        <li>In Zélar: <span class="ui">Backup, Import und Export</span> → <span class="ui">Aus Datei wiederherstellen</span> → wähle die Datei in Dateien.</li>
+      </ol>
+      <p>Wird die Datei zu groß, teilt die KI sie in mehrere auf. Stelle nur eine davon wieder her, denn jede Wiederherstellung ersetzt die vorige, oder nutze stattdessen den Textweg.</p>
+
+      <h3>Gute Tipps</h3>
+      <ul>
+        <li><strong>Tabelle:</strong> eine Zeile pro Wein mit Überschriften bringt das beste Ergebnis. Anzahl Flaschen und Platz können in eigenen Spalten stehen.</li>
+        <li><strong>Export aus einer anderen App:</strong> CSV oder Text ist am besten. Sag der KI, aus welcher App er stammt.</li>
+        <li><strong>Viele Etiketten:</strong> ein Foto pro Etikett, gerade von vorn, und schick sie in kleineren Stapeln.</li>
+        <li><strong>Plätze:</strong> Bau zuerst deine Weinregale in Zélar. Dann kann die KI deine echten Namen nutzen, z. B. „Weinregal A · B3“.</li>
+      </ul>
+    </div>
+
+    <div class="card" id="fejl">
+      <div class="eyebrow">Fehlerbehebung</div>
+      <h2>Wenn etwas hakt</h2>
+      <h3>„Die Antwort nutzt eine neuere Version des Formats“</h3>
+      <p>Die Antwort ist für ein neueres Zélar geschrieben. Aktualisiere Zélar im App Store und versuche es erneut.</p>
+      <h3>Der Kurzbefehl stoppt, oder Claude fragen / ChatGPT fragen liefert keine Antwort</h3>
+      <p>Prüfe, ob die KI-App installiert und angemeldet ist und ob du Netz hast. Öffne die KI-App einmal und führe den Kurzbefehl dann aus der App Kurzbefehle aus, damit du siehst, an welchem Schritt er stoppt.</p>
+      <h3>Das Etikett wurde falsch gelesen</h3>
+      <p>Mach das Foto noch einmal gerade von vorn, ohne Spiegelungen, und fülle das Bild mit dem Etikett. Nutzt du in Schritt 2 die Texterkennung, versuch stattdessen das Cloud-Modell; es liest schwierige Etiketten besser. Die Felder kannst du auf dem Prüfbildschirm immer korrigieren.</p>
+      <h3>Zélar ist nicht im Teilen-Menü</h3>
+      <p>Wische in der App-Reihe nach rechts, tippe auf <span class="ui">Mehr</span> und aktiviere Zélar. Öffne Zélar nach einer Neuinstallation einmal.</p>
+      <h3>„Modell verwenden“ sagt Stopp</h3>
+      <p>Apples Modell hat Tageslimits. Nutze <span class="ui">Text aus Bild extrahieren</span> in Schritt 2 bis morgen.</p>
+      <h3>Warum nicht einfach Siri?</h3>
+      <p>Die neuen KI-Funktionen von Siri gibt es auf dem iPhone in der EU noch nicht. Kurzbefehle funktionieren überall, deshalb baut Zélar darauf.</p>
+      <h3>Die Datei ist zu groß</h3>
+      <p>Teile den Inhalt auf mehrere Runden auf: Schick weniger Fotos auf einmal oder nutze den Textweg mit Teilen zu 40 Weinen.</p>
+    </div>
+
+    <div class="card" id="own-prompts">
+      <div class="eyebrow">Für Neugierige</div>
+      <h2>Für deine eigenen Prompts und Kurzbefehle</h2>
+      <h3>Das Format</h3>
+      <p>Zélar liest Text mit einer Angabe pro Zeile (<code>KEY: value</code>) und einer Zeile mit <code>---</code> zwischen den Weinen. Die Antwort kann beginnen mit <code>ZÉLAR-FORMAT: 1</code>, damit Zélar weiß, welche Version des Formats es ist. Die Schlüssel sind englisch (dänische Schlüssel aus älteren Versionen funktionieren auch), und Zeilen, die Zélar nicht kennt, werden übersprungen.</p>
+      <pre>ZÉLAR-FORMAT: 1
+WINE: Château Somewhere
+PRODUCER: A. Christmann
+VINTAGE: 2018
+COUNTRY: Frankreich
+REGION: Bordeaux, Médoc
+TYPE: Red
+GRAPES: Cabernet Sauvignon, Merlot
+QUANTITY: 2
+DRINKING WINDOW: 2024-2032
+CELLAR: Zu Hause
+LOCATION: Weinregal A · B3
+---
+WINE: ...</pre>
+      <p>Das vollständige Format mit allen Feldern bekommst du mit <span class="ui">Importformat abrufen</span> in Kurzbefehle oder mit <span class="ui">?</span> unter <span class="ui">＋ → Von KI importieren</span>.</p>
+
+      <h3>Die Aktionen von Zélar in Kurzbefehle</h3>
+      <div class="table-wrap" tabindex="0" role="region" aria-label="Die Aktionen von Zélar in Kurzbefehle">
+        <table>
+          <tr><th>Aktion</th><th>Eingabe</th><th>Liefert</th></tr>
+          <tr><td><span class="ui">Wein im Bestand anlegen</span></td><td>Text (KI-Antwort im Zélar-Format), Fotos (optional)</td><td>Einen Entwurf, der zum Prüfen geöffnet wird</td></tr>
+          <tr><td><span class="ui">Journaleintrag erstellen</span></td><td>Text, Fotos (optional)</td><td>Einen Entwurf fürs Journal, der zum Prüfen geöffnet wird</td></tr>
+          <tr><td><span class="ui">Foto zu Entwurf hinzufügen</span></td><td>Fotos, Entwurf (optional: der neueste, der auf ein Foto wartet)</td><td>Das Foto wird dem Entwurf hinzugefügt</td></tr>
+          <tr><td><span class="ui">Zélar-Prompt abrufen</span></td><td>Prompt (in Bestand oder Journal scannen, erster Import als Text oder Backup-Datei), Notiz</td><td>Den Prompt als Text</td></tr>
+          <tr><td><span class="ui">Importformat abrufen</span></td><td>Wein in den Bestand oder verkosteter Wein</td><td>Das Format und seine Version</td></tr>
+          <tr><td><span class="ui">Meine Bibliothek abrufen</span></td><td>—</td><td>Deinen Keller, deine Verkostungen und deine Wunschliste als Markdown</td></tr>
+          <tr><td><span class="ui">Prompt mit meinem Keller abrufen</span></td><td>Aufgabe, Gericht, aus dem Keller oder neu kaufen, wo du einkaufst</td><td>Einen Prompt aus Prompts mit deinem Keller, wie beim Kopieren in der App</td></tr>
+        </table>
+      </div>
+
+      <h3>Deine Prompt-Bibliothek in einem Kurzbefehl</h3>
+      <p><span class="ui">Prompt mit meinem Keller abrufen</span> gefolgt von Claude fragen oder ChatGPT fragen gibt dir deine Prompts, ohne Zélar zu öffnen. Zwei Ideen:</p>
+      <ul>
+        <li><strong>Weinbegleitung per Stimme:</strong> Text diktieren („Was kochst du?“) → Prompt mit meinem Keller abrufen (Weinbegleitung zum Abendessen, Gericht: das Diktat) → Claude fragen.</li>
+        <li><strong>Einkaufsvorschläge auf dem Home-Bildschirm:</strong> Prompt mit meinem Keller abrufen (Einkaufsvorschläge) → ChatGPT fragen.</li>
+      </ul>
+      <p>Die Antwort bleibt in der KI-App. Nutzt du die Aufgabe <em>Meine Weinangaben ergänzen</em>, füge die Antwort mit <span class="ui">Weine von KI aktualisieren</span> in Zélar ein, damit du die Änderungen Feld für Feld sehen kannst.</p>
+    </div>
+
+    <div class="card">
+      <div class="eyebrow">Hilfe</div>
+      <p>Der Rest der App ist beschrieben im <a href="{{root}}support/">Benutzerhandbuch</a>. Kommst du nicht weiter, schreib an <a href="mailto:zelar@whaaat.co" class="mono">zelar@whaaat.co</a>.</p>
+    </div>
+</div>
+</main>
